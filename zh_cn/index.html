@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="intellegence evolution">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>intellegence evolution</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="rss.xml">
+<link rel="canonical" href="https://monkeyxite.github.io/zh_cn/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://monkeyxite.github.io/zh_cn/">
+
+            <span id="blog-title">intellegence evolution</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item"><a href="https://monkeyxite.github.io/" rel="alternate" hreflang="en" class="nav-link">English</a></li>
+
+                    
+                    
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="archive.html" class="nav-link">文章归档</a>
+                </li>
+<li class="nav-item">
+<a href="categories/" class="nav-link">标签</a>
+                </li>
+<li class="nav-item">
+<a href="rss.xml" class="nav-link">RSS 源</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+    
+        
+
+    
+        
+    <div class="postindex">
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/test-nicola-with-markdown/" class="u-url">test nicola with markdown</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jonny Hou
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/test-nicola-with-markdown/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-10-14T00:07:27+08:00" itemprop="datePublished" title="2018-10-14 00:07">2018-10-14 00:07</time></a>
+            </p>
+                        <p class="commentline">
+        
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h2>Ch1</h2>
+<p>Probably all of you learn Flask studies via <a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a>. Even though I believe it's typical that starting a tutorial for beginners to start learn by standlone env, a Paas version would be suiable for beginers who are aiming for using Paas as Infrustruction as Paas is "next big thing" and it's popular all over the word even in China. That's enough talk, let's get the work done.</p>
+<p>List of tutorials:</p>
+<ol>
+<li><a href="posts/test-nicola-with-markdown/">getting started and basic configurations in SAE</a></li>
+<li>[]</li>
+</ol>
+<h2>SAE Basic Configuration</h2>
+<p>Even though sae team claimed that flask only support 0.7 or some other version, I tried latest 0.10.1 in config file it works fine so far.</p>
+<h3>SVN</h3>
+<p>Create first version and you would have a init version. detailed useage you could refer <a href="http://sae.sina.com.cn/?m=devcenter&amp;catId=211">SVN Doc for SAE</a>.
+After checkout, you would have a basic folder name 1 which could be used as a repo for your useage. </p>
+<h3>Initialize the MySQL</h3>
+<p>As sooner or later we would adopt MySQL, so we need intiallize it from the control panel.</p>
+<h3>Local env (optional)</h3>
+<p>Please refer to <a href="http://python.sinaapp.com/doc/index.html">SAE python user guide</a> for more details </p>
+<h2>"Hello World" from Flask in SAE</h2>
+<h3>application folder structure</h3>
+<p>A recommandated project structure would be like this for now:</p>
+<pre class="code literal-block"><span></span>1/
+    config.yaml
+    index.wsgi
+    main.py
+    app/
+        views.py
+        __init__.py
+        static/
+    tmp/
+</pre>
+
+
+<h3>flask modification in SAE</h3>
+<p>index.wsgi would be frontgate for all request, need a instance to hanle http requests:</p>
+<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">sae</span>
+
+<span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">app</span>
+
+<span class="n">application</span> <span class="o">=</span> <span class="n">sae</span><span class="o">.</span><span class="n">create_wsgi_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</pre>
+
+
+<p>main.py would be like this: </p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">g</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">import</span> <span class="nn">MySQLdb</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">debug</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="kn">from</span> <span class="nn">sae.const</span> <span class="kn">import</span> <span class="p">(</span><span class="n">MYSQL_HOST</span><span class="p">,</span> <span class="n">MYSQL_HOST_S</span><span class="p">,</span>
+    <span class="n">MYSQL_PORT</span><span class="p">,</span> <span class="n">MYSQL_USER</span><span class="p">,</span> <span class="n">MYSQL_PASS</span><span class="p">,</span> <span class="n">MYSQL_DB</span>
+<span class="p">)</span>
+
+<span class="nd">@app.before_request</span>
+<span class="k">def</span> <span class="nf">before_request</span><span class="p">():</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="n">MySQLdb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">MYSQL_HOST</span><span class="p">,</span> <span class="n">MYSQL_USER</span><span class="p">,</span> <span class="n">MYSQL_PASS</span><span class="p">,</span>
+                            <span class="n">MYSQL_DB</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">MYSQL_PORT</span><span class="p">))</span>
+
+<span class="nd">@app.teardown_request</span>
+<span class="k">def</span> <span class="nf">teardown_request</span><span class="p">(</span><span class="n">exception</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="s1">'db'</span><span class="p">):</span> <span class="n">g</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre>
+
+
+<h2>Ready to go</h2>
+<p>SVN update and visit your application ID, or here to see what is <a href="http://1.flasktutorial.sinaapp.com/">expected</a>.</p>
+<h2>Ch2</h2>
+<p>Probably all of you learn Flask studies via <a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a>. Even though I believe it's typical that starting a tutorial for beginners to start learn by standlone env, a Paas version would be suiable for beginers who are aiming for using Paas as Infrustruction as Paas is "next big thing" and it's popular all over the word even in China. That's enough talk, let's get the work done.</p>
+<p>List of tutorials:</p>
+<ol>
+<li><a href="posts/test-nicola-with-markdown/">getting started and basic configurations in SAE</a></li>
+<li>[template]</li>
+</ol>
+<h2>Recap</h2>
+<p>What we already have now is:</p>
+<h2>Why we need template?</h2>
+<h2>"Hello World" from Flask in SAE</h2>
+<h3>First impression of template engine in Flask</h3>
+<h4>add index template</h4>
+<p>create a templates folder in app, the content is </p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, {{user.nickname}}!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<h4>modify view to render from template</h4>
+<p>view will change into:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span>
+<span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'nickname'</span><span class="p">:</span> <span class="s1">'Miguel'</span> <span class="p">}</span> <span class="c1"># fake user</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">"index.html"</span><span class="p">,</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Home'</span><span class="p">,</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">user</span><span class="p">)</span>
+</pre>
+
+
+<p>Then you will find you pass the user name into the template. Jinja2 take care of ...</p>
+<h3>Higher level templated skills</h3>
+<p>Let move on for more details</p>
+<h4>Control</h4>
+<p><em>The Jinja2 templates also support control statements, given inside {%...%} blocks</em>.
+update index template like this:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% if title %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% else %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Welcome to microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% endif %}
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, {{user.nickname}}!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>Then, feel free to remove the <code>title</code> argue in view.py, you will find that logic in index.html will handle missing title situation.</p>
+<h4>Loop</h4>
+<p>First of all, you need provide contents(like <code>posts</code> as argue here) in view to show in templates. update <code>view.py</code> as the following:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'nickname'</span><span class="p">:</span> <span class="s2">"SAE User"</span><span class="p">}</span> <span class="c1">#fake</span>
+    <span class="n">posts</span> <span class="o">=</span> <span class="p">[</span> <span class="c1"># fake array of posts</span>
+        <span class="p">{</span> 
+            <span class="s1">'author'</span><span class="p">:</span> <span class="p">{</span> <span class="s1">'nickname'</span><span class="p">:</span> <span class="s1">'John'</span> <span class="p">},</span> 
+            <span class="s1">'body'</span><span class="p">:</span> <span class="s1">'Beautiful day in Portland!'</span> 
+        <span class="p">},</span>
+        <span class="p">{</span> 
+            <span class="s1">'author'</span><span class="p">:</span> <span class="p">{</span> <span class="s1">'nickname'</span><span class="p">:</span> <span class="s1">'Susan'</span> <span class="p">},</span> 
+            <span class="s1">'body'</span><span class="p">:</span> <span class="s1">'The Avengers movie was so cool!'</span> 
+        <span class="p">}</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">"index.html"</span><span class="p">,</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Home'</span><span class="p">,</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">user</span><span class="p">,</span>
+        <span class="n">posts</span> <span class="o">=</span> <span class="n">posts</span><span class="p">)</span>
+</pre>
+
+
+<p>Then, let us take a look at how <code>for</code> loop works in <code>index.html</code>jinja2:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% if title %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% else %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% endif %}
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi, {{user.nickname}}!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    {% for post in posts %}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{post.author.nickname}} says: <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>{{post.body}}<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    {% endfor %}
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<h4>Tempalte Inheritance</h4>
+<p>I could imagine how boring it is to repeat <code>head</code> stuff in htmls everytime when you create tempaltes, while thanks to inheritance of Jinja2, we could make our life easier by creating <code>base.html</code>, in this file we store all the repeating stuff for other siblings of our apps.</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% if title %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% else %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% endif %}
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>Microblog: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/index"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+    {% block content %}{% endblock %}
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>Then, other templates could reuse the generic stuff and do it own specific logic, like <code>index.html</code>:</p>
+<pre class="code literal-block"><span></span>{% extends "base.html" %}
+{% block content %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hi, {{user.nickname}}!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+{% for post in posts %}
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{post.author.nickname}} says: <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>{{post.body}}<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+{% endfor %}
+{% endblock %}
+</pre>
+
+
+<h2>Ready to go</h2>
+<p>SVN update and visit your application ID in this version to enjoy what you've done already!
+You could always refer <a href="http://2.flasktutorial.sinaapp.com/">here</a> to see what is expected.</p>
+<h2>Ch3</h2>
+<p>Probably all of you learn Flask studies via <a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a>. Even though I believe it's typical that starting a tutorial for beginners to start learn by standlone env, a Paas version would be suiable for beginers who are aiming for using Paas as Infrustruction as Paas is "next big thing" and it's popular all over the word even in China. That's enough talk, let's get the work done.</p>
+<p>List of tutorials:</p>
+<ol>
+<li><a href="posts/test-nicola-with-markdown/">getting started and basic configurations in SAE</a></li>
+<li>[template]</li>
+<li>[Webform]</li>
+</ol>
+<h2>Recap</h2>
+<p>What we already have now is seting up a basic Flask in SAE, and using the template engine in flask. While, web form is always one of the most important way to interact with users. What are we waiting for?</p>
+<h2>WTF in Flask</h2>
+<h3>about WTF in Flask</h3>
+<p>In Flask WTF is most widely used form extension for form handling. more details you could get from :</p>
+<ul>
+<li><a href="http://wtforms.readthedocs.org/en/latest/">WTForm</a></li>
+<li><a href="http://wtforms.readthedocs.org/en/latest/crash_course.html">WTForm Course</a></li>
+<li><a href="https://flask-wtf.readthedocs.org/en/latest/">flask-wtf</a></li>
+</ul>
+<h3>config external packages in SAE</h3>
+<p>There are several ways to install the packages in SAE:</p>
+<ul>
+<li>put in the version folder, import them directly</li>
+<li>use remote API install related packages</li>
+<li>use virtualenv, then use SAE remote API to install related packages</li>
+</ul>
+<p>As there are so many external packages to be installed in SAE, so we preferred 2 or 3 solution in this case. details refer to <a href="https://windrocblog.sinaapp.com/?p=935">link</a> or <a href="http://cloudbbs.org/forum.php?mod=viewthread&amp;tid=12860">link2</a>, or <a href="http://python.sinaapp.com/doc/tools.html#saecloud">offical doc</a>.</p>
+<p>Anyway, after you installed the nessary package, in our case flask-wtf, you could modify the <code>index.wsgi</code> like this:</p>
+<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+<span class="c1"># 两者取其一</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="s1">'site-packages'</span><span class="p">))</span> <span class="c1">#if you do not zip the packages</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="s1">'site-packages.zip'</span><span class="p">))</span> <span class="c1"># preferred for zipped packages</span>
+</pre>
+
+
+<p>Then, you could import the packages in your project.</p>
+<h3>Config flask with the WTF extention</h3>
+<p>Many extensions require some amount of configuration, fow now we could config our web app with <code>config.py</code> in version 3.</p>
+<pre class="code literal-block"><span></span><span class="n">CSRF_ENABLED</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="s1">'you-will-never-guess'</span>
+</pre>
+
+
+<p>This is accuary required by WTF, <code>CSRF_ENABLED</code> activates the <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">cross-site request forgery</a> prevention. In most cases you want to have this option enabled as it makes your app more secure.</p>
+<p>And <code>SECRET_KEY</code> setting is noly needed when <code>CSRF</code> is enable, and is used to create a cryptographic token that is used to validate a form. WHen you write your own apps, please make sure to set the key into something others nerver to guess.</p>
+<h3>load config in your flask app</h3>
+<p>Well, this config file need to imported by our app to use it. Modify the file <code>app/__init__.py</code> as the following:</p>
+<pre class="code literal-block"><span></span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">from_object</span><span class="p">(</span><span class="s1">'config'</span><span class="p">)</span>
+</pre>
+
+
+<h2>Start using form in Flask</h2>
+<h3>First impression of forms in Flask</h3>
+<p>Web froms are represented in Flask-WTF as objects, subclassed from class <em>Form</em>. A form subclass simply defines the fields of the form as class variables.</p>
+<p>A login form will be created by using OpenID. We don't have to validate passwords.</p>
+<p>The OpenID login only requires one string, called OpenID. We will also put a 'remember me' checkbox in the form.</p>
+<p>The form would be like this <code>app/form.py</code>:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">flask.ext.wtf</span> <span class="kn">import</span> <span class="n">Form</span>
+<span class="kn">from</span> <span class="nn">wtforms</span> <span class="kn">import</span> <span class="n">TextField</span><span class="p">,</span> <span class="n">BooleanField</span>
+<span class="kn">from</span> <span class="nn">wtforms.validators</span> <span class="kn">import</span> <span class="n">Required</span>
+
+<span class="k">class</span> <span class="nc">LoginForm</span><span class="p">(</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">openid</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="s1">'openid'</span><span class="p">,</span> <span class="n">validators</span> <span class="o">=</span> <span class="p">[</span><span class="n">Required</span><span class="p">()])</span>
+    <span class="n">remember_me</span> <span class="o">=</span> <span class="n">BooleanField</span><span class="p">(</span><span class="s1">'remember_me'</span><span class="p">,</span> <span class="n">default</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+</pre>
+
+
+<p>in the file, we imported the <em>Form</em> class, as twoo field classes we needed: <code>TextField</code> and <code>BooleanField</code>.
+Onething to be highlighted here is the validator in openid field: <code>Required</code> validator simply checks that the field is not submitted empty. </p>
+<h3>templates for Form</h3>
+<p>create a templates named <code>login.html</code> for the login form as representative in <code>app/tempaltes</code>, the content is </p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend from base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>as previous templates intro, inherited from 'base.html' we creat the tempalte for form. While there are several differences which are worth to highlight:</p>
+<p>The template expects a form object instantiated from the form class we just defined stored in a template argument named form. We will take care of sending this template argument to the template next, when we write the view function that renders this template.</p>
+<p>The <code>form.hidden_tag()</code> template argument will get replaced with a hidden field that implements the CSRF prevention that we enabled in the configuration. This field needs to be in all your forms if you have CSRF enabled.</p>
+<p>The actual fields of our form are also rendered by the form object, you just have to refer to a {{form.field_name}} template argument in the place where the field should be inserted. Some fields can take arguments. In our case, we are asking the form to generate our openid field with a width of 80 characters.</p>
+<p>Since we have not defined the submit button in the form class we have to define it as a regular field. The submit field does not carry any data so it doesn't need to be defined in the form class.</p>
+<h4>modify view to render from template</h4>
+<p>The last step to complete a form is to code a view funtion to handle the specific URL requestion and pass throught the parameteres and render it in the tempaltes.</p>
+<p>add contends for form in the <code>app/views.py</code> as following:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">flash</span><span class="p">,</span> <span class="n">redirect</span>
+<span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+<span class="kn">from</span> <span class="nn">forms</span> <span class="kn">import</span> <span class="n">LoginForm</span>
+
+<span class="c1">#index view function suppressed for brevity</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">)</span>
+</pre>
+
+
+<p>So, we imported the <code>LoginForm</code> Class in view, and sent it to the template.
+Add in the route decorator, we defined the <code>methods</code> arguments. It tells the flask this view fuction accepts not only GET request, but also POST request..</p>
+<p>Not you can see the form in your browser</p>
+<h3>Receiving data from form submission</h3>
+<p>How did you handle the data from form? Again, in the view func:</p>
+<pre class="code literal-block"><span></span><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">validate_on_submit</span><span class="p">():</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s1">'Login requested for OpenID="'</span> <span class="o">+</span> <span class="n">form</span><span class="o">.</span><span class="n">openid</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="s1">'", remember_me='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">remember_me</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">)</span>
+</pre>
+
+
+<p>The <code>validate_on_submit</code> method does all the form processing work. When the form just being presented to the user, then it will return <code>False</code>, which means Flask will just render the template.</p>
+<p>If <code>validate_on_submit</code> is called as part of a form submission request, then it will gather all data, run any validators attached to fields, and if everything is  all right and it will return <code>True</code>, indicating that the data is valid to proceed next step.</p>
+<ul>
+<li>if validatio pass through, two more steps are processing after that. <code>flash</code> function is a quick way to show a message on the next page presented to the user. By now, we just show the submitted data to user. of course, we need update the template to show these flash messages. This time we will update in the <code>app/templates/base.html</code> as these flashese would be used as a generic functionalities:</li>
+</ul>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% if title %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% else %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% endif %}
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>Microblog: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/index"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    {% for message in messages %}
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>{{ message }} <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    {% endfor %}
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>Jiajia <code>with</code> will xxxxxxxxxx. the other step is using <code>redirect</code> to tells the client web browser to navigate to a different page(index in this case).
+noted that the flashed messages will display even if a view function ends in a redirect.</p>
+<ul>
+<li>if validation teturn <code>Flase</code>, we would see later how to show an error message when vlalidation fails.</li>
+</ul>
+<p>This is a great time to start the app and test how the form works. Make sure you try submitting the form with the openid field empty, to see how the Required validator halts the submit process.</p>
+<h3>improve the field validation</h3>
+<p>Currently, if validation fails, the page will not submit. While a hint to user which part is missing is helpful to imporvement the usibility. Luckily, Flask-WTF also makes this an easy task.</p>
+<p>update <code>app/templates/login.html</code> template like this:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {% for error in form.errors.openid %}
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: red;"</span><span class="p">&gt;</span>[{{error}}]<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        {% endfor %}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>The only change we've made is to add a for loop that renders any messages added by the validators below the openid field. <em>As a general rule, any fields that have validators attached will have errors added under <code>form.errors.field_name</code></em>. In our case we use <code>form.errors.openid</code>. We display these messages in a red style to call the user's attention.</p>
+<h3>Dealing with OpenID</h3>
+<p>If you have an account with Google, you have an OpenID with them. Likewise with Yahoo, AOL, Flickr and many other providers.</p>
+<p>While we need define which services are supported in our app, so you need update config file(file <code>config.py</code>) like this</p>
+<pre class="code literal-block"><span></span><span class="n">CSRF_ENABLED</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="s1">'you-will-never-guess'</span>
+
+<span class="n">OPENID_PROVIDERS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Google'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://www.google.com/accounts/o8/id'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Yahoo'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://me.yahoo.com'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'AOL'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'http://openid.aol.com/&lt;username&gt;'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Flickr'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'http://www.flickr.com/&lt;username&gt;'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'MyOpenID'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://www.myopenid.com'</span> <span class="p">}]</span>
+</pre>
+
+
+<p>Then, let us take a look at how we need update view to handle OpenID:</p>
+<pre class="code literal-block"><span></span><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">validate_on_submit</span><span class="p">():</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s1">'Login requested for OpenID="'</span> <span class="o">+</span> <span class="n">form</span><span class="o">.</span><span class="n">openid</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="s1">'", remember_me='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">remember_me</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">,</span>
+        <span class="n">providers</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'OPENID_PROVIDERS'</span><span class="p">])</span>
+</pre>
+
+
+<p>It just pass through the 'OPENID_PROVIDERS' to tempate.</p>
+<p>Now, some modicidations are needed to handle the pass-through <code>OPENID_OROVIDERS</code>, update the <code>app/templates/login.html</code>:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">set_openid</span><span class="p">(</span><span class="nx">openid</span><span class="p">,</span> <span class="nx">pr</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nx">u</span> <span class="o">=</span> <span class="nx">openid</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'&lt;username&gt;'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">u</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// openid requires username</span>
+        <span class="nx">user</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">'Enter your '</span> <span class="o">+</span> <span class="nx">pr</span> <span class="o">+</span> <span class="s1">' username:'</span><span class="p">)</span>
+        <span class="nx">openid</span> <span class="o">=</span> <span class="nx">openid</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">u</span><span class="p">)</span> <span class="o">+</span> <span class="nx">user</span>
+    <span class="p">}</span>
+    <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="s1">'login'</span><span class="p">];</span>
+    <span class="nx">form</span><span class="p">.</span><span class="nx">elements</span><span class="p">[</span><span class="s1">'openid'</span><span class="p">].</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">openid</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID, or select one of the providers below:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}
+        {% for error in form.errors.openid %}
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: red;"</span><span class="p">&gt;</span>[{{error}}]<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        {% endfor %}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        |{% for pr in providers %}
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"javascript:set_openid('{{pr.url}}', '{{pr.name}}');"</span><span class="p">&gt;</span>{{pr.name}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> |
+        {% endfor %}
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>Some OpenIDs include the user's username, so for those we have to have a bit of javascript magic that prompts the user for its username and then composes the OpenID. When the user clicks on an OpenID provider link and (optionally) enters the username, the OpenID for that provider is inserted in the text field.</p>
+<h2>Ready to go</h2>
+<p>SVN update and visit your application ID in this version to enjoy what you've done already!
+You could always refer <a href="http://3.flasktutorial.sinaapp.com/">here</a> to see what is expected.</p>
+<p>For now we just finish basic progress regarding forms, there are lots of things to be fixed till we actually do something, such as database setup in next artical.</p>
+<h2>Ch4</h2>
+<p>Probably all of you learn Flask studies via <a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a>. Even though I believe it's typical that starting a tutorial for beginners to start learn by standlone env, a Paas version would be suiable for beginers who are aiming for using Paas as Infrustruction as Paas is "next big thing" and it's popular all over the word even in China. That's enough talk, let's get the work done.</p>
+<p>List of tutorials:</p>
+<ol>
+<li><a href="posts/test-nicola-with-markdown/">getting started and basic configurations in SAE</a></li>
+<li>[template]</li>
+<li>[Webform]</li>
+<li>[Database]</li>
+</ol>
+<h2>Recap</h2>
+<p>What we already have now is seting up a basic Flask in SAE without anyn database configuration. And as you may already known, database is essential part for web developing and we will start config it in SAE on this artical.</p>
+<h2>WTF in Flask</h2>
+<h3>about db migration in SAE</h3>
+<p>There are 3 ways for now I thouht out to migrate db in SAE
+- Using local db, then update date into remote sae sever.
+- <a href="http://wtforms.readthedocs.org/en/latest/crash_course.html">WTForm Course</a>
+- <a href="https://flask-wtf.readthedocs.org/en/latest/">flask-wtf</a></p>
+<h3>config external packages in SAE</h3>
+<p>There are several ways to install the packages in SAE:</p>
+<ul>
+<li>put in the version folder, import them directly</li>
+<li>use remote API install related packages</li>
+<li>use virtualenv, then use SAE remote API to install related packages</li>
+</ul>
+<p>As there are so many external packages to be installed in SAE, so we preferred 2 or 3 solution in this case. details refer to <a href="https://windrocblog.sinaapp.com/?p=935">link</a> or <a href="http://cloudbbs.org/forum.php?mod=viewthread&amp;tid=12860">link2</a>, or <a href="http://python.sinaapp.com/doc/tools.html#saecloud">offical doc</a>.</p>
+<p>Anyway, after you installed the nessary package, in our case flask-wtf, you could modify the <code>index.wsgi</code> like this:</p>
+<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+<span class="c1">#sys.path.insert(0, os.path.join(root, 'site-packages')) #if you do not zip the packages</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="s1">'site-packages.zip'</span><span class="p">))</span> <span class="c1"># preferred for zipped packages</span>
+</pre>
+
+
+<p>Then, you could import the packages in your project.</p>
+<h3>Config flask with the WTF extention</h3>
+<p>Many extensions require some amount of configuration, fow now we could config our web app with <code>config.py</code> in version 3.</p>
+<pre class="code literal-block"><span></span><span class="n">CSRF_ENABLED</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="s1">'you-will-never-guess'</span>
+</pre>
+
+
+<p>This is accuary required by WTF, <code>CSRF_ENABLED</code> activates the <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">cross-site request forgery</a> prevention. In most cases you want to have this option enabled as it makes your app more secure.</p>
+<p>And <code>SECRET_KEY</code> setting is noly needed when <code>CSRF</code> is enable, and is used to create a cryptographic token that is used to validate a form. WHen you write your own apps, please make sure to set the key into something others nerver to guess.</p>
+<h3>load config in your flask app</h3>
+<p>Well, this config file need to imported by our app to use it. Modify the file <code>app/__init__.py</code> as the following:</p>
+<pre class="code literal-block"><span></span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">from_object</span><span class="p">(</span><span class="s1">'config'</span><span class="p">)</span>
+</pre>
+
+
+<h2>Start using form in Flask</h2>
+<h3>First impression of forms in Flask</h3>
+<p>Web froms are represented in Flask-WTF as objects, subclassed from class <em>Form</em>. A form subclass simply defines the fields of the form as class variables.</p>
+<p>A login form will be created by using OpenID. We don't have to validate passwords.</p>
+<p>The OpenID login only requires one string, called OpenID. We will also put a 'remember me' checkbox in the form.</p>
+<p>The form would be like this <code>app/form.py</code>:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">flask.ext.wtf</span> <span class="kn">import</span> <span class="n">Form</span>
+<span class="kn">from</span> <span class="nn">wtforms</span> <span class="kn">import</span> <span class="n">TextField</span><span class="p">,</span> <span class="n">BooleanField</span>
+<span class="kn">from</span> <span class="nn">wtforms.validators</span> <span class="kn">import</span> <span class="n">Required</span>
+
+<span class="k">class</span> <span class="nc">LoginForm</span><span class="p">(</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">openid</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="s1">'openid'</span><span class="p">,</span> <span class="n">validators</span> <span class="o">=</span> <span class="p">[</span><span class="n">Required</span><span class="p">()])</span>
+    <span class="n">remember_me</span> <span class="o">=</span> <span class="n">BooleanField</span><span class="p">(</span><span class="s1">'remember_me'</span><span class="p">,</span> <span class="n">default</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+</pre>
+
+
+<p>in the file, we imported the <em>Form</em> class, as twoo field classes we needed: <code>TextField</code> and <code>BooleanField</code>.
+Onething to be highlighted here is the validator in openid field: <code>Required</code> validator simply checks that the field is not submitted empty. </p>
+<h3>templates for Form</h3>
+<p>create a templates named <code>login.html</code> for the login form as representative in <code>app/tempaltes</code>, the content is </p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend from base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>as previous templates intro, inherited from 'base.html' we creat the tempalte for form. While there are several differences which are worth to highlight:</p>
+<p>The template expects a form object instantiated from the form class we just defined stored in a template argument named form. We will take care of sending this template argument to the template next, when we write the view function that renders this template.</p>
+<p>The <code>form.hidden_tag()</code> template argument will get replaced with a hidden field that implements the CSRF prevention that we enabled in the configuration. This field needs to be in all your forms if you have CSRF enabled.</p>
+<p>The actual fields of our form are also rendered by the form object, you just have to refer to a {{form.field_name}} template argument in the place where the field should be inserted. Some fields can take arguments. In our case, we are asking the form to generate our openid field with a width of 80 characters.</p>
+<p>Since we have not defined the submit button in the form class we have to define it as a regular field. The submit field does not carry any data so it doesn't need to be defined in the form class.</p>
+<h4>modify view to render from template</h4>
+<p>The last step to complete a form is to code a view funtion to handle the specific URL requestion and pass throught the parameteres and render it in the tempaltes.</p>
+<p>add contends for form in the <code>app/views.py</code> as following:</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">flash</span><span class="p">,</span> <span class="n">redirect</span>
+<span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+<span class="kn">from</span> <span class="nn">forms</span> <span class="kn">import</span> <span class="n">LoginForm</span>
+
+<span class="c1">#index view function suppressed for brevity</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">)</span>
+</pre>
+
+
+<p>So, we imported the <code>LoginForm</code> Class in view, and sent it to the template.
+Add in the route decorator, we defined the <code>methods</code> arguments. It tells the flask this view fuction accepts not only GET request, but also POST request..</p>
+<p>Not you can see the form in your browser</p>
+<h3>Receiving data from form submission</h3>
+<p>How did you handle the data from form? Again, in the view func:</p>
+<pre class="code literal-block"><span></span><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">validate_on_submit</span><span class="p">():</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s1">'Login requested for OpenID="'</span> <span class="o">+</span> <span class="n">form</span><span class="o">.</span><span class="n">openid</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="s1">'", remember_me='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">remember_me</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">)</span>
+</pre>
+
+
+<p>The <code>validate_on_submit</code> method does all the form processing work. When the form just being presented to the user, then it will return <code>False</code>, which means Flask will just render the template.</p>
+<p>If <code>validate_on_submit</code> is called as part of a form submission request, then it will gather all data, run any validators attached to fields, and if everything is  all right and it will return <code>True</code>, indicating that the data is valid to proceed next step.</p>
+<ul>
+<li>if validatio pass through, two more steps are processing after that. <code>flash</code> function is a quick way to show a message on the next page presented to the user. By now, we just show the submitted data to user. of course, we need update the template to show these flash messages. This time we will update in the <code>app/templates/base.html</code> as these flashese would be used as a generic functionalities:</li>
+</ul>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    {% if title %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{title}} - microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% else %}
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>microblog<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    {% endif %}
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>Microblog: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/index"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    {% for message in messages %}
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>{{ message }} <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    {% endfor %}
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>Jiajia <code>with</code> will xxxxxxxxxx. the other step is using <code>redirect</code> to tells the client web browser to navigate to a different page(index in this case).
+noted that the flashed messages will display even if a view function ends in a redirect.</p>
+<ul>
+<li>if validation teturn <code>Flase</code>, we would see later how to show an error message when vlalidation fails.</li>
+</ul>
+<p>This is a great time to start the app and test how the form works. Make sure you try submitting the form with the openid field empty, to see how the Required validator halts the submit process.</p>
+<h3>improve the field validation</h3>
+<p>Currently, if validation fails, the page will not submit. While a hint to user which part is missing is helpful to imporvement the usibility. Luckily, Flask-WTF also makes this an easy task.</p>
+<p>update <code>app/templates/login.html</code> template like this:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {% for error in form.errors.openid %}
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: red;"</span><span class="p">&gt;</span>[{{error}}]<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        {% endfor %}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>The only change we've made is to add a for loop that renders any messages added by the validators below the openid field. <em>As a general rule, any fields that have validators attached will have errors added under <code>form.errors.field_name</code></em>. In our case we use <code>form.errors.openid</code>. We display these messages in a red style to call the user's attention.</p>
+<h3>Dealing with OpenID</h3>
+<p>If you have an account with Google, you have an OpenID with them. Likewise with Yahoo, AOL, Flickr and many other providers.</p>
+<p>While we need define which services are supported in our app, so you need update config file(file <code>config.py</code>) like this</p>
+<pre class="code literal-block"><span></span><span class="n">CSRF_ENABLED</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="s1">'you-will-never-guess'</span>
+
+<span class="n">OPENID_PROVIDERS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Google'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://www.google.com/accounts/o8/id'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Yahoo'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://me.yahoo.com'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'AOL'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'http://openid.aol.com/&lt;username&gt;'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Flickr'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'http://www.flickr.com/&lt;username&gt;'</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'MyOpenID'</span><span class="p">,</span> <span class="s1">'url'</span><span class="p">:</span> <span class="s1">'https://www.myopenid.com'</span> <span class="p">}]</span>
+</pre>
+
+
+<p>Then, let us take a look at how we need update view to handle OpenID:</p>
+<pre class="code literal-block"><span></span><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/login'</span><span class="p">,</span> <span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'GET'</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">LoginForm</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">validate_on_submit</span><span class="p">():</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s1">'Login requested for OpenID="'</span> <span class="o">+</span> <span class="n">form</span><span class="o">.</span><span class="n">openid</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="s1">'", remember_me='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">remember_me</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'login.html'</span><span class="p">,</span> 
+        <span class="n">title</span> <span class="o">=</span> <span class="s1">'Sign In'</span><span class="p">,</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="n">form</span><span class="p">,</span>
+        <span class="n">providers</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'OPENID_PROVIDERS'</span><span class="p">])</span>
+</pre>
+
+
+<p>It just pass through the 'OPENID_PROVIDERS' to tempate.</p>
+<p>Now, some modicidations are needed to handle the pass-through <code>OPENID_OROVIDERS</code>, update the <code>app/templates/login.html</code>:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!-- extend base layout --&gt;</span>
+{% extends "base.html" %}
+
+{% block content %}
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">set_openid</span><span class="p">(</span><span class="nx">openid</span><span class="p">,</span> <span class="nx">pr</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nx">u</span> <span class="o">=</span> <span class="nx">openid</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s1">'&lt;username&gt;'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">u</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// openid requires username</span>
+        <span class="nx">user</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">'Enter your '</span> <span class="o">+</span> <span class="nx">pr</span> <span class="o">+</span> <span class="s1">' username:'</span><span class="p">)</span>
+        <span class="nx">openid</span> <span class="o">=</span> <span class="nx">openid</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">u</span><span class="p">)</span> <span class="o">+</span> <span class="nx">user</span>
+    <span class="p">}</span>
+    <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="s1">'login'</span><span class="p">];</span>
+    <span class="nx">form</span><span class="p">.</span><span class="nx">elements</span><span class="p">[</span><span class="s1">'openid'</span><span class="p">].</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">openid</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Sign In<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">""</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span> <span class="na">name</span><span class="o">=</span><span class="s">"login"</span><span class="p">&gt;</span>
+    {{form.hidden_tag()}}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Please enter your OpenID, or select one of the providers below:<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        {{form.openid(size=80)}}
+        {% for error in form.errors.openid %}
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: red;"</span><span class="p">&gt;</span>[{{error}}]<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        {% endfor %}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        |{% for pr in providers %}
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"javascript:set_openid('{{pr.url}}', '{{pr.name}}');"</span><span class="p">&gt;</span>{{pr.name}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> |
+        {% endfor %}
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{form.remember_me}} Remember Me<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Sign In"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{% endblock %}
+</pre>
+
+
+<p>Some OpenIDs include the user's username, so for those we have to have a bit of javascript magic that prompts the user for its username and then composes the OpenID. When the user clicks on an OpenID provider link and (optionally) enters the username, the OpenID for that provider is inserted in the text field.</p>
+<h2>Ready to go</h2>
+<p>SVN update and visit your application ID in this version to enjoy what you've done already!
+You could always refer <a href="http://3.flasktutorial.sinaapp.com/">here</a> to see what is expected.</p>
+<p>For now we just finish basic progress regarding forms, there are lots of things to be fixed till we actually do something, such as database setup in next artical.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/test-nicola/" class="u-url">Test Nicola</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Jonny Hou
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/test-nicola/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-10-13T23:47:38+08:00" itemprop="datePublished" title="2018-10-13 23:47">2018-10-13 23:47</time></a>
+            </p>
+                        <p class="commentline">
+        
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <p>Write your post here.</p>
+                </div>
+            </article>
+</div>
+    
+
+    
+        
+
+
+    
+
+
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("zh-cn");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
