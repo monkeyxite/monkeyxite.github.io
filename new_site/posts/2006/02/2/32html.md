@@ -1,0 +1,4 @@
+<html><body><div><br><a href="http://vim.sourceforge.net/tip_view.php?tip_id=21">VimTip 21: easy pasting to windows apps</a><br>方便的粘贴到Windows应用程序<br><br>In
+Vim, the unnamed register is the " register, and the Windows Clipboard
+is the * register. This means that if you yank something, you have to
+yank it to the * register if you want to paste it into a Windows app. <br>在Vim中，未命名的寄存器是" register,而在Windows中是* register。这意味这如果你粘贴一些东西，你必须从* register<br>中粘贴到Windows 应用程序中。<br>If this is too much trouble, set the 'clipboard' option to 'unnamed'. Then you always yank to *.<br>如果这样太麻烦的话，设置'clipboard'选项为'unnamed'。这样你全部是从* 中粘贴<br>So pasting to windows apps doesn't require prefixing "* :<br>这样粘贴到windows应用程序中不需要前缀*<b><br> set clipboard=unnamed</b><br><br>Technorati Tags: <a href="http://technorati.com/tag/VI" rel="tag">VI</a>, <a href="http://technorati.com/tag/EDITOR" rel="tag">EDITOR</a></div></body></html>

@@ -1,0 +1,1 @@
+<html><body><p>离开成都；离开网络；下周回来。<br><br>ps:齐达内顶人的秃头怎么和窦唯点火时候的脑袋有点像啊？<br><br><br><br><br>Technorati Tags: <a href="http://technorati.com/tag/life" rel="tag">life</a></p></body></html>

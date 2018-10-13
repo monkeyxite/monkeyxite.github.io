@@ -1,0 +1,1 @@
+<html><body><div>这已然不是细节不细节的问题，而是对错问题，是非问题。<br><br>为什么在三次布线的过程中都会发生连线错误？认真做好每一件事，别管它是不是很没有技术含量，更别以为你能随随便便做得好这没有技术含量的事情。粗心大意不能一再当作你的遮羞布！<br><br><span style="font-weight:bold;">认真检查一次最终layout确认没有犯下低级错误</span>，<span style="font-weight:bold;">低级错误会躲在你最难以发现的角落里嘲笑你的过失。</span><br></div></body></html>

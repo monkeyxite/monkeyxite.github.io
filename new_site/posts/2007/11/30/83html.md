@@ -1,0 +1,1 @@
+<html><body><div>疯子，快乐！</div></body></html>

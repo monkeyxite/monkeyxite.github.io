@@ -1,0 +1,1 @@
+<html><body><div><br>不好意思，看题目似乎是结巴。<br><br>不过我现在要做的就是把抓虾里边收藏的文章逐步迁徙到本地或del.icio.us去，打算用python实现，就是所谓的“抓-抓虾”<br><br><br>参考文档：<br>抓虾页面频繁地应用了javascript操作DOM，就连login的Form都不放过，所以补习一下DOM的相关知识。<br><br><br>http://www.w3school.com.cn/htmldom/dom_nodes.asp</div></body></html>

@@ -1,0 +1,1 @@
+<html><body><div>在使用turbogears的过程中发现了@paginate的问题。为了解决这个问题，往往你会不得不绕一大圈去全盘考虑，花费很多精力去看粗枝大叶解决方案所不关注的问题，往往这个细节乍一看不显眼，实际却是掌控了你是否真正理解turbogears的核心。仅仅会使用 并不能说 懂了核心的东西。<br><br>就和 predistortion amplifier 的设计一样，最关键的其实是不为大家所重视的细节问题。<br><br>细节问题是决定成败的胜负手。<br><br><br></div></body></html>
