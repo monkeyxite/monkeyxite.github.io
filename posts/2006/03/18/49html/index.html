@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIM TIP32 | intellegence evolution</title>
+<link href="../../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../../rss.xml">
+<link rel="canonical" href="https://monkeyxite.github.io/posts/2006/03/18/49html/">
+<!--[if lt IE 9]><script src="../../../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Jonny Hou">
+<link rel="prev" href="../../17/48html/" title="Python for S60" type="text/html">
+<link rel="next" href="../../20/50html/" title="新书到手" type="text/html">
+<meta property="og:site_name" content="intellegence evolution">
+<meta property="og:title" content="VIM TIP32">
+<meta property="og:url" content="https://monkeyxite.github.io/posts/2006/03/18/49html/">
+<meta property="og:description" content="VimTip 32: Write your own vim function(scripts)
+编写自己的vim函数
+compare to C and shell(bash), herein is some vim specifics about vim-script:
+相对于C和shell（bash）编程，这里有些vim脚本的细节要注意：
+1. A function name must be c">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2006-03-18T17:25:00+08:00">
+<meta property="article:tag" content="tips">
+<meta property="article:tag" content="vim">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://monkeyxite.github.io/">
+
+            <span id="blog-title">intellegence evolution</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.md" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../../../../archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../../categories/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../../rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">VIM TIP32</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Jonny Hou
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2006-03-18T17:25:00+08:00" itemprop="datePublished" title="2006-03-18 17:25">2006-03-18 17:25</time></a>
+            </p>
+                <p class="commentline">
+        
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p></p>
+<a href="http://vim.sourceforge.net/tip_view.php?tip_id=32">VimTip 32: Write your own vim function(scripts)</a>
+编写自己的vim函数
+<p>compare to C and shell(bash), herein is some vim specifics about vim-script:
+相对于C和shell（bash）编程，这里有些vim脚本的细节要注意：
+1. A function name must be capitalized.
+1. 函数名必须大写
+  hex2dec is invalid
+  Hex2dec is valid
+  hex2dex是非法的
+  Hex2dec是合法的
+  while in c and shell(bash), both lowercase and uppercase is allowed.
+  但是在C或bash shell中，无论大小写都是可以的。
+2. how to reference the parameters
+2.如何传递参数
+</p>
+<blockquote>   fu! Hex2dec(var1, var2)
+   let str=a:var1
+   let str2=a:var2
+</blockquote>   you must prefix the parameter name with "a:", and a:var1 itself is read-only
+  你必须在参数前加前缀a:，并且a:var1是只读的
+  in c, you reference the parameter directly and the parameter is writable.
+  在C中，你直接调用参数并且参数是可读的
+3. how to implement variable parameter
+3. 如何执行变量
+<blockquote>   fu! Hex2dec(fixpara, ...)
+</blockquote>     a:0 is the real number of the variable parameter when you invoke the function, with <span style="font-weight:bold;">:Hex2dec("asdf", 4,5,6), a:0=3, and a:1=4 a:2=5 a:3=6</span>
+    当调用函数，a:0 是实数变量
+  you can combine "a:" and the number to get the value
+  你可以混合“a:"和数字来取得函数值
+<blockquote>   while i
+     exe "let num=a:".i
+     let i=i+1
+   endwhile
+</blockquote>  in c, the function get the real number by checking the additional parameter such as printf family, or by checking the special value such as NULL
+  c中，函数取值是通过检验额外得参数比如printf族，或者检测特定得值是否为空
+4. where is the vim-library
+4.vim的库在哪？
+ yes, vim has its own function-library, just like <em>.a in c
+ <span style="font-weight:bold;">:help functions</span>
+ 是的，vim有它自己的函数库，就像c语言中的</em>.a文件
+ <span style="font-weight:bold;">:help functions</span>
+5. can I use += or ++ operator?
+5.我可以使用+=或者++这样的操作符吗？
+ Nop, += and ++ (and -=, -- and so on)operator gone away in vim.
+ 遗憾的是vim没有类似+=和＋＋这样的操作符（-=,--这些也是）
+6. How can I assign a value to a variables and fetch its value?
+6.如何分配变量置并取取其值呢？
+<blockquote>
+<a>   let var_Name=value</a>
+<a>   let var1=var2</a>
+<a></a>
+</blockquote>
+<a>   like it does in c, except you must use <span style="font-weight:bold;">let</span> keyword
+ 除了必须用关键字<span style="font-weight:bold;">let</span>以外，就像在c中做的一样。
+7. Can I use any ex-mode command in a function?
+7. 我可以在ex模式下调用函数吗？
+ As I know, yes, just use it directly, as if every line you type appears in the familar <span style="font-weight:bold;">: </span>
+ 据我所知，是的，可以直接用，就像每行都是你在熟悉的<span style="font-weight:bold;">：</span>后输入的一样
+8. Can I call a function recurse?
+8. 可以使用递归调用吗？
+ Yes, but use it carefully to avoid infinte call.
+ 可以，但是要小心，避免无穷调用！
+9. Can I call another function in a function?
+9. 可以在函数中调用函数吗？
+ Course, like C does.
+ 当然，就像C一样
+10. Must I compile the function?
+10. 我必须编译函数吗？
+  No, you needn't and you can't, just <span style="font-weight:bold;">:so script_name</span>, after this you can call the function freely.
+  不，你没必要也不能，仅仅<span style="font-weight:bold;">:so script_name</span>，之后就可以自由调用该函数了
+11. Is it has integer and char or float data type?
+11. 有整型，字符，浮点这样的数据类型吗？
+  No, like perl, vim script justify the variable type depend upon the context
+  没有，就像perl，vim脚本自动根据变量值调整变量类型
+</a><blockquote>
+<a>   :let a=1</a>
+<a>   :let a=a."asdf"</a>
+<a>   :echo a</a>
+<a></a>
+</blockquote>
+<a>   you'll get <code>1asdf'
+  将得到 &lt;/a&gt;</code>1asdf'<blockquote>
+<a>   :let a=1</a>
+<a>   :let a=a+2</a>
+<a>   :echo a</a>
+<a></a>
+</blockquote></a><a>   you'll get 3
+  </a>将得到 3
+<a>   But it differs from perl.
+  但是它和perl有区别
+12. Must I append a <span style="font-weight:bold;"><code>;'&lt;/span&gt; in every statement?
+  必须在每一句后边加&lt;span style="font-weight:bold;"&gt;';'&lt;/span&gt;吗？
+  No, never do that.
+  不，没必要
+  ; is required in C, and optional in shell for each statement in a alone line.
+  ；在C是必须的，在shell中一行中的每一句是可选的
+  But is forbidden in vim.
+  但是在vim是禁止的
+  if you want combine servals statement in one single line, use &lt;span style="font-weight:bold;"&gt;</code>|'</span>.
+  如果想在单行里边写多句，使用<span style="font-weight:bold;">‘|'</span>
+  Take your mind that every statement appears in function should be valid in ex-mode(except for some special statement).
+  谨记除少数特殊声明外，函数中每一句都可以在ex模式下合法可用
+</a>
+<p>Technorati Tags: <a href="http://technorati.com/tag/vi" rel="tag">vi</a>, <a href="http://technorati.com/tag/editor" rel="tag">editor</a>
+<a href="http://technorati.com/tag/editor" rel="tag"></a></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../../categories/tips/" rel="tag">tips</a></li>
+            <li><a class="tag p-category" href="../../../../../categories/vim/" rel="tag">vim</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../17/48html/" rel="prev" title="Python for S60">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../../20/50html/" rel="next" title="新书到手">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+
+
+        </section></article><!--End of body content--><footer id="footer">
+            Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

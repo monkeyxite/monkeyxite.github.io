@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>intellegence evolution (Posts about firefox)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/firefox.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 13 Oct 2018 16:58:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>firebird 涅磐 firefox 重生</title><link>https://monkeyxite.github.io/posts/2006/04/6/56html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;在我的印象中，Firefox是继承了Mozilla以前一个叫做Firebird的浏览器衣钵的。从前一直不温不火的，改名之后 火鸟重生为火狐，这下真火了。在M$垄断控制浏览器市场的现状下，&lt;a href="http://marketshare.hitslink.com/report.aspx?qprid=0"&gt;大概有10%的市场占有率&lt;/a&gt;。
+Firefox的强大是基于强大的可扩展性基础上的，武装到牙齿的firefox是无所不能的！
+我使用的Portable Firefox，为的就是在异地主机保持安装、配置的同步，免去每台电脑都要重新配置的痛苦，简单的将PortableFirefox目录下拷贝既可。
+下面使我用MR Tech生成的Firefox信息，对照这些来介绍一下使用情况罢：&lt;/p&gt;
+&lt;p&gt;&lt;span class="GeneratedHeader"&gt;Generated:&lt;/span&gt; Wed Apr 05 2006 23:50:44 GMT+0800
+&lt;span class="UserAgentHeader"&gt;User Agent:&lt;/span&gt; Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1
+Firefox1.5以上有自动升级的功能，也就是说出现新版本后自动下载安装，无缝升级。
+&lt;span class="BuildIDHeader"&gt;Build ID:&lt;/span&gt; 2006011112
+&lt;span class="ExtensionHeader"&gt;Enabled Extensions:&lt;/span&gt; [57]&lt;/p&gt;&lt;ul&gt;&lt;li&gt; &lt;a href="http://karmatics.com/aardvark/" target="_blank"&gt;Aardvark&lt;/a&gt; 1.1 类似 &lt;span style="text-decoration:underline;"&gt;&lt;a href="http://platypus.mozdev.org/" target="_blank"&gt;Platypus&lt;/a&gt;，单不能生成用户脚本。但可以方便的了解网页构架，浏览网页元素的属性&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://bene.sitesled.com/adblock.htm" target="_blank"&gt;Adblock Plus&lt;/a&gt; 0.5.11.3 广告拦截。支持白名单，支持单正则表达式的匹配模式常常会出现梦幻一般的拦截效果。
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://perso.wanadoo.fr/marc.boullet/ext/extensions-en.html" target="_blank"&gt;All-in-One Gestures&lt;/a&gt; 0.17.4 鼠标手势扩扩展
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://firefox.exxile.net/aios/" target="_blank"&gt;All-In-One Sidebar&lt;/a&gt; 0.6.4 象opera一样的侧边栏，有强大的制定功能。让浏览器变得更干净
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://jayseae.cxliv.org/" target="_blank"&gt;Bloglines Toolkit&lt;/a&gt; 1.6.0 Bloglines的工具。现在迷上了Google Reader，打算卸咯
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://roachfiend.com" target="_blank"&gt;BugMeNot&lt;/a&gt; 1.3 共享精神的延伸，自动从BugMeNot网站取出别人贡献出来的收费网站的用户名和密码。不过最近发现好多假帐号，艾，还好能够自动重试
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://blog.thetechgurus.net" target="_blank"&gt;Cacheout!&lt;/a&gt; 1.10 从google cache和coralcdn 里取出数据，右键点cacheout后就能看到从cache里取出的网页。可以当个代理来用&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.codetch.com/" target="_blank"&gt;Codetch&lt;/a&gt; 0.3.6.20051230 让firefox成为类似dreamwave一样的网页设计平台.
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.iosart.com/firefox/colorzilla/" target="_blank"&gt;ColorZilla&lt;/a&gt; 0.8.3.1 网页取色，网页设计者必备
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.google.com/search?q=Firefox%20CSSViewer" target="_blank"&gt;CSSViewer&lt;/a&gt; 1.0.1 快速浏览CSS，有些鸡肋，准备卸了
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.customizegoogle.com/" target="_blank"&gt;CustomizeGoogle&lt;/a&gt; 0.45 基础上的一个扩展，让Google满足你的需要&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://del.icio.us/" target="_blank"&gt;del.icio.us&lt;/a&gt; 1.1 方便的使用del.icio.us的tag等功能
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.mozilla.org/projects/inspector/" target="_blank"&gt;DOM Inspector&lt;/a&gt; 1.8.0.1 DOM查看器
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://eunheui.cocolog-nifty.com/blog/" target="_blank"&gt;East Asian Translator&lt;/a&gt; 1.1.1 东亚语言翻译，虽然转中文的比较少
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://editcss.mozdev.org" target="_blank"&gt;EditCSS&lt;/a&gt; 0.3.5 在调整CSS后想立即看看效果的话，嘿嘿
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://ted.mielczarek.org/code/mozilla/extensiondev/" target="_blank"&gt;Extension Developer&lt;/a&gt; 0.2.2.20050505 网页设计者必备！
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://fasterfox.mozdev.org/" target="_blank"&gt;Fasterfox&lt;/a&gt; 1.0.3 firefox加速工具&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://projects.koziarski.net/fyr/" target="_blank"&gt;Feed Your Reader&lt;/a&gt; 1.5.1 &lt;span id="zoom"&gt;&lt;script type="text/javascript" src="http://ei.appspot.com/tinymce/themes/advanced/langs/zh.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" src="http://ei.appspot.com/tinymce/plugins/wordpress/langs/zh.js"&gt;&lt;/script&gt;替换Firefox中将RSS加入Live Bookmark图标功能的小工具，自动使用你指定的外部RSS reader订阅当前页面的RSS&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.joehewitt.com/software/firebug/" target="_blank"&gt;FireBug&lt;/a&gt; 0.3.1 DOM查看 网页元件监视工具。网页设计必备工具。通过firebug的xmlhttprequest Spy功能可以获得xmlhttprequest传输的数据。哈哈，是不是很方便。在升级至0.3.1后界面漂亮多了&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://customsoftwareconsult.com/extensions" target="_blank"&gt;Firefox Extension Backup Extension (FEBE)&lt;/a&gt; 2.0 RC2 减轻重新安装扩展的痛苦
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://fireftp.mozdev.org" target="_blank"&gt;FireFTP&lt;/a&gt; 0.90.1.1 ^_^，在firefox中的ftp工具，其实还有一个IRC的扩展：&lt;a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/"&gt;chatzilla&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://flashgot.net" target="_blank"&gt;FlashGot&lt;/a&gt; 0.5.9.993 调用本机下载工具
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://thekleins.freeservers.com/" target="_blank"&gt;Flickr Sidebar&lt;/a&gt; 0.1.1&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://philmccluskey.com/projects/flickrfox/" target="_blank"&gt;FlickrFox&lt;/a&gt; 1.0.0 和上边的差不多，在sidebar里边方便的浏览flickr的pp，&lt;a href="http://philmccluskey.com/projects/flickrfox/" target="_blank"&gt;FlickrFox&lt;/a&gt;的显示效果更好些，&lt;a href="http://thekleins.freeservers.com/" target="_blank"&gt;Flickr Sidebar&lt;/a&gt;的选项更多谢罢了
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://forecastfox.mozdev.org/" target="_blank"&gt;Forecastfox&lt;/a&gt; 0.8.5.3 天气预报
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.foxytunes.org/firefox/" target="_blank"&gt;FoxyTunes&lt;/a&gt; 1.2 控制本地的音频播放器，支持mediamonkey、winmap、foobar、iTune等十数种音频播放器。告别在播放器和浏览器中切换的痛苦
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.foxytunes.org/firefox/skins/index.php?skin=14" target="_blank"&gt;FoxyTunes Skin - FS Aqua&lt;/a&gt; 2.0 FoxyTunes的皮肤，严格来说不能算扩展吧
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.nexgenmedia.net/extensions/" target="_blank"&gt;Gmail Notifier&lt;/a&gt; 0.5.5.2 Gmail提醒
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.google.com/tools/service/npredir?r=ff_sb_home" target="_blank"&gt;Google Safe Browsing&lt;/a&gt; 1.1 让那些流氓垃圾网站见鬼去吧
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://webaccelerator.google.com/" target="_blank"&gt;Google Web Accelerator&lt;/a&gt; 1.0.62.80 网页加速，代价再是多付出些内存
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://greasemonkey.mozdev.org/" target="_blank"&gt;Greasemonkey&lt;/a&gt; 0.6.4 天才级别的插件，使用它可以改变网页在本地外观，添加附加功能……有极其丰富的&lt;a href="http://userscripts.org/"&gt;用户脚本库&lt;/a&gt;。配合&lt;a href="http://platypus.mozdev.org/" target="_blank"&gt;Platypus&lt;/a&gt;这些工具甚至可以在不懂编程的情况下实现这些功能！很多扩展都是建立在Greasemonkey的基础之上的，当然，你也可以利用它来创造自己的扩展。可以看看&lt;a href="http://diveintogreasemonkey.org/"&gt;Dive into greasemonkey&lt;/a&gt;这本书
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://ietab.mozdev.org/" target="_blank"&gt;IE Tab&lt;/a&gt; 1.0.8 无可奈何，还是不得不在某些场合使用IE，譬如网上银行、考试报名之类。这就是现实啊 T_T
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://imagezoom.yellowgorilla.net/" target="_blank"&gt;Image Zoom&lt;/a&gt; 0.2.3 方便的使用左键三击调出放大器放大图像，进一步放大在该状态下使用滚轮；也可以用右键和滚轮放大图像。
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://livehttpheaders.mozdev.org/" target="_blank"&gt;Live HTTP Headers&lt;/a&gt; 0.12 网页设计中检测HTTP报头的工具
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://heygom.com/extensions/" target="_blank"&gt;LiveLines&lt;/a&gt; 0.4.5 实时发现feeds，并且自动加入所设定的feeds阅读器中
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.kevinfreitas.net/pro/extensions/" target="_blank"&gt;MeasureIt&lt;/a&gt; 0.3.5 网页设计者能够快速测量网页部件的大小
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://membres.lycos.fr/sethnakht/" target="_blank"&gt;MediaPlayerConnectivity&lt;/a&gt; 0.5.5 强大的媒体播放工具，可以让在线播放调用本机播放器在firefox外部播放
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://minimizetotray.mozdev.org/" target="_blank"&gt;MinimizeToTray&lt;/a&gt; 0.0.1.2006022107+ 让firefox最小化到状态栏
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.mrtech.com/extensions/local_install/" target="_blank"&gt;MR Tech Local Install&lt;/a&gt; 4.6 强大的扩展安装管理扩展（好像很绕口啊 ）
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://operaview.mozdev.org/" target="_blank"&gt;OperaView&lt;/a&gt; 0.4.1 对于网页设计者来说，可以方便的比较网页在opera中的浏览效果
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.rabotat.org/firefox/" target="_blank"&gt;PDF Download&lt;/a&gt; 0.6 避免在firefox中调用Acrobat打开PDF造成的假死
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://pearlcrescent.com/products/pagesaver/" target="_blank"&gt;Pearl Crescent Page Saver&lt;/a&gt; 1.0 网页截图
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://performancing.com/" target="_blank"&gt;Performancing&lt;/a&gt; 1.1.1 极其好用的blogger客户端，支持Wordpress、MSN space、Blogger…………几乎所有的主流blog系统
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://platypus.mozdev.org" target="_blank"&gt;Platypus&lt;/a&gt; 0.64 配合&lt;a href="http://greasemonkey.mozdev.org/" target="_blank"&gt;Greasemonkey&lt;/a&gt;来使用，以所见及所得WYSIWYG的方式生成greasemonkey user script来改变在本地浏览状况。譬如干掉那些讨厌的跳动广告和sidebar
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://aluminum.sourmilk.net/reveal/" target="_blank"&gt;Reveal&lt;/a&gt; 1.0.6 按下Alt+`新打开一个tab，是所有tab的缩页预览，动画效果。mazing，无愧为今年最佳扩展之一
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://sage.mozdev.org" target="_blank"&gt;Sage&lt;/a&gt; 1.3.6 rss阅读器，自从用上Google Reader之后，就受冷落了。
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://amb.vis.ne.jp/mozilla/scrapbook/" target="_blank"&gt;ScrapBook&lt;/a&gt; 1.0pre 网页抓取到本地，并能够深层挖掘，制定文件类型……而且抓取之后在本地可以加入笔记之类的功能…………完美的东西，我使用firefox最离不开的扩展之一
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://adblock.ethereal.net/alchemy.cgi/SessionSaver" target="_blank"&gt;SessionSaver .2&lt;/a&gt; 0.2.1.031 保存对话。比较鸡肋
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.siteadvisor.com/" target="_blank"&gt;SiteAdvisor Firefox Extension&lt;/a&gt; 20.0 MIT开发的安全浏览扩展，让那些流氓垃圾网站继续见鬼去吧
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://m4ng0.lilik.it/separe.php" target="_blank"&gt;Séparé&lt;/a&gt; 0.1.3 新生成一个tab —— separe包括上个separe之后、左右两边的tab的预览，有了&lt;a href="http://aluminum.sourmilk.net/reveal/" target="_blank"&gt;Reveal&lt;/a&gt;后也准备卸咯。一点比较体贴的功能就是可以用它来分隔所浏览tab，并对其分类&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://tmp.garyr.net" target="_blank"&gt;Tab Mix Plus&lt;/a&gt; 0.3.0.5 Tab浏览增强工具
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://torfox.berlios.de/" target="_blank"&gt;tor-proxy&lt;/a&gt; 0.2.1 懒人代理工具，不必添加代理类表并认证，点击一下图标自动帮你设置好，代价是为了使用tor再多付出些内存
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://getahead.ltd.uk/ajax/venkman/" target="_blank"&gt;Venkman JavaScript Debugger&lt;/a&gt; 0.9.86 超强JavaScript调试工具，有详细的资料在&lt;a href="http://www.svendtofte.com/code/learning_venkman/index.php"&gt;这里&lt;/a&gt; 中文的看&lt;a href="http://blog.iyi.cn/start/2005/11/firefox_venkmanjavascript.html"&gt;这&lt;/a&gt;&lt;span style="text-decoration:underline;"&gt;&lt;a href="http://www.svendtofte.com/code/learning_venkman/index.php"&gt;
+&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://jennifermadden.com" target="_blank"&gt;View Rendered Source Chart&lt;/a&gt; 1.5.02 方便美观的看网页源代码，层次关系一目了然，自动着色，配色很漂亮
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://chrispederick.com/work/webdeveloper/" target="_blank"&gt;Web Developer&lt;/a&gt; 1.0.2 网页设计者必备
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.jedbrown.net/extensions/" target="_blank"&gt;WebmailCompose&lt;/a&gt; 0.6.6 调用webmail来作为系统默认邮件。
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://xyzboard.com/" target="_blank"&gt;xyzproxy&lt;/a&gt; 1.14 代理工具，若想手动设置代理的话可以使用。
+&lt;/li&gt;
+&lt;/ul&gt;&lt;span class="ThemeHeader"&gt;Installed Themes:&lt;/span&gt; [7]&lt;ul&gt;&lt;li&gt; &lt;a href="http://www.deviantart.com/deviation/29941650/" target="_blank"&gt;amalgam&lt;/a&gt; 1.0.3 仿safri，质感不够&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.mozilla.org/" target="_blank"&gt;Firefox (default)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.radar.250x.com" target="_blank"&gt;iFox&lt;/a&gt; 1.6.6&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.radar.250x.com" target="_blank"&gt;iFox Smooth&lt;/a&gt; 1.6.7 iFox系列是仿safri的，但是不太兼容ScrapBook。姑且留机查看
+&lt;/li&gt;
+&lt;li&gt; &lt;b&gt;&lt;a href="http://www.twistermc.com/" target="_blank"&gt;iPox&lt;/a&gt; 0.52 我的最爱，iPod风格的界面，&lt;/b&gt;&lt;b&gt;简洁&lt;/b&gt;&lt;b&gt;清爽干净
+&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.pimpzilla.nl" target="_blank"&gt;PimpZilla&lt;/a&gt; 3.18 太花哨了，准备卸了
+&lt;/li&gt;
+&lt;li&gt; &lt;a href="http://www.aqua-soft.org/board/showthread.php?p=343445" target="_blank"&gt;Pinstripes, Grapes, and Apples&lt;/a&gt; 0.2 仿safri，老问题，质感不够，在用过真正safri甚至是Opera仿Safri的主题后，发现firefox上的界面太软，莫非是XUL和Gecko的问题？&lt;/li&gt;&lt;/ul&gt;这部分主要根据主机上所安装的软件而定，印象中我没有主动去安装过什么plugin
+&lt;ul&gt;&lt;li&gt; Adobe Acrobat&lt;/li&gt;
+&lt;li&gt; Java Plug-in&lt;/li&gt;
+&lt;li&gt; Microsoft? DRM&lt;/li&gt;
+&lt;li&gt; Mozilla Default Plug-in&lt;/li&gt;
+&lt;li&gt; PCMan's IE Tab Plug-in for Mozilla/Firefox&lt;/li&gt;
+&lt;li&gt; QuickTime Plug-in 7.0.4&lt;/li&gt;
+&lt;li&gt; RealJukebox NS Plugin&lt;/li&gt;
+&lt;li&gt; RealPlayer Version Plugin&lt;/li&gt;
+&lt;li&gt; RealPlayer(tm) G2 LiveConnect-Enabled Plug-In (32-bit) &lt;/li&gt;
+&lt;li&gt; Shockwave Flash&lt;/li&gt;
+&lt;li&gt; Windows Media Player Plug-in Dynamic Link Library&lt;/li&gt;&lt;/ul&gt;这就基本上就是我使用的Firefox了，其他的以后想到了补充～另附传说中的firefox 照片一张
+&lt;div style="text-align:center;"&gt;&lt;img alt="http://i7.photobucket.com/albums/y261/tstuff/realfirefox2dv.jpg" src="http://i7.photobucket.com/albums/y261/tstuff/realfirefox2dv.jpg"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;它就是传说中的：FireFox！我喜欢它的莫西干，好彻底啊，从头到尾。彻底！&lt;/p&gt;
+&lt;p&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/firefox" rel="tag"&gt;firefox&lt;/a&gt;, &lt;a href="http://technorati.com/tag/brower" rel="tag"&gt;brower&lt;/a&gt;
+&lt;a href="http://technorati.com/tag/brower" rel="tag"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>firefox</category><category>Tools</category><guid>https://monkeyxite.github.io/posts/2006/04/6/56html/</guid><pubDate>Wed, 05 Apr 2006 19:36:00 GMT</pubDate></item></channel></rss>

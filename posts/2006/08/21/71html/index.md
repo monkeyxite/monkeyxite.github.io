@@ -1,0 +1,1 @@
+<html><body><p>wordpress database 导入用phpmyadmin或者mysql命令行，<br>数据编码尽管是utf-8但直接bin编码导入<br><br><br>Technorati Tags: <a href="http://technorati.com/tag/wordpress" rel="tag">wordpress</a>, <a href="http://technorati.com/tag/database" rel="tag">database</a>, <a href="http://technorati.com/tag/tips" rel="tag">tips</a></p></body></html>

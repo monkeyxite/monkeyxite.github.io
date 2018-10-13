@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>intellegence evolution (Posts about Mac)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/mac.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 13 Oct 2018 16:58:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mac OS X Privileges reconvery tips</title><link>https://monkeyxite.github.io/posts/2008/11/16/94html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This tip saved my ass when I broken the privileges of  Mac OS X by accident, while changing the file sharing settings:
+&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Turn on your Macbook.&lt;/li&gt;&lt;li&gt;Press and hold the [Apple] and "S" keys when you hear a chime sound.&lt;/li&gt;&lt;li&gt;Release the keys when you see computer code on a black and white screen.&lt;/li&gt;&lt;li&gt;Type at the prompt: &lt;span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;"&gt;/sbin/mount -uw /&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Press the [Enter] key.&lt;/li&gt;&lt;li&gt;Type next: &lt;span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;"&gt;rm /var/db/.applesetupdone(rebuild user setups) or chmod (rebuild the user privilege)
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Press the [Enter] key.&lt;/li&gt;&lt;li&gt;Restart. Your Macbook will restart and you can create a new user and password by going through the installation wizard or reborn .&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><category>Mac</category><category>tips</category><guid>https://monkeyxite.github.io/posts/2008/11/16/94html/</guid><pubDate>Sat, 15 Nov 2008 19:26:00 GMT</pubDate></item><item><title>iPython in MacOS autoComplete and highlight configure</title><link>https://monkeyxite.github.io/posts/2008/05/8/88html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;Using ipython in Mac OS X, finding that although the readline is already installed, but the autocompletion isn't available.Follow the instruction of this article, found that the configure file will disable the highlight.
+&lt;p&gt;So here is the improvement version of ~/.ipython/ipy_user_conf.py&lt;/p&gt;
+&lt;p&gt;P.S: Mac OS X v10.5.2; python 2.5.1; ipython 0.8.2&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+"""
+uer configuration file for IPython
+This is a more flexible and safe way to configure ipython than *rc files
+(ipythonrc, ipythonrc-pysh etc.)
+This file is always imported on ipython startup. You can import the
+ipython extensions you need here (see IPython/Extensions directory).
+Feel free to edit this file to customize your ipython experience.
+Note that as such this file does nothing, for backwards compatibility.
+Consult e.g. file 'ipy_profile_sh.py' for an example of the things
+you can do here.
+See http://ipython.scipy.org/moin/IpythonExtensionApi for detailed
+description on what you could do here.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;"""&lt;/p&gt;
+&lt;h2&gt;Most of your config files and extensions will probably start with this import&lt;/h2&gt;
+&lt;p&gt;import IPython.ipapi
+ip = IPython.ipapi.get()&lt;/p&gt;
+&lt;h2&gt;You probably want to uncomment this if you did %upgrade -nolegacy&lt;/h2&gt;
+&lt;h2&gt;import ipy_defaults&lt;/h2&gt;
+&lt;p&gt;def main():&lt;/p&gt;
+&lt;h2&gt;Handy tab-completers for %cd, %run, import etc.&lt;/h2&gt;
+&lt;h2&gt;Try commenting this out if you have completion problems/slowness&lt;/h2&gt;
+&lt;h2&gt;import ipy_stock_completers&lt;/h2&gt;
+&lt;h2&gt;uncomment if you want to get ipython -p sh behaviour&lt;/h2&gt;
+&lt;h2&gt;without having to use command line switches&lt;/h2&gt;
+&lt;h2&gt;import ipy_profile_sh&lt;/h2&gt;
+&lt;p&gt;import ipy_defaults&lt;/p&gt;
+&lt;h2&gt;o = ip.options&lt;/h2&gt;
+&lt;h2&gt;An example on how to set options&lt;/h2&gt;
+&lt;h2&gt;o.autocall = 1&lt;/h2&gt;
+&lt;h2&gt;o.system_verbose = 0&lt;/h2&gt;
+&lt;h2&gt;added to fix readline support, temporarily&lt;/h2&gt;
+&lt;p&gt;import readline&lt;/p&gt;
+&lt;p&gt;readline.parse_and_bind ("bind ^I rl_complete")&lt;/p&gt;
+&lt;p&gt;main()&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Coding</category><category>ipython</category><category>Mac</category><category>python</category><category>tips</category><guid>https://monkeyxite.github.io/posts/2008/05/8/88html/</guid><pubDate>Wed, 07 May 2008 22:50:00 GMT</pubDate></item></channel></rss>

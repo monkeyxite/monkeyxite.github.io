@@ -6,16 +6,136 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/book.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/bzr.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/career.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/coding.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/cydia.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/dom.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/firefox.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/fun.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/gfw.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/google.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/googleplex.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/iphone.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/ipython.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/itouch.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/life.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/lifehacker.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/mac.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/opera.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/pc.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/python.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/reading.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/rssreader.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/s60.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/tips.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/tools.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/turbogears.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/vim.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/web.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/wish.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/zen.xml</loc>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/galleries/rss.xml</loc>
-  <lastmod>2018-10-13T16:15:00Z</lastmod>
+  <lastmod>2018-10-13T16:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/rss.xml</loc>
-  <lastmod>2018-10-13T16:15:00Z</lastmod>
+  <lastmod>2018-10-13T16:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/sitemap.xml</loc>
-  <lastmod>2018-10-13T16:15:00Z</lastmod>
+  <lastmod>2018-10-13T17:03:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/galleries/rss.xml</loc>

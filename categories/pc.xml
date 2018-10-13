@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>intellegence evolution (Posts about PC)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/pc.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 13 Oct 2018 16:58:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PythonChallenge 1</title><link>https://monkeyxite.github.io/posts/2009/02/16/97html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;&lt;span class="Apple-style-span" style="font-size:large;"&gt;Procedure&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Q:&lt;/div&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pc/def/map.html"&gt;http://www.pythonchallenge.com/pc/def/map.html&lt;/a&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;A:
+&lt;pre class="python"&gt;s = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+def trans(s1, s2=""):
+   for i in s1:
+       if i in " .,'":
+           s2 += i
+       elif i is "y":
+           s2 += "a"
+       elif i is "z":
+           s2 += "b"
+       else:
+           s2 += chr(ord(i) + 2 )
+   return s2
+&lt;p&gt;print trans(s)
+&lt;/p&gt;&lt;/pre&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pcc/def/ocr.html"&gt;Other Answer&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;&lt;span class="Apple-style-span" style="font-size:large;"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;I think mine is straight, redundance, complex, and does not use the power of standard lib. &lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Lessons learned:  &lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;DRY
+&lt;/li&gt;&lt;li&gt;string module&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;&lt;span class="Apple-style-span" style="font-size:large;"&gt;Review&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-size:medium;"&gt;N/A&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Coding</category><category>PC</category><category>python</category><guid>https://monkeyxite.github.io/posts/2009/02/16/97html/</guid><pubDate>Sun, 15 Feb 2009 22:02:00 GMT</pubDate></item><item><title>Python Challenge 0</title><link>https://monkeyxite.github.io/posts/2009/01/13/96html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;a href="http://www.pythonchallenge.com/pc/def/calc.jpg"&gt;&lt;img src="http://www.pythonchallenge.com/pc/def/calc.jpg" alt="" border="0"&gt;&lt;/a&gt;Q:
+&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pc/def/0.html"&gt;&amp;lt;----&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;A:&lt;/div&gt;&lt;div&gt;
+My answer is staight:&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;pre class="py"&gt;
+print  2**38
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Other Answers:&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pcc/def/map.html"&gt;Here&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Such as using google, use cauculator in Windows.&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Just using this to spent the time that I do have post to say....... don't blame me, I'm boring.
+&lt;div&gt; &lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Coding</category><category>PC</category><category>python</category><guid>https://monkeyxite.github.io/posts/2009/01/13/96html/</guid><pubDate>Tue, 13 Jan 2009 01:05:00 GMT</pubDate></item></channel></rss>

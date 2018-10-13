@@ -1,0 +1,1 @@
+<html><body><span style="font-weight:bold;">Windows XP自动登录设置</span><br><br>方法：单击“开始/运行”，输入“rundll32 netplwiz.dll,UsersRunDll”，按回车键后弹出“用户帐户”窗口，看清楚，这可跟“控制面板”中打开的“用户账户”面板窗口不同哦！然后取消选定“要使用本机，用户必须输入用户名和密码”选项，单击确定，在弹出的对话框中输入你想让电脑每次自动登录的账户和密码即可。<br></body></html>
