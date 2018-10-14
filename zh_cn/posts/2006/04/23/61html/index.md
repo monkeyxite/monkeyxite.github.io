@@ -1,0 +1,9 @@
+<html><body><p>经<a href="http://maryhit.blogcn.com">Honey</a>的<a href="http://monkey.to.md/2006/04/blog-post_20.html#comments">提醒</a> 发现今天竟然是版权日！是联合国教科文组织确定“世界图书与<span style="color:rgb(204,0,51);">版权日</span>”，于是继续漫谈开来：
+</p><ul><li>早上还和<a href="http://maryhit.blogcn.com/">Honey</a>扯到图书和传统平面媒体必然将（或者如今已经？）成为不折不扣夕阳产业。挠头想了好久没有相处来上次买报纸杂志是什么时候就是一个很好的证明吧。如今除了经典的有收藏意义的书籍外对任何纸质的东西有种生疏感，随便拿起笔在纸上写出的汉字也是越看越别扭（靠，刚才“汉字”都打成“焊字”了，看来是电烙铁拿多了），总觉的是错别字，似乎从键盘上输入的字符更有安全感一些；写出来稍微顺溜的也就是10个阿拉伯数字和26个字母了，字母组合起来的话也总怀疑拼写有误，平常打开拼写检查似乎就像买了保险一样……是在退化？还是进化？这是个问题。</li><li>版权，我想说，盗亦有道。</li></ul><ol></ol><ol><li>从历史上来讲，copyright 出于商业发展的需要伴随的刺鼻的铜臭而产生的，于是有一帮充满理想主义色彩梦想的嬉皮士弄出来个copyleft来嘲讽这种没有人文道德的商业机制，成立的FSF等组织来维护人人生而平等的享有知识的权利。我想，他们是为了道而“盗”，孤身对抗沉积数世纪的庞大而健全的商业体制，对这些家伙们，只有钦佩。</li><li>在我们生活的周围，同样没有版权的概念。各种各样的盗版，最低级的就是我们家楼下时常在菜市孤身蹬破车，后座架一对劣质喇叭（奇怪的是如此破烂的喇叭声音却如此之大）及无数纸质包装破碟，车前挂破牌，上写“流行金曲500首；时尚音乐3元钱”，招摇过市，怡然自得……诸如此类盗版，不想说啥了……</li><li>从目前来看，中国IT业应感谢盗版。毫无疑问，如果没有盗版，我想90%以上得个人用户是无法享受到目前得IT产品得，这点大家心知肚明，不必多言。然而，出来混迟早要还的，<a href="http://cn.tech.yahoo.com/060418/467/27xfm.html">联想微软签约12亿大单</a>才刚刚是个开始……似乎听说，<a href="http://www.chinamil.com.cn/site1/ztpd/2005-10/13/content_314092.htm">连神六都采用了windows</a> ，什么是饮鸩止渴？！</li></ol>盗亦有道，没有尊严的盗不仅可恨，而且可耻。
+结局，必然可怜。
+
+附伟大的GNU斗士、Free software布道者、我心中永远的Punk <a href="http://www.stallman.org/">Richard Stallman</a>照片一张，希望copyleft、free software的乌托邦早点到来。
+<div style="text-align:center;"><img alt="http://colombia.indymedia.org/images/gnurevolution-small.png" src="http://colombia.indymedia.org/images/gnurevolution-small.png">
+
+</div>
+Technorati Tags: <a href="http://technorati.com/tag/pirate" rel="tag">pirate</a>, <a href="http://technorati.com/tag/copyright" rel="tag">copyright</a>, <a href="http://technorati.com/tag/copyleft" rel="tag">copyleft</a>, <a href="http://technorati.com/tag/FSF" rel="tag">FSF</a></body></html>

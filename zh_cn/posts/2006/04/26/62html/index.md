@@ -1,0 +1,1 @@
+<html><body><p>最近干活很辛苦，今晚就是1点才回来……<br><br>享受痛苦的每一天，踩个脚印先<br><br><br>Technorati Tags: <a href="http://technorati.com/tag/life" rel="tag">life</a>, <a href="http://technorati.com/tag/boring" rel="tag">boring</a></p></body></html>

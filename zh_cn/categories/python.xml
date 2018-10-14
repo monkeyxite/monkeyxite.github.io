@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (关于文章 python)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/zh_cn/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sun, 14 Oct 2018 15:31:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PythonChallenge 1</title><link>https://monkeyxite.github.io/zh_cn/posts/2009/02/16/97html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;print trans(s)
+&lt;/p&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pcc/def/ocr.html"&gt;Other Answer&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;&lt;span class="Apple-style-span" style="font-size:large;"&gt;Conclusion&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;I think mine is straight, redundance, complex, and does not use the power of standard lib. &lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Lessons learned:  &lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;DRY
+&lt;/li&gt;&lt;li&gt;string module&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;&lt;span class="Apple-style-span" style="font-size:large;"&gt;Review&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-weight:bold;"&gt;
+&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class="Apple-style-span" style="font-size:medium;"&gt;N/A&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2009/02/16/97html/</guid><pubDate>Sun, 15 Feb 2009 22:02:00 GMT</pubDate></item><item><title>Python Challenge 0</title><link>https://monkeyxite.github.io/zh_cn/posts/2009/01/13/96html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;a href="http://www.pythonchallenge.com/pc/def/calc.jpg"&gt;&lt;img src="http://www.pythonchallenge.com/pc/def/calc.jpg" alt="" border="0"&gt;&lt;/a&gt;Q:
+&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pc/def/0.html"&gt;&amp;lt;----&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;A:&lt;/div&gt;&lt;div&gt;
+My answer is staight:&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;pre class="py"&gt;
+print  2**38
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Other Answers:&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;&lt;a href="http://www.pythonchallenge.com/pcc/def/map.html"&gt;Here&lt;/a&gt;&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Such as using google, use cauculator in Windows.&lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;div&gt;Just using this to spent the time that I do have post to say....... don't blame me, I'm boring.
+&lt;div&gt; &lt;/div&gt;&lt;div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2009/01/13/96html/</guid><pubDate>Tue, 13 Jan 2009 01:05:00 GMT</pubDate></item><item><title>bzr@iPhone/iTouch</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/06/25/90html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;可以说我是吃饱了撑得，总之我又这样的需求：
+&lt;/p&gt;&lt;ol&gt;&lt;li&gt;bzr，python随处可带，portable后带一个U盘里边轻而易举，WIFI似乎马上也不是问题，北京都已经&lt;a href="http://tech.sina.com.cn/t/2008-06-25/12422282763.shtml"&gt;满城遍是免费网&lt;/a&gt;了。&lt;/li&gt;&lt;li&gt;更何况不论S60还是WM都有利用GPRS做wifi AP的软件出现了（对于iTouch这个没有GPRS的家伙只有多带一样设备了）。&lt;/li&gt;&lt;/ol&gt;简要过程如下：
+&lt;ol&gt;&lt;li&gt;破解iPhone(Ziphone方便快捷，3分钟完成，点击鼠标不超过10次，安逸)&lt;/li&gt;&lt;li&gt;从&lt;a href="http://www.iphonecake.com/"&gt;iphonecake&lt;/a&gt;安装cydia&lt;/li&gt;&lt;li&gt;从cydia装上Python以及GNU C Compiler&lt;/li&gt;&lt;li&gt;SFTP传上&lt;a href="http://bazaar-vcs.org/Download"&gt;bzr&lt;/a&gt;源代码&lt;/li&gt;&lt;li&gt;python setup.py install (解压之类不说也罢)&lt;/li&gt;&lt;/ol&gt;搞定！编译好的代码在&lt;a href="http://www.box.net/shared/i5jjkh9sss"&gt;这里&lt;/a&gt;。&lt;br&gt;&lt;br&gt;
+以后可以抛开了itune，配合iPhone上的lighttpd，用bzr 的push pull checkout来同步电影什么的，听歌就算了吧，没有列表的概念在safari听个可不见得是个好主意（如果有空的话尽管可以自个写一个自动播放列 表的页面。。。。。再想想吧）。&lt;br&gt;&lt;br&gt;
+让我们没事尽管穷折腾吧！&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/06/25/90html/</guid><pubDate>Wed, 25 Jun 2008 10:09:00 GMT</pubDate></item><item><title>iPython in MacOS autoComplete and highlight configure</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/05/8/88html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;So here is the improvement version of ~/.ipython/ipy_user_conf.py&lt;/p&gt;
+&lt;p&gt;P.S: Mac OS X v10.5.2; python 2.5.1; ipython 0.8.2&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+"""
+uer configuration file for IPython
+This is a more flexible and safe way to configure ipython than *rc files
+(ipythonrc, ipythonrc-pysh etc.)
+This file is always imported on ipython startup. You can import the
+ipython extensions you need here (see IPython/Extensions directory).
+Feel free to edit this file to customize your ipython experience.
+Note that as such this file does nothing, for backwards compatibility.
+Consult e.g. file 'ipy_profile_sh.py' for an example of the things
+you can do here.
+See http://ipython.scipy.org/moin/IpythonExtensionApi for detailed
+description on what you could do here.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;"""&lt;/p&gt;
+&lt;h2&gt;Most of your config files and extensions will probably start with this import&lt;/h2&gt;
+&lt;p&gt;import IPython.ipapi
+ip = IPython.ipapi.get()&lt;/p&gt;
+&lt;h2&gt;You probably want to uncomment this if you did %upgrade -nolegacy&lt;/h2&gt;
+&lt;h2&gt;import ipy_defaults&lt;/h2&gt;
+&lt;p&gt;def main():&lt;/p&gt;
+&lt;h2&gt;Handy tab-completers for %cd, %run, import etc.&lt;/h2&gt;
+&lt;h2&gt;Try commenting this out if you have completion problems/slowness&lt;/h2&gt;
+&lt;h2&gt;import ipy_stock_completers&lt;/h2&gt;
+&lt;h2&gt;uncomment if you want to get ipython -p sh behaviour&lt;/h2&gt;
+&lt;h2&gt;without having to use command line switches&lt;/h2&gt;
+&lt;h2&gt;import ipy_profile_sh&lt;/h2&gt;
+&lt;p&gt;import ipy_defaults&lt;/p&gt;
+&lt;h2&gt;o = ip.options&lt;/h2&gt;
+&lt;h2&gt;An example on how to set options&lt;/h2&gt;
+&lt;h2&gt;o.autocall = 1&lt;/h2&gt;
+&lt;h2&gt;o.system_verbose = 0&lt;/h2&gt;
+&lt;h2&gt;added to fix readline support, temporarily&lt;/h2&gt;
+&lt;p&gt;import readline&lt;/p&gt;
+&lt;p&gt;readline.parse_and_bind ("bind ^I rl_complete")&lt;/p&gt;
+&lt;p&gt;main()&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/05/8/88html/</guid><pubDate>Wed, 07 May 2008 22:50:00 GMT</pubDate></item><item><title>抓-抓虾</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/01/26/87html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;不好意思，看题目似乎是结巴。&lt;br&gt;&lt;br&gt;不过我现在要做的就是把抓虾里边收藏的文章逐步迁徙到本地或del.icio.us去，打算用python实现，就是所谓的“抓-抓虾”&lt;br&gt;&lt;br&gt;&lt;br&gt;参考文档：&lt;br&gt;抓虾页面频繁地应用了javascript操作DOM，就连login的Form都不放过，所以补习一下DOM的相关知识。&lt;br&gt;&lt;br&gt;&lt;br&gt;http://www.w3school.com.cn/htmldom/dom_nodes.asp&lt;/div&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/01/26/87html/</guid><pubDate>Sat, 26 Jan 2008 08:56:00 GMT</pubDate></item><item><title>living in ipython</title><link>https://monkeyxite.github.io/zh_cn/posts/2007/11/18/75html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;In [2]: print "hello world"
+hello world&lt;/p&gt;
+&lt;p&gt;In [3]: %hi
+%hist     %history&lt;/p&gt;
+&lt;p&gt;In [3]: %hist
+1: True == False&lt;/p&gt;
+&lt;p&gt;2: print "hello world"&lt;/p&gt;
+&lt;p&gt;In [4]: In
+Out[4]: ['\n', 'True == False\n', 'print "hello world"\n',
+       'ipmagic("%hist ")\n', 'In\n']&lt;/p&gt;
+&lt;p&gt;In [5]: Out
+Out[5]:
+{1: False,
+4: ['\n', 'True == False\n', 'print "hello world"\n',
+       'ipmagic("%hist ")\n', 'In\n', 'Out\n'],
+5: }&lt;/p&gt;
+&lt;p&gt;In [6]: print &lt;em&gt;i, _ii, _iii, &lt;/em&gt;, __, &lt;strong&gt;&lt;em&gt;
+Out
+In
+ipmagic("%hist ")
+{1: False, 4: ['\n', 'True == False\n', 'print "hello world"\n',
+        'ipmagic("%hist ")\n', 'In\n', 'Out\n',
+        'print &lt;/em&gt;i, &lt;em&gt;ii, _iii, &lt;/em&gt;, &lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;\n'], 5: {...}} ['\n',
+        'True == False\n', 'print "hello world"\n',
+        'ipmagic("%hist ")\n', 'In\n', 'Out\n',
+        'print &lt;/em&gt;i, &lt;em&gt;ii, _iii, &lt;/em&gt;, &lt;/strong&gt;, ___\n'] False&lt;/p&gt;
+&lt;p&gt;编辑
+&lt;/p&gt;&lt;ul&gt;&lt;li&gt;支持行编辑，默认为vi键绑定。可以按 ESC 允许行被编辑&lt;/li&gt;&lt;li&gt;允许方便编辑所以代码&lt;/li&gt;&lt;li&gt;%edit调出 环境变量EDITOR定义的编辑器&lt;/li&gt;&lt;li&gt;%edit star stop 可以对某一区域编辑&lt;/li&gt;&lt;/ul&gt;编辑例子
+&lt;blockquote&gt; In [4]: hist
+   1:
+   class A:
+       def &lt;strong&gt;init&lt;/strong&gt;(self, start, end):
+           """Some comment here."""
+&lt;p&gt;2: a = 1
+   3: b = 2
+   4: c = 0
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;span style="font-weight:bold;"&gt;%edit&lt;/span&gt;
+   Will open up an empty editor
+&lt;span style="font-weight:bold;"&gt;%edit 2 4&lt;/span&gt;
+   Will open an editor containing lines 2 and 4
+&lt;span style="font-weight:bold;"&gt;%edit 1&lt;/span&gt;
+   Will open up the class definition
+&lt;span style="font-weight:bold;"&gt;%edit 1:4&lt;/span&gt;
+w
+   Will open up the editor with lines 1, 2 and 3&lt;/p&gt;
+&lt;p&gt;会话和日志
+每次使用后会话都有记录。并且可以重放会话快速恢复到上次会话的最后状态&lt;/p&gt;
+&lt;p&gt;开始记录日志可以使用 -log 或 -logfile  在命令行或者使用%logstart在interpreter。%logstate可以显示当前log的状态&lt;/p&gt;
+&lt;p&gt;%logoff可以暂停记录，%logon恢复&lt;/p&gt;
+&lt;p&gt;继续某次会话可以通过命令行使用 -logfile &lt;/p&gt;
+&lt;p&gt;对象自省
+自省可以像标准python那样
+？是个快捷键
+例子
+&lt;/p&gt;&lt;blockquote&gt;In [2]: sys.path?
+Type:           list
+Base Class:   &lt;br&gt;
+String Form:    ['', '/usr/bin', '/disk2/ag/common',
+                '/usr/lib/python24.zip', '/usr/lib/python2.4',
+                '/usr/lib/pyt &amp;amp;lt;...&amp;amp;gt; 2.4/site-packages/Numeric',
+                '/usr/lib/python2.4/site-packages/gtk-2.0',
+                '/home/dstanek/.ipython']
+Namespace:      Interactive
+Length:         13
+Docstring:
+    list() -&amp;amp;gt; new list
+    list(sequence) -&amp;amp;gt; new list initialized from sequence's items
+&lt;/blockquote&gt;
+&lt;blockquote&gt;In [1]: class C(object):
+   ...:     a = "a string"
+   ...:     def f(self, name, value):
+   ...:         """my docstring here"""
+   ...: 
+&lt;p&gt;In [2]: C.a?
+Type:           str
+Base Class:   &lt;br&gt;
+String Form:    a string
+Namespace:      Interactive
+Length:         8
+Docstring:
+    str(object) -&amp;amp;gt; string&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Return a nice string representation of the object.
+If the argument is a string, the return value is the
+same object.
+&lt;/pre&gt;
+
+
+&lt;p&gt;In [3]: ?C.f
+Type:           instancemethod
+Base Class:   &lt;br&gt;
+String Form:  &lt;br&gt;
+Namespace:      Interactive
+File:           /mnt/home/dstanek/
+Definition:     C.f(self, name, value)
+Docstring:
+   my docstring here&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/blockquote&gt;
+其他技巧
+&lt;ul&gt;&lt;li&gt;集成调试器&lt;/li&gt;&lt;li&gt;集成profiler&lt;/li&gt;&lt;li&gt;Python jobs can be run in the background in a thread.&lt;/li&gt;&lt;li&gt;支持配置文件&lt;/li&gt;&lt;/ul&gt;结论
+&lt;p&gt;&lt;b&gt;It's a good thing&lt;/b&gt; and is available at
+   http://ipython.scipy.org/&lt;/p&gt;
+
+&lt;p&gt;A sprint to add other cool things may be a useful exercise.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;To set ipython to be the default:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Python honors the environment variable PYTHONSTARTUP and will execute
+   at startup the file referenced by this variable. If you put at the end
+   of this file the following two lines of code:&lt;/p&gt;&lt;pre&gt;    import IPython
+   IPython.Shell.IPShell().mainloop(sys_exit=1)
+   &lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2007/11/18/75html/</guid><pubDate>Sun, 18 Nov 2007 04:48:00 GMT</pubDate></item><item><title>Python for S60</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/03/17/48html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;Python for S60 brings the power and productivity of the Python programming language to the S60 platform. These snippets make your phone be really SMART!&lt;br&gt;&lt;br&gt;&lt;a href="http://www.bigbold.com/snippets/tags/series60"&gt;read more&lt;/a&gt; | &lt;a href="http://digg.com/programming/"&gt;digg story&lt;/a&gt;&lt;br&gt;&lt;br&gt;Technorati Tags: &lt;a rel="tag" href="http://technorati.com/tag/joke"&gt;python&lt;/a&gt;, &lt;a rel="tag" href="http://technorati.com/tag/maotou"&gt;scripts&lt;/a&gt;, &lt;a rel="tag" href="http://technorati.com/tag/maotou"&gt;s60&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/03/17/48html/</guid><pubDate>Fri, 17 Mar 2006 08:04:00 GMT</pubDate></item></channel></rss>

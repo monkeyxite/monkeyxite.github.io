@@ -1,0 +1,3 @@
+<html><body><div><a href="http://vim.sourceforge.net/tip_view.php?tip_id=32">VimTip 33: toggle off the line-number when enter on-line help</a><br>在帮助文档里关闭行号<br><br>I like the line-number for myself editing. But I hate it in on-line help page because it force the screen wrapped.<br>
+我喜欢在自己编辑时有行号。但是我讨厌在帮助文档里边的行号，因为这样使屏幕转行了。<br><b>:au filetype help :se nonu</b><br>
+<br><br><br>Technorati Tags: <a href="http://technorati.com/tag/VI" rel="tag">VI</a>, <a href="http://technorati.com/tag/EDITOR" rel="tag">EDITOR</a></div></body></html>

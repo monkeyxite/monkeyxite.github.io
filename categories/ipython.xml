@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>intellegence evolution (Posts about ipython)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/ipython.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 13 Oct 2018 16:58:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>iPython in MacOS autoComplete and highlight configure</title><link>https://monkeyxite.github.io/posts/2008/05/8/88html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;Using ipython in Mac OS X, finding that although the readline is already installed, but the autocompletion isn't available.Follow the instruction of this article, found that the configure file will disable the highlight.
-&lt;p&gt;So here is the improvement version of ~/.ipython/ipy_user_conf.py&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about ipython)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/ipython.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sun, 14 Oct 2018 15:31:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>iPython in MacOS autoComplete and highlight configure</title><link>https://monkeyxite.github.io/posts/2008/05/8/88html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;So here is the improvement version of ~/.ipython/ipy_user_conf.py&lt;/p&gt;
 &lt;p&gt;P.S: Mac OS X v10.5.2; python 2.5.1; ipython 0.8.2&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;
 """
@@ -37,25 +36,7 @@ ip = IPython.ipapi.get()&lt;/p&gt;
 &lt;p&gt;import readline&lt;/p&gt;
 &lt;p&gt;readline.parse_and_bind ("bind ^I rl_complete")&lt;/p&gt;
 &lt;p&gt;main()&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Coding</category><category>ipython</category><category>Mac</category><category>python</category><category>tips</category><guid>https://monkeyxite.github.io/posts/2008/05/8/88html/</guid><pubDate>Wed, 07 May 2008 22:50:00 GMT</pubDate></item><item><title>living in ipython</title><link>https://monkeyxite.github.io/posts/2007/11/18/75html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;big&gt;&lt;/big&gt;&lt;big&gt;介绍：&lt;/big&gt;
-&lt;ul&gt;&lt;li&gt;ipython是什么？&lt;/li&gt;&lt;li&gt;为什么要用它？&lt;/li&gt;&lt;/ul&gt;&lt;big&gt;标准的python interpreter&lt;/big&gt;
-标准的python interpreter对于python guy来说一定是特有分量的一个常备工具，因为：
-&lt;ul&gt;&lt;li&gt;用户可以马上输入代码看到结果&lt;/li&gt;&lt;li&gt;自省
-&lt;/li&gt;&lt;li&gt;尽管很有用可是在实际的使用中还是有些地方可以改进！&lt;/li&gt;&lt;/ul&gt;&lt;big&gt;ipython 的目标：&lt;/big&gt;
-&lt;ol&gt;&lt;li&gt;提供一个更好用的python interactive shell&lt;/li&gt;&lt;li&gt;可嵌入的interpreter
-&lt;/li&gt;&lt;li&gt;提供一个框架可以在不同操作系统将pythono作为一个底层语言的基本环境
-&lt;/li&gt;&lt;/ol&gt;&lt;big&gt;&lt;/big&gt;&lt;big&gt;Magic命令系统
-&lt;/big&gt;
-使ipyothon与众不同的特性
-&lt;ul&gt;&lt;li&gt;以%开头的行认为恶事magic命令&lt;/li&gt;&lt;li&gt;一般的shell比如ls，mkdir等均为magic命令&lt;/li&gt;&lt;li&gt;%alias 命令可以建新的别名&lt;/li&gt;&lt;li&gt;automagic模式打开后，%都不需要。在把名利提交给python interpreter都会自动分析是否是在magic命令的list中&lt;/li&gt;&lt;li&gt;%magic 看 关于magic命令的更多信息&lt;/li&gt;&lt;/ul&gt;Tab补全
-很有用，很多场合都能调用此功能
-&lt;ul&gt;&lt;li&gt;命令补全&lt;/li&gt;&lt;li&gt;变量名补全&lt;/li&gt;&lt;li&gt;object. 可以对象属性补全&lt;/li&gt;&lt;li&gt;一些场合可以自动补全文件或目录&lt;/li&gt;&lt;/ul&gt;不仅如此，egular and menu completion modes are supported. The default    is regular, but can easily be changed in the config file
-历史
-&lt;ul&gt;&lt;li&gt;不同session 和每个用户配置文件都有&lt;/li&gt;&lt;li&gt;%hist显示最近历史&lt;/li&gt;&lt;li&gt;-n 选项可以上翻n条历史&lt;/li&gt;&lt;li&gt;可以告诉%hist显示特定行&lt;/li&gt;&lt;/ul&gt;一些有用的细节
-&lt;ul&gt;&lt;li&gt;历史一般都存储在 In 的list里&lt;/li&gt;&lt;li&gt;输出 存储在 Out 的list里&lt;/li&gt;&lt;li&gt;最后3个命令 分别为 &lt;em&gt;i,_ii,_iii&lt;/em&gt;&lt;/li&gt;&lt;li&gt;最后3个输出 分别为 , __, ___&lt;script type="text/javascript" src="http://ei.appspot.com/tinymce/themes/advanced/langs/zh.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" src="http://ei.appspot.com/tinymce/plugins/wordpress/langs/zh.js"&gt;&lt;/script&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;看看例子：
-In [1]: True == False
-Out[1]: False
-&lt;p&gt;In [2]: print "hello world"
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Coding</category><category>ipython</category><category>Mac</category><category>python</category><category>tips</category><guid>https://monkeyxite.github.io/posts/2008/05/8/88html/</guid><pubDate>Wed, 07 May 2008 22:50:00 GMT</pubDate></item><item><title>living in ipython</title><link>https://monkeyxite.github.io/posts/2007/11/18/75html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;In [2]: print "hello world"
 hello world&lt;/p&gt;
 &lt;p&gt;In [3]: %hi
 %hist     %history&lt;/p&gt;
@@ -81,8 +62,8 @@ ipmagic("%hist ")
         'True == False\n', 'print "hello world"\n',
         'ipmagic("%hist ")\n', 'In\n', 'Out\n',
         'print &lt;/em&gt;i, &lt;em&gt;ii, _iii, &lt;/em&gt;, &lt;/strong&gt;, ___\n'] False&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/blockquote&gt;编辑
-&lt;ul&gt;&lt;li&gt;支持行编辑，默认为vi键绑定。可以按 ESC 允许行被编辑&lt;/li&gt;&lt;li&gt;允许方便编辑所以代码&lt;/li&gt;&lt;li&gt;%edit调出 环境变量EDITOR定义的编辑器&lt;/li&gt;&lt;li&gt;%edit star stop 可以对某一区域编辑&lt;/li&gt;&lt;/ul&gt;编辑例子
+&lt;p&gt;编辑
+&lt;/p&gt;&lt;ul&gt;&lt;li&gt;支持行编辑，默认为vi键绑定。可以按 ESC 允许行被编辑&lt;/li&gt;&lt;li&gt;允许方便编辑所以代码&lt;/li&gt;&lt;li&gt;%edit调出 环境变量EDITOR定义的编辑器&lt;/li&gt;&lt;li&gt;%edit star stop 可以对某一区域编辑&lt;/li&gt;&lt;/ul&gt;编辑例子
 &lt;blockquote&gt; In [4]: hist
    1:
    class A:
@@ -165,4 +146,4 @@ Docstring:
    of this file the following two lines of code:&lt;/p&gt;&lt;pre&gt;    import IPython
    IPython.Shell.IPShell().mainloop(sys_exit=1)
    &lt;/pre&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>Coding</category><category>ipython</category><category>python</category><guid>https://monkeyxite.github.io/posts/2007/11/18/75html/</guid><pubDate>Sun, 18 Nov 2007 04:48:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Coding</category><category>ipython</category><category>python</category><guid>https://monkeyxite.github.io/posts/2007/11/18/75html/</guid><pubDate>Sun, 18 Nov 2007 04:48:00 GMT</pubDate></item></channel></rss>

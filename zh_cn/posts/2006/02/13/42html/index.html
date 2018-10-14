@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>VIM TIP31 | Intellegence Evolution</title>
+<link href="../../../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="../../../../../rss.xml">
+<link rel="canonical" href="https://monkeyxite.github.io/zh_cn/posts/2006/02/13/42html/">
+<!--[if lt IE 9]><script src="../../../../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Jonny Hou">
+<link rel="prev" href="../../8/41html/" title="VIM TIP30" type="text/html">
+<link rel="next" href="../../15/43html/" title="VIM TIP33" type="text/html">
+<meta property="og:site_name" content="Intellegence Evolution">
+<meta property="og:title" content="VIM TIP31">
+<meta property="og:url" content="https://monkeyxite.github.io/zh_cn/posts/2006/02/13/42html/">
+<meta property="og:description" content="To find and replace one or more occurences of a given text pattern with a new text string, use the s[ubstitute] command.
+为了查找替换文中出现过的一个或多个文本串，使用s命令
+There are a variety of options, but these are what y">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2006-02-13T12:18:00+08:00">
+<meta property="article:tag" content="tips">
+<meta property="article:tag" content="vim">
+<link rel="alternate" hreflang="en" href="../../../../../../posts/2006/02/13/42html/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
+
+<!-- Menubar -->
+
+<div class="navbar navbar-static-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="https://monkeyxite.github.io/zh_cn/">
+
+                <span id="blog-title">Intellegence Evolution</span>
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+<li>
+<a href="../../../../../archive.html">文章归档</a>
+                </li>
+<li>
+<a href="../../../../../categories/">标签</a>
+                </li>
+<li>
+<a href="../../../../../rss.xml">RSS 源</a>
+
+                    
+                </li>
+</ul>
+<ul class="nav pull-right">
+<li>            </li>
+<li><a href="https://monkeyxite.github.io/" rel="alternate" hreflang="en">English</a></li>
+
+                    <li>    </li>
+<li>
+    <a href="index.md" id="sourcelink">资源</a>
+    </li>
+
+                
+                </ul>
+</div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="content" role="main">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+<article class="post- h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">VIM TIP31</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Jonny Hou
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2006-02-13T12:18:00+08:00" itemprop="datePublished" title="2006-02-13 12:18">2006-02-13 12:18</time></a>
+            </p>
+                <p class="commentline">        
+
+                    </p>
+<p class="sourceline"><a href="index.md" class="sourcelink">资源</a></p>
+
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>To find and replace one or more occurences of a given text pattern with a new text string, use the s[ubstitute] command.
+为了查找替换文中出现过的一个或多个文本串，使用s命令
+There are a variety of options, but these are what you most probably want:
+有很多可选的变量，看看什么是你最需要的：
+<b>:%s/foo/bar/g   </b>        find each occurance of 'foo' and replace it with 'bar' without asking for confirmation
+<b>                                      </b>不确认替换每一个foo为bar<b>
+:%s/foo/bar/gc  </b>        find each occurance of 'foo' and replace it with 'bar' asking for confirmation first
+                                                首次向用户确认并替换每一个foo为bar
+<b>:%s//bar/gc  </b>    find (match exact word only) and replace each occurance of 'foo' with 'bar'
+                                               将一个词foo替换为bar
+<b>:%s/foo/bar/gci </b>        find (case insensitive) and replace each occurance of 'foo' with 'bar'
+                                                大小写不敏感替换foo为bar
+<b>:%s/foo/bar/gcI  </b>       find (case sensitive) and replace each occurance of 'foo' with 'bar'
+                                                大小写敏感替换foo为bar</p>
+<p>NB: Without the 'g' flag, replacement occurs only for the first occurrence in each line.
+NB: 没有g选项的话，仅仅替换每行的第一个匹配项
+For a full description and some more interesting examples of the substitute command refer to
+想知道替换详细的解释和一些有趣的例子请参考
+<b>:help substitute</b></p>
+<p>See also:
+或者：
+<b>:help cmdline-ranges
+:help pattern
+:help gdefault</b></p>
+<p>Technorati Tags: <a href="http://technorati.com/tag/VI" rel="tag">VI</a>, <a href="http://technorati.com/tag/EDITOR" rel="tag">EDITOR</a></p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../../categories/tips/" rel="tag">tips</a></li>
+            <li><a class="tag p-category" href="../../../../../categories/vim/" rel="tag">vim</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../8/41html/" rel="prev" title="VIM TIP30">上一篇文章</a>
+            </li>
+            <li class="next">
+                <a href="../../15/43html/" rel="next" title="VIM TIP33">下一篇文章</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>评论</h2>
+                
+
+        </section></article>
+</div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+    
+</div>
+            <script src="../../../../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("zh-cn");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>

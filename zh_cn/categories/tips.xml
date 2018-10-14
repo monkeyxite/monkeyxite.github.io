@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (关于文章 tips)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/zh_cn/categories/tips.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sun, 14 Oct 2018 15:31:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mac OS X Privileges reconvery tips</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/11/16/94html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This tip saved my ass when I broken the privileges of  Mac OS X by accident, while changing the file sharing settings:
+&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Turn on your Macbook.&lt;/li&gt;&lt;li&gt;Press and hold the [Apple] and "S" keys when you hear a chime sound.&lt;/li&gt;&lt;li&gt;Release the keys when you see computer code on a black and white screen.&lt;/li&gt;&lt;li&gt;Type at the prompt: &lt;span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;"&gt;/sbin/mount -uw /&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Press the [Enter] key.&lt;/li&gt;&lt;li&gt;Type next: &lt;span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;"&gt;rm /var/db/.applesetupdone(rebuild user setups) or chmod (rebuild the user privilege)
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Press the [Enter] key.&lt;/li&gt;&lt;li&gt;Restart. Your Macbook will restart and you can create a new user and password by going through the installation wizard or reborn .&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/11/16/94html/</guid><pubDate>Sat, 15 Nov 2008 19:26:00 GMT</pubDate></item><item><title>Using vim to open recent files</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/09/29/92html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;p&gt;d means one digital from 0 to 9, which present the recent files.&lt;/p&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/09/29/92html/</guid><pubDate>Mon, 29 Sep 2008 15:17:00 GMT</pubDate></item><item><title>iPython in MacOS autoComplete and highlight configure</title><link>https://monkeyxite.github.io/zh_cn/posts/2008/05/8/88html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;So here is the improvement version of ~/.ipython/ipy_user_conf.py&lt;/p&gt;
+&lt;p&gt;P.S: Mac OS X v10.5.2; python 2.5.1; ipython 0.8.2&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+"""
+uer configuration file for IPython
+This is a more flexible and safe way to configure ipython than *rc files
+(ipythonrc, ipythonrc-pysh etc.)
+This file is always imported on ipython startup. You can import the
+ipython extensions you need here (see IPython/Extensions directory).
+Feel free to edit this file to customize your ipython experience.
+Note that as such this file does nothing, for backwards compatibility.
+Consult e.g. file 'ipy_profile_sh.py' for an example of the things
+you can do here.
+See http://ipython.scipy.org/moin/IpythonExtensionApi for detailed
+description on what you could do here.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;"""&lt;/p&gt;
+&lt;h2&gt;Most of your config files and extensions will probably start with this import&lt;/h2&gt;
+&lt;p&gt;import IPython.ipapi
+ip = IPython.ipapi.get()&lt;/p&gt;
+&lt;h2&gt;You probably want to uncomment this if you did %upgrade -nolegacy&lt;/h2&gt;
+&lt;h2&gt;import ipy_defaults&lt;/h2&gt;
+&lt;p&gt;def main():&lt;/p&gt;
+&lt;h2&gt;Handy tab-completers for %cd, %run, import etc.&lt;/h2&gt;
+&lt;h2&gt;Try commenting this out if you have completion problems/slowness&lt;/h2&gt;
+&lt;h2&gt;import ipy_stock_completers&lt;/h2&gt;
+&lt;h2&gt;uncomment if you want to get ipython -p sh behaviour&lt;/h2&gt;
+&lt;h2&gt;without having to use command line switches&lt;/h2&gt;
+&lt;h2&gt;import ipy_profile_sh&lt;/h2&gt;
+&lt;p&gt;import ipy_defaults&lt;/p&gt;
+&lt;h2&gt;o = ip.options&lt;/h2&gt;
+&lt;h2&gt;An example on how to set options&lt;/h2&gt;
+&lt;h2&gt;o.autocall = 1&lt;/h2&gt;
+&lt;h2&gt;o.system_verbose = 0&lt;/h2&gt;
+&lt;h2&gt;added to fix readline support, temporarily&lt;/h2&gt;
+&lt;p&gt;import readline&lt;/p&gt;
+&lt;p&gt;readline.parse_and_bind ("bind ^I rl_complete")&lt;/p&gt;
+&lt;p&gt;main()&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2008/05/8/88html/</guid><pubDate>Wed, 07 May 2008 22:50:00 GMT</pubDate></item><item><title>恢复更新！</title><link>https://monkeyxite.github.io/zh_cn/posts/2007/11/18/82html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;主机的问题其实很久以前就搞定了，用了非主流的办法：&lt;br&gt;&lt;ol&gt;&lt;li&gt;windows下常规AMP(Apache/MySQL/PHP)的设置&lt;/li&gt;&lt;li&gt;将域名monkey.za.org通过&lt;a href="http://www.everydns.net"&gt;everyDNS&lt;/a&gt;绑定到网关，再对Router 做NAT映射到内网主机（似乎有更好的办法，router做DNS映射到内网，有熟悉的麻烦告知～谢谢谢谢）&lt;/li&gt;&lt;li&gt;安装openssh到同一windows主机，并做好NAT映射及SFTP的设置&lt;/li&gt;&lt;li&gt;在Blogger将Publish设置为SFTP&lt;/li&gt;&lt;/ol&gt;哈哈，把自己的Host方案都脱出来，似乎不甚安全呀。。。。。。。&lt;br&gt;&lt;br&gt;p.s. 和自己希望的工作失之交臂，遗憾遗憾。9月来一直奔波劳碌（似乎从05年开始了），遗弃了一些乐趣。舍得。会好起来的，加油。&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2007/11/18/82html/</guid><pubDate>Sun, 18 Nov 2007 05:12:00 GMT</pubDate></item><item><title>留个纪念再</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/09/9/72html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;span style="font-weight:bold;"&gt;Windows XP自动登录设置&lt;/span&gt;&lt;br&gt;&lt;br&gt;方法：单击“开始/运行”，输入“rundll32 netplwiz.dll,UsersRunDll”，按回车键后弹出“用户帐户”窗口，看清楚，这可跟“控制面板”中打开的“用户账户”面板窗口不同哦！然后取消选定“要使用本机，用户必须输入用户名和密码”选项，单击确定，在弹出的对话框中输入你想让电脑每次自动登录的账户和密码即可。&lt;br&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/09/9/72html/</guid><pubDate>Sat, 09 Sep 2006 06:00:00 GMT</pubDate></item><item><title>记一笔</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/08/21/71html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;wordpress database 导入用phpmyadmin或者mysql命令行，&lt;br&gt;数据编码尽管是utf-8但直接bin编码导入&lt;br&gt;&lt;br&gt;&lt;br&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/wordpress" rel="tag"&gt;wordpress&lt;/a&gt;, &lt;a href="http://technorati.com/tag/database" rel="tag"&gt;database&lt;/a&gt;, &lt;a href="http://technorati.com/tag/tips" rel="tag"&gt;tips&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/08/21/71html/</guid><pubDate>Sun, 20 Aug 2006 23:07:00 GMT</pubDate></item><item><title>犯了一个低级错误 在此记录之：mysql Root 密码</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/08/17/70html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;如果 MySQL 正在运行，首先杀之： killall -TERM mysqld。
+启动 MySQL ：mysqld_safe --skip-grant-tables &amp;amp;
+就可以不需要密码就进入 MySQL 了。
+然后就是
+&amp;gt;use mysql
+&amp;gt;update user set password=password("new_pass") where user="root";
+&amp;gt;flush privileges;
+重新杀 MySQL ，用正常方法启动 MySQL&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/08/17/70html/</guid><pubDate>Wed, 16 Aug 2006 21:04:00 GMT</pubDate></item><item><title>06世界杯Google Calender版 日程表</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/06/10/68html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div style="text-align:center;"&gt;&lt;a href="http://blog.outer-court.com/files/calendars/world-cup.gif" rel="lightbox" title="calender"&gt;&lt;img src="http://blog.outer-court.com/files/calendars/world-cup.gif"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+当然，如果你比较讨厌英文的话，可以在Add Other Calender里边来搜你喜欢的语言的Calender，&lt;a href="http://www.google.com/calendar/feeds/ehlhhs2daqdvjoqckdhe6p8p60@group.calendar.google.com/public/basic"&gt;这里&lt;/a&gt;就是一个繁体中文的世界杯日程表。
+&lt;p&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/google%20calender" rel="tag"&gt;google calender&lt;/a&gt;, &lt;a href="http://technorati.com/tag/world%20cup" rel="tag"&gt;world cup&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/06/10/68html/</guid><pubDate>Fri, 09 Jun 2006 20:48:00 GMT</pubDate></item><item><title>Google web服务快捷键大全</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/06/10/67html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;p.s.  有不少的User.script来帮助实现快捷键，添加更方便快捷键，让web服务来适应你的使用习惯，例如这个&lt;a href="http://gr.ayre.st/%7Egrayrest/greasemonkey/gmail/gmail-macros.user.js"&gt;Gmail Macros&lt;/a&gt;尽管会带来很炫的效果，尽管已经是修订版，但是或多或少会仍与原先的快捷键有冲突。&lt;/p&gt;
+&lt;p&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/google" rel="tag"&gt;google&lt;/a&gt;, &lt;a href="http://technorati.com/tag/web" rel="tag"&gt;web&lt;/a&gt;, &lt;a href="http://technorati.com/tag/shortcuts" rel="tag"&gt;shortcuts&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/06/10/67html/</guid><pubDate>Fri, 09 Jun 2006 18:08:00 GMT</pubDate></item><item><title>vim jde note</title><link>https://monkeyxite.github.io/zh_cn/posts/2006/04/17/59html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;big&gt;&lt;/big&gt;&lt;big&gt;配置篇&lt;/big&gt;
+&lt;/p&gt;&lt;div style="text-align:left;"&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;启用或者禁用java在用户输入括号后自动提示参数 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_cfu_java_para=0 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 启用或者禁用 用户在用&amp;lt;c-x&amp;gt; &amp;lt;c-u&amp;gt;时显示预览 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_show_preview=0 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 启用或者禁用 在用户输入 .  时自动提示后面的部分 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_cfu_java_dot=0 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 启用或才禁用 使用一个图形化的提示窗口.(不推荐,太难看) &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt; let g:vjde_preview_gui=1 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 以下做为c++使用 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt; let g:vjde_iab_exts='.cpp;.c;.vim;.rb' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;  &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 对指定名字的窗口进行调整,如下表示: &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class="postbody"&gt; 对以__Tag_List__为标题的窗口,在垂直方向变化,进入时40宽,离开后变成20宽 &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class="postbody"&gt; 对以.prj为标题的窗口,在垂直方向变化,进入时24宽,离开后变为1 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt; let g:floatingwindows=
+"'&lt;strong&gt;Tag_List&lt;/strong&gt;',1,40,20;'.prj',1,24,1;'.vimproject',1,24,1;"&lt;/span&gt;&lt;/blockquote&gt;
+&lt;div style="text-align:center;"&gt;   &lt;p&gt;&lt;img src="http://mfrost.typepad.com/photos/uncategorized/hamster_stretch.jpg" alt="Photo"&gt;&lt;/p&gt;   &lt;/div&gt;&lt;/div&gt;&lt;big&gt;&lt;/big&gt;&lt;big&gt;工程创建篇
+&lt;/big&gt;&lt;p&gt;&lt;span class="postbody"&gt;在开始写一个java程序的时候,如果是一个简单程序,一切都无所谓.如果是一个比较大的项目.需要工程支持.在vjde的配合下,可以这样做.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 创建目录 project1 在你的工作目录上. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 打开 vim 并切换到 project1 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt; :cd project1 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;  &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 存储一个工程模板&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;:Vjdesave .vjde &lt;/span&gt;
+&lt;/blockquote&gt;&lt;span class="postbody"&gt;  &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;在.vjde里面,会有一个参数,你可自行打开并修改.如我的一个配置文件中，编译时的输出文件夹 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_out_path='classes' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;源代码目录 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_src_path='src' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;编译时使用的路径,用于代码补全时类查找,也是编译时使用,最好把输出文件夹加在此处. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_lib_path='lib/servlet.jar:lib/images.jar:class' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;如果有jsp类型文件,放在这里 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_web_app='webapps' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;测试源代码路径 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_test_path='test' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;系统中java命令的命令名字,默认在windows下为javaw,linux下java,理论上可以修改成为jikes &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;let g:vjde_java_command='java' &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;  &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;修改完成后,你可以用 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;:Vjdeload .vjde &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;或者这样加载&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;:source .vjde &lt;/span&gt;
+&lt;/blockquote&gt;&lt;div style="text-align:center;"&gt;   &lt;p&gt;&lt;img src="http://mfrost.typepad.com/photos/uncategorized/akagami4jm.jpg" alt="Photo"&gt;&lt;/p&gt;   &lt;/div&gt;&lt;span class="postbody"&gt;
+&lt;big&gt;&lt;/big&gt;&lt;big&gt;编程开始篇
+&lt;/big&gt;&lt;p&gt;&lt;/p&gt;&lt;/span&gt;&lt;span class="postbody"&gt;使用vjde,就可以使用已经存在的模板进行创建你的程序:
+在图形界面下,可以从菜单Vim JDE-&amp;gt;Wizard-&amp;gt;New Class(with main) 开始创建一个你自己的类.它还包括一个main 方法.
+vjde提供了很多的代码模板可以使用,第一个模板被定义为在当前的位置添加模板的全部内容.
+同时,你可以自己定义你自己的模板为你的每一类文件.它们都会被列在 Vim JDE-&amp;gt;Wizzard的子菜里面.
+你只需要把自己定义的模板放到 ~/.vim/vjde/java.vjde 即可被当作java类型文件的模板 ~/.vim/vjde/cpp.vjde 即被当作cpp类型文件的模板
+关于文件类型,打开一个文件,然后用
+:set filetype
+即可知道当前文件的类型.
+&lt;p&gt;高级技巧: 各类模板是可以互相引用的.但是,我不作递归检查.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/span&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;if !exists('g:vjde_iab_refs') &lt;/span&gt;
+&lt;span class="postbody"&gt; let g:vjde_iab_refs={} &lt;/span&gt;
+&lt;span class="postbody"&gt;endif &lt;/span&gt;
+&lt;span class="postbody"&gt;if !has_key(g:vjde_iab_refs,'jsp') &lt;/span&gt;
+&lt;span class="postbody"&gt; let g:vjde_iab_refs['jsp']=[ 'java', 'html' ] &lt;/span&gt;
+&lt;span class="postbody"&gt;endif &lt;/span&gt;
+&lt;span class="postbody"&gt;if !has_key(g:vjde_iab_refs,'cpp') &lt;/span&gt;
+&lt;span class="postbody"&gt; let g:vjde_iab_refs['cpp']=[ 'c' ] &lt;/span&gt;
+&lt;span class="postbody"&gt;endif &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;
+即是说 jsp引用 java 和 html的模板
+cpp引用了c的模板.
+当然,也可定义自己的引用.
+&lt;/span&gt;&lt;div style="text-align:center;"&gt;   &lt;p&gt;&lt;img src="http://mfrost.typepad.com/photos/uncategorized/bunny.jpg" alt="Photo"&gt;&lt;/p&gt;   &lt;/div&gt;&lt;span class="postbody"&gt;&lt;big&gt;&lt;/big&gt;&lt;big&gt;编程日常工作篇
+&lt;/big&gt;&lt;p&gt;&lt;/p&gt;&lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;代码补全 &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;   在默认的情况下,在gui环境下,用户在任何时候按下&amp;lt;c-space&amp;gt;即可进行代码提示. &lt;/span&gt;
+&lt;span class="postbody"&gt; &lt;/span&gt;
+&lt;span class="postbody"&gt;   如果要改变这个定义,请定义 g:vjde_completion_key &lt;/span&gt;
+&lt;span class="postbody"&gt;   let g:vjde_completion_key="&amp;lt;c-l&amp;gt;" &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;添加引用的包.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;通常,我们编辑的时候,比如,使用了 Vector numbers; &lt;/span&gt;&lt;span class="postbody"&gt;&lt;/span&gt;
+&lt;span class="postbody"&gt;我们已经知道了 Vector 在 java.util里,或者一些类,我们不知道在什么地方,这个时候, 把Shu标话在 Vector 上, 在通常模式下,使用 &amp;lt;leader&amp;gt;ai  &lt;/span&gt;
+&lt;span class="postbody"&gt;在我系统上,是 \ai 这个组合.即可自动添加 java.util.Vector 到你的 文件上. 如果有多个,则提示你选择一个你要使用的. &lt;/span&gt;
+&lt;span class="postbody"&gt;或者使用使用菜单 Vim JDE-&amp;gt;Add import &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;如果在编译时发现一个错误,就是无法找到一个类的定义,这时,可以使用: &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;Vim JDE-&amp;gt;fixerror with import  来把当前这个没有添加的类添加到文件中来. &lt;/span&gt;
+&lt;span class="postbody"&gt;这个,必须使用 :make 或者 :Vjdec 编译时才能使用. &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;对编译时提示的没有捕获的异常,也可以根据需要来使用 Vim JDE-&amp;gt;fixerror with  try/catch , 这会把当前的错误行包含在一个适当的try-catch块里. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;使用 Vim JDE-&amp;gt;fixerror with throws 则把这个异常定义为 throws ,添加到函数定义上. &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 重载方法 Vim JDE-&amp;gt;Source-&amp;gt;override methods... &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;列出父类的方法,选择重载 &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 实现接口 Vim JDE-&amp;gt;Source-&amp;gt;Implement interfaces... &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;列出类的接口中要实现的方法,用户选择实现. &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;生成构造函数 Vim JDE-&amp;gt;Soruce-&amp;gt;Generate Con... &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;把已经编译过的类中每一个成员变量做为参数,生成一个构造函数. &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; 添加 Singleton 接口 Vim JDE-&amp;gt;Source-&amp;gt;Add single... &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;在当前位置为类生成一个Singlton接口.包括一个私有构造函数,一个getInstance()方法,一个实例变量. &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;span class="postbody"&gt;把变量变成成员变量,局部变量,静态变量的小工具. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;Vim JDE-&amp;gt;Source-&amp;gt;Extract .... &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt; &lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span class="postbody"&gt;把引用的要排序的包选中,然后,执行此命令&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt; Vim JDE-&amp;gt;Source-&amp;gt;Sort import ... &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;div style="text-align:center;"&gt;   &lt;img src="http://mfrost.typepad.com/photos/uncategorized/tanjaaskani_2.jpg" alt="Photo"&gt;  &lt;/div&gt;
+&lt;span class="postbody"&gt;
+&lt;big&gt;&lt;/big&gt;&lt;big&gt;编程提高篇
+&lt;/big&gt;&lt;/span&gt;
+&lt;span class="postbody"&gt;通常,在我们写代码的时候,我们会写很多重复的代码,如一个数据循环结构,一个Vector的遍历,一个System.out.println() , 甚至很多很多的,每天都要写很多遍的代码.
+&lt;p&gt;怎么办? vjde 提供了一个方法.&lt;/p&gt;
+&lt;p&gt;vjde 提供了一个iab的扩展.目前,是在输入模式下输入 &amp;lt;c-j&amp;gt;即激活这个功能.&lt;/p&gt;
+&lt;p&gt;在使用这个功能前.你可以定义好自己的要使用的一个模板:如果要用java 使用,存储为 ~/.vim/vjde/java.iab, 为c++使用,存储为~/.vim/vjde/cpp.iab , 在 .iab 前是文件类型.你可以为你使用的每一种文件类型创建一种模板&lt;/p&gt;
+&lt;p&gt;如,一个java 的模板按如下定义:
+&lt;/p&gt;&lt;/span&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;template out ; system out &lt;/span&gt;
+&lt;span class="postbody"&gt;body  &lt;/span&gt;
+&lt;span class="postbody"&gt;System.out.println(|); &lt;/span&gt;
+&lt;span class="postbody"&gt;endt &lt;/span&gt;
+&lt;span class="postbody"&gt;template err; Sysetm.err &lt;/span&gt;
+&lt;span class="postbody"&gt;body &lt;/span&gt;
+&lt;span class="postbody"&gt;System.err.println(|); &lt;/span&gt;
+&lt;span class="postbody"&gt;endt &lt;/span&gt;
+&lt;span class="postbody"&gt;template fa ; for loop for array &lt;/span&gt;
+&lt;span class="postbody"&gt;body &lt;/span&gt;
+&lt;span class="postbody"&gt;for ( int i = 0 ; i &amp;lt; |.length ; i++) { &lt;/span&gt;
+&lt;span class="postbody"&gt;} &lt;/span&gt;
+&lt;span class="postbody"&gt;endt &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;
+&lt;p&gt;这样,当你输入
+&lt;/p&gt;&lt;/span&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;          out&amp;lt;c-J&amp;gt; &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;时,自动把本行展开成为:
+&lt;/span&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;          System.out.println(); &lt;/span&gt;
+&lt;span class="postbody"&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;span class="postbody"&gt;并把光标放在第一个 | 的位置.
+&lt;p&gt;更多的定义和使用,请参考
+&lt;/p&gt;&lt;/span&gt;&lt;blockquote&gt;&lt;span class="postbody"&gt;:h vjde-iabbr&lt;/span&gt;&lt;/blockquote&gt;
+&lt;p&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/vi" rel="tag"&gt;vi&lt;/a&gt;, &lt;a href="http://technorati.com/tag/java" rel="tag"&gt;java&lt;/a&gt;, &lt;a href="http://technorati.com/tag/jde" rel="tag"&gt;jde&lt;/a&gt;, &lt;a href="http://technorati.com/tag/vjde" rel="tag"&gt;vjde&lt;/a&gt;, &lt;a href="http://technorati.com/tag/note" rel="tag"&gt;note&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/2006/04/17/59html/</guid><pubDate>Mon, 17 Apr 2006 07:16:00 GMT</pubDate></item></channel></rss>
