@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jonny Hou"  # (translatable)
-BLOG_TITLE = "intellegence evolution"  # (translatable)
+BLOG_TITLE = "Intellegence Evolution"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://monkeyxite.github.io/"
@@ -25,7 +25,7 @@ SITE_URL = "https://monkeyxite.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://monkeyxite.github.io/"
 BLOG_EMAIL = "monkeyxite@gmail.com"
-BLOG_DESCRIPTION = "intellegence evolution"  # (translatable)
+BLOG_DESCRIPTION = "Intellegence Evolution"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -95,7 +95,7 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    #  "zh_cn": "./zh_cn",
+    "zh_cn": "./zh_cn"
 }
 
 # What will translated input files be named like?
@@ -155,7 +155,8 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+#THEME = "bootblog4"
+THEME="bootstrap-jinja"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -221,12 +222,14 @@ THEME_CONFIG = {
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.md", "pages", "page.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
 )
