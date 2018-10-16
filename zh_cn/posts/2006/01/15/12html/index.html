@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh_cn">
+<html prefix="" lang="zh_cn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>VIM TIP4 | Intellegence Evolution</title>
-<link href="../../../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../../../../assets/css/screen.css">
+<link rel="stylesheet" type="text/css" href="../../../../../../assets/css/nav.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400%7CInconsolata">
 <link href="../../../../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../../../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="../../../../../rss.xml">
 <link rel="canonical" href="https://monkeyxite.github.io/zh_cn/posts/2006/01/15/12html/">
@@ -23,119 +30,53 @@
 <meta property="article:tag" content="vim">
 <link rel="alternate" hreflang="en" href="../../../../../../posts/2006/01/15/12html/">
 </head>
-<body>
-<a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
+<body class="nav-closed">
 
-<!-- Menubar -->
-
-<div class="navbar navbar-static-top" id="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-
-            <a class="brand" href="https://monkeyxite.github.io/zh_cn/">
-
-                <span id="blog-title">Intellegence Evolution</span>
-            </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-<li>
-<a href="../../../../../archive.html">文章归档</a>
-                </li>
-<li>
-<a href="../../../../../categories/">标签</a>
-                </li>
-<li>
-<a href="../../../../../rss.xml">RSS 源</a>
-
-                    
-                </li>
-</ul>
-<ul class="nav pull-right">
-<li>            </li>
-<li><a href="https://monkeyxite.github.io/" rel="alternate" hreflang="en">English</a></li>
-
-                    <li>    </li>
-<li>
-    <a href="index.md" id="sourcelink">资源</a>
-    </li>
-
-                
-                </ul>
-</div>
-        </div>
-    </div>
-</div>
-<!-- End of Menubar -->
-<div class="container-fluid" id="content" role="main">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+<li class="nav-opened" role="presentation">
+            <a href="../../../../../archive.html">文章归档</a>
+        </li>
+        <li class="nav-opened" role="presentation">
+            <a href="../../../../../categories/">标签</a>
+        </li>
+        <li class="nav-opened" role="presentation">
+            <a href="../../../../../rss.xml">RSS 源</a>
+        </li>
     
-<article class="post- h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">VIM TIP4</a></h1>
+    
+    </ul>
+</div>
+<span class="nav-cover"></span>
 
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                    Jonny Hou
-            </span></p>
-            <p class="dateline">
-            <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2006-01-15T02:52:00+08:00" itemprop="datePublished" title="2006-01-15 02:52">2006-01-15 02:52</time></a>
-            </p>
-                <p class="commentline">        
-
-                    </p>
-<p class="sourceline"><a href="index.md" class="sourcelink">资源</a></p>
-
-        </div>
-        
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
+<div class="site-wrapper">
+    <header class="main-header post-head no-cover"><nav class="main-nav overlay clearfix"><a class="blog-logo" href="https://monkeyxite.github.io/"><img src="https://getnikola.com/assets/img/logo.svg" alt="Blog Logo"></a>
+            <a class="menu-button" href="#"><span class="burger">☰</span><span class="word">Menu</span></a>
+        </nav></header><main id="content" class="content" role="main"><article class="post post"><header class="post-header"><h1 class="post-title">VIM TIP4</h1>
+        <section class="post-meta"> by
+            Jonny Hou
+            on
+                <a href="../../../../../categories/tips/">#tips</a>,
+                <a href="../../../../../categories/vim/">#vim</a>,
+            <time class="post-date" datetime="2006-01-15T02:52:00+08:00">
+                2006-01-15 02:52
+            </time></section></header><section class="post-content"><div>
 <p></p>
 <div>
 <a href="http://vim.sourceforge.net/tip_view.php?tip_id=4">VimTip 4: Any word completion</a><br>＃自动拼写补齐 ；谁能想想中文的输入补齐？×_×<br><br>Either when programming or writing, I tend to have some identifiers or words that I use all the time.<br>＃在写字或编程的时候，总想弄点我总用的标识符来省事；懒惰是灵感的源泉！<br><br>By sheer accident, I noticed the 'ctrl-n' command, that will attempt to complete the word under the cursor. <br>＃撞大运后发现 ctrl-n 是在自动补齐<br>Hit it once, and it will try to complete it with the first match in the current file. <br>＃一次一个<br>If there is no match, it will (at least in the case of C code) search through all files included from the current one. <br>＃若没有的话，在C 语言的环境下，它将会补齐库的名字<br>Repeated <span style="text-decoration:underline;">invocations＃符咒。哇，魔法耶</span> will cycle through all found matches.<br>＃重复ctrl-n 会循环来补齐</div>
 </div>
-    </div>
-    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../../categories/tips/" rel="tag">tips</a></li>
-            <li><a class="tag p-category" href="../../../../../categories/vim/" rel="tag">vim</a></li>
-        </ul>
-<ul class="pager hidden-print">
-<li class="previous">
-                <a href="../../14/10html/" rel="prev" title="VIM TIP2">上一篇文章</a>
-            </li>
-            <li class="next">
-                <a href="../11html/" rel="next" title="VIM TIP3">下一篇文章</a>
-            </li>
-        </ul></nav></aside><section class="comments hidden-print"><h2>评论</h2>
-                
+    </section><footer class="post-footer"><section class="comments hidden-print"><h2>评论</h2>
+        
+        
 
-        </section></article>
+
+        </section></footer></article></main><footer class="site-footer clearfix"><section class="poweredby">Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </section></footer>
 </div>
-    </div>
-    <!--End of body content-->
-</div>
-<div class="footerbox">
-    Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
-    
-</div>
-            <script src="../../../../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("zh-cn");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
-    baguetteBox.run('div#content', {
-        ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
-    </script>
+
+    <script type="text/javascript" src="../../../../../../assets/js/jquery.js"></script><script type="text/javascript" src="../../../../../../assets/js/jquery.fitvids.js"></script><script type="text/javascript" src="../../../../../../assets/js/index.js"></script>
 </body>
 </html>

@@ -18,6 +18,10 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/cat_coding.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/coding.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -62,6 +66,10 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/jupyter.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/life.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -74,6 +82,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/notebook.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/notes.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/opera.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -83,7 +99,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/python.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/reading.xml</loc>
@@ -127,15 +143,15 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/galleries/rss.xml</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/rss.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/sitemap.xml</loc>
-  <lastmod>2018-10-14T15:36:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book.xml</loc>
@@ -148,6 +164,10 @@
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/career.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/cat_coding.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/coding.xml</loc>
@@ -194,6 +214,10 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/jupyter.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/life.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -206,6 +230,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/notebook.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/notes.xml</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/opera.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -215,7 +247,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/python.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/reading.xml</loc>
@@ -259,10 +291,10 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/galleries/rss.xml</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/rss.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </sitemap>
 </sitemapindex>

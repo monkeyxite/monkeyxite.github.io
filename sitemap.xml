@@ -419,11 +419,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/archive.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/</loc>
-  <lastmod>2018-10-13T16:58:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/book/</loc>
@@ -436,6 +436,10 @@
  <url>
   <loc>https://monkeyxite.github.io/categories/career/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/cat_coding/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/coding/</loc>
@@ -482,6 +486,10 @@
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/categories/jupyter/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/categories/life/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
@@ -492,6 +500,14 @@
  <url>
   <loc>https://monkeyxite.github.io/categories/mac/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/notebook/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/notes/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/opera/</loc>
@@ -551,39 +567,39 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-1.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-2.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-3.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-4.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-5.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-6.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-7.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-8.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-9.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/listings/</loc>
@@ -974,6 +990,10 @@
   <lastmod>2018-10-13T16:58:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/posts/test-nicola-with-markdown/</loc>
   <lastmod>2018-10-13T16:15:00Z</lastmod>
  </url>
@@ -1011,11 +1031,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/archive.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book/</loc>
@@ -1028,6 +1048,10 @@
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/career/</loc>
   <lastmod>2018-10-14T15:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/cat_coding/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/coding/</loc>
@@ -1074,6 +1098,10 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/jupyter/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/life/</loc>
   <lastmod>2018-10-14T15:30:00Z</lastmod>
  </url>
@@ -1084,6 +1112,14 @@
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/mac/</loc>
   <lastmod>2018-10-14T15:30:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/notebook/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/notes/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/opera/</loc>
@@ -1143,39 +1179,39 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-1.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-2.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-3.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-4.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-5.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-6.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-7.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-8.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-9.html</loc>
-  <lastmod>2018-10-14T15:35:00Z</lastmod>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/pages/about/</loc>
@@ -1656,6 +1692,11 @@
   <loc>https://monkeyxite.github.io/zh_cn/posts/2009/12/27/5187html/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/2009/12/27/5187html/" />
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/</loc>
+  <lastmod>2018-10-16T14:25:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/" />
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/posts/test-nicola-with-markdown/</loc>

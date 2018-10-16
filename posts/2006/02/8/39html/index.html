@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>VIM TIP29 | Intellegence Evolution</title>
-<link href="../../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../../../assets/css/screen.css">
+<link rel="stylesheet" type="text/css" href="../../../../../assets/css/nav.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400%7CInconsolata">
 <link href="../../../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="../../../../../zh_cn/rss.xml">
 <link rel="canonical" href="https://monkeyxite.github.io/posts/2006/02/8/39html/">
@@ -23,82 +30,41 @@
 <meta property="article:tag" content="vim">
 <link rel="alternate" hreflang="zh_cn" href="../../../../../zh_cn/posts/2006/02/8/39html/">
 </head>
-<body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+<body class="nav-closed">
 
-<!-- Menubar -->
-
-<div class="navbar navbar-static-top" id="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-
-            <a class="brand" href="https://monkeyxite.github.io/">
-
-                <span id="blog-title">Intellegence Evolution</span>
-            </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-<li>
-<a href="../../../../../archive.html">Archive</a>
-                </li>
-<li>
-<a href="../../../../../categories/">Tags</a>
-                </li>
-<li>
-<a href="../../../../../rss.xml">RSS feed</a>
-
-                    
-                </li>
-</ul>
-<ul class="nav pull-right">
-<li>            </li>
-<li><a href="https://monkeyxite.github.io/zh_cn/" rel="alternate" hreflang="zh_cn">简体中文</a></li>
-
-                    <li>    </li>
-<li>
-    <a href="index.md" id="sourcelink">Source</a>
-    </li>
-
-                
-                </ul>
-</div>
-        </div>
-    </div>
-</div>
-<!-- End of Menubar -->
-<div class="container-fluid" id="content" role="main">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+<li class="nav-opened" role="presentation">
+            <a href="../../../../../archive.html">Archive</a>
+        </li>
+        <li class="nav-opened" role="presentation">
+            <a href="../../../../../categories/">Tags</a>
+        </li>
+        <li class="nav-opened" role="presentation">
+            <a href="../../../../../rss.xml">RSS feed</a>
+        </li>
     
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">VIM TIP29</a></h1>
+    
+    </ul>
+</div>
+<span class="nav-cover"></span>
 
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                    Jonny Hou
-            </span></p>
-            <p class="dateline">
-            <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2006-02-08T13:23:00+08:00" itemprop="datePublished" title="2006-02-08 13:23">2006-02-08 13:23</time></a>
-            </p>
-                <p class="commentline">        
-
-                    </p>
-<p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
-
-        </div>
-        
-    </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
+<div class="site-wrapper">
+    <header class="main-header post-head no-cover"><nav class="main-nav overlay clearfix"><a class="blog-logo" href="https://monkeyxite.github.io/"><img src="https://getnikola.com/assets/img/logo.svg" alt="Blog Logo"></a>
+            <a class="menu-button" href="#"><span class="burger">☰</span><span class="word">Menu</span></a>
+        </nav></header><main id="content" class="content" role="main"><article class="post post"><header class="post-header"><h1 class="post-title">VIM TIP29</h1>
+        <section class="post-meta"> by
+            Jonny Hou
+            on
+                <a href="../../../../../categories/tips/">#tips</a>,
+                <a href="../../../../../categories/vim/">#vim</a>,
+            <time class="post-date" datetime="2006-02-08T13:23:00+08:00">
+                2006-02-08 13:23
+            </time></section></header><section class="post-content"><div>
 <p></p>
 <div>
 <br><a href="http://vim.sourceforge.net/tip_view.php?tip_id=29">VimTip 29: reverse all the line with only 7 keystroke in vim</a><br>使用7个键反转所有行<br><br><b>:g/^/m0</b><br>well, <br>1. <b>: </b>bring you to command-line mode(also known as ex-mode) from normal-mode(also known as command mode).<br>1. <b>: </b>使你从一般模式进入命令行<br>2. <b>g</b>
@@ -107,39 +73,14 @@ search, <code>v' also perform a search but it match the line not match the
 canonical expression.&lt;br&gt;2.&lt;b&gt;g&lt;/b&gt; 表明作用域将是整个文件，一般使用在搜索中。'&lt;b&gt;v&lt;/b&gt;'也在搜索中使用但是不能使用正则表达式。&lt;br&gt;3.&lt;b&gt; /&lt;/b&gt; begins the regular express&lt;br&gt;3.&lt;b&gt;/&lt;/b&gt;开始正则表达式&lt;br&gt;4.&lt;b&gt; ^ &lt;/b&gt;is a special character respect the start of a line.&lt;br&gt;4.&lt;b&gt; ^&lt;/b&gt;使表示行首的元字符&lt;br&gt;5. the second&lt;b&gt; /&lt;/b&gt; ends the regular express and indicate that the remains is action to do.&lt;br&gt;5. 第二个&lt;b&gt;/&lt;/b&gt;在正则表达式的末尾，并表明有后续操作&lt;br&gt;6. &lt;b&gt;m&lt;/b&gt; means move,</code><b>t</b><code>and</code><b>co</b>' for copy, `d' for delete<br>6. <b>m</b> 表示移动，'<b>t</b>'<b> </b>和'<b>co</b>'表示复制，d为删除<br>7. <b>0 </b>is the destination line.<br>7. <b>0</b> 是目标行号<br>you can use <br>你可以使用<br><b>:g/regexp/t$</b><br>to filter all lines and pick the match line together and copy them to the end of the buffer or<br>为了过滤所有的行并全部取出匹配行到buffer中<br><b>:g/regexp/y A</b><br>to put them into a register(not eax, ebx...)<br>将过滤出的匹配项放入寄存器(非汇编中的eax、ebx)<br><br><br>Technorati Tags: <a href="http://technorati.com/tag/VIM" rel="tag">VIM</a>, <a href="http://technorati.com/tag/EDITOR" rel="tag">EDITOR</a>
 </div>
 </div>
-    </div>
-    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../../../categories/tips/" rel="tag">tips</a></li>
-            <li><a class="tag p-category" href="../../../../../categories/vim/" rel="tag">vim</a></li>
-        </ul>
-<ul class="pager hidden-print">
-<li class="previous">
-                <a href="../40html/" rel="prev" title="VIM TIP28">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../41html/" rel="next" title="VIM TIP30">Next post</a>
-            </li>
-        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
-                
+    </section><footer class="post-footer"><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
 
-        </section></article>
+
+        </section></footer></article></main><footer class="site-footer clearfix"><section class="poweredby">Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </section></footer>
 </div>
-    </div>
-    <!--End of body content-->
-</div>
-<div class="footerbox">
-    Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
-    
-</div>
-            <script src="../../../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
-    baguetteBox.run('div#content', {
-        ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
-    </script>
+
+    <script type="text/javascript" src="../../../../../assets/js/jquery.js"></script><script type="text/javascript" src="../../../../../assets/js/jquery.fitvids.js"></script><script type="text/javascript" src="../../../../../assets/js/index.js"></script>
 </body>
 </html>
