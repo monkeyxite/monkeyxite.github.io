@@ -156,7 +156,14 @@ NAVIGATION_ALT_LINKS = {
 
 # Name of the theme to use.
 #THEME = "bootblog4"
-THEME="bootstrap-jinja"
+#THEME="bootstrap-jinja"
+THEME = 'canterville'
+LOGO_URL = 'https://getnikola.com/assets/img/logo.svg'
+GLOBAL_CONTEXT = {
+        'TWITTER_URL': 'https://twitter.com/monkeyxite',
+        'GITHUB_URL': 'https://github.com/monkeyxite',
+        'BANNER_URL': '/assets/img/silk-road.jpg'
+}
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
