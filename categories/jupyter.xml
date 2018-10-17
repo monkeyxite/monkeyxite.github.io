@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about jupyter)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/jupyter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Tue, 16 Oct 2018 14:25:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>jupyter halt in "[1/4] 🔍  Resolving packages..." when installation new lab extension</title><link>https://monkeyxite.github.io/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;p&gt;In the end, it's the node 10 compatibility issue with yarn 1.6.0 in jupyterlab
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about jupyter)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/jupyter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Oct 2018 14:56:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jupyter Extension &amp; Jupyter Lab Config</title><link>https://monkeyxite.github.io/posts/jupyter-extension-jupyter-lab-config/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;h2&gt;Jupyter&lt;/h2&gt;
+&lt;h3&gt;Enabled extension&lt;/h3&gt;
+&lt;p&gt;First three are used to enable the manager&lt;/p&gt;
+&lt;h4&gt;Nbextensions dashboard tab&lt;/h4&gt;
+&lt;h4&gt;Nbextensions edit menu item&lt;/h4&gt;
+&lt;h4&gt;contrib_nbextensions_help_item&lt;/h4&gt;
+&lt;p&gt;Below&lt;/p&gt;
+&lt;h4&gt;nbdime&lt;/h4&gt;
+&lt;h4&gt;Table of Contents(2)&lt;/h4&gt;
+&lt;h4&gt;Zenmode&lt;/h4&gt;
+&lt;h4&gt;Comment/Uncomment Hotkey&lt;/h4&gt;
+&lt;h4&gt;Snippets Menu&lt;/h4&gt;
+&lt;h4&gt;Split Cell Menu&lt;/h4&gt;
+&lt;h4&gt;Equation Auto Numbering&lt;/h4&gt;
+&lt;h4&gt;Variable Inspector&lt;/h4&gt;
+&lt;h4&gt;jupyter-js-widgets/extension&lt;/h4&gt;
+&lt;h4&gt;Python markdown&lt;/h4&gt;
+&lt;h4&gt;Live Markdown Preview&lt;/h4&gt;
+&lt;h4&gt;RICE&lt;/h4&gt;
+&lt;h4&gt;Hide input&lt;/h4&gt;
+&lt;h4&gt;Latex related (TBC)&lt;/h4&gt;
+&lt;h3&gt;Other Configs&lt;/h3&gt;
+&lt;h2&gt;Jupyter Lab&lt;/h2&gt;
+&lt;h3&gt;Enabled extension&lt;/h3&gt;
+&lt;h4&gt;jupyterlab-manager&lt;/h4&gt;
+&lt;h4&gt;latex&lt;/h4&gt;
+&lt;h4&gt;statusbar&lt;/h4&gt;
+&lt;h4&gt;toc&lt;/h4&gt;
+&lt;h4&gt;nbdime-jupyterlab&lt;/h4&gt;
+&lt;h3&gt;Other Configs&lt;/h3&gt;&lt;/div&gt;</description><category>jupyter</category><guid>https://monkeyxite.github.io/posts/jupyter-extension-jupyter-lab-config/</guid><pubDate>Wed, 17 Oct 2018 14:33:21 GMT</pubDate></item><item><title>jupyter halt in "[1/4] 🔍  Resolving packages..." when installation new lab extension</title><link>https://monkeyxite.github.io/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;p&gt;In the end, it's the node 10 compatibility issue with yarn 1.6.0 in jupyterlab
 &lt;a href="https://medium.com/@mahasakpijittum/downgrade-node-9-in-macos-18a3a55d5436"&gt;Downgrade into Node 9 in Mac&lt;/a&gt; would resolve this...&lt;/p&gt;</description><category>jupyter</category><category>notebook</category><category>notes</category><category>python</category><guid>https://monkeyxite.github.io/posts/jupyter-halt-in-14-resolving-packages-when-installation-new-lab-extension/</guid><pubDate>Tue, 16 Oct 2018 14:12:49 GMT</pubDate></item></channel></rss>
