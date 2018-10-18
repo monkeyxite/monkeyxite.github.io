@@ -155,15 +155,17 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-#THEME = "bootblog4"
-#THEME="bootstrap-jinja"
-THEME = 'canterville'
-LOGO_URL = 'https://getnikola.com/assets/img/logo.svg'
-GLOBAL_CONTEXT = {
-        'TWITTER_URL': 'https://twitter.com/monkeyxite',
-        'GITHUB_URL': 'https://github.com/monkeyxite',
-        'BANNER_URL': '/assets/img/silk-road.jpg'
-}
+# THEME = "bootblog4"
+THEME="bootstrap-jinja"
+
+# tags for canterville
+# THEME = 'canterville'
+#  LOGO_URL = 'https://getnikola.com/assets/img/logo.svg'
+#  GLOBAL_CONTEXT = {
+        #  'TWITTER_URL': 'https://twitter.com/monkeyxite',
+        #  'GITHUB_URL': 'https://github.com/monkeyxite',
+        #  'BANNER_URL': '/assets/img/silk-road.jpg'
+#  }
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -1348,11 +1350,27 @@ WARN_ABOUT_TAG_METADATA = False
 # those.
 # TEMPLATE_FILTERS = {}
 
+ANALYTICS = """
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-238788-7"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-238788-7');
+            </script>
+            """
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+# Google Analytics or whatever else you use. Added to the bottom of <body>
+# in the default template (base.tmpl).
+# (translatable)
+BODY_END = ANALYTICS
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
