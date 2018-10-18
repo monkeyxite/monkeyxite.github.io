@@ -15,7 +15,9 @@
 <meta property="og:site_name" content="Intellegence Evolution">
 <meta property="og:title" content="nikola auto deployment in github pages with custom domain name (CNAME)">
 <meta property="og:url" content="https://monkeyxite.github.io/posts/nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/">
-<meta property="og:description" content="Nikola has a neat feature that could deploy automatically in github pages, and it create master branches to fit the gh_pages deployment purpose and scr branch to records the raw data of config, theme,">
+<meta property="og:description" content="While github pages is applicable to using the custom domain name accordingly, which acutally creating a CNAME file with xxx.youdomain.com as contents.
+1st trial
+It seems currently Nikola did not expec">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2018-10-18T22:10:45+08:00">
 <meta property="article:tag" content="git">
@@ -99,9 +101,13 @@
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Nikola has a neat feature that could deploy automatically in github pages, and it create master branches to fit the gh_pages deployment purpose and scr branch to records the raw data of config, theme, posts and so on.</p>
 <p>While github pages is applicable to using the custom domain name accordingly, which acutally creating a CNAME file with xxx.youdomain.com as contents.</p>
+<h3>1st trial</h3>
 <p>It seems currently Nikola did not expected that CNAME as master's content so you have to checkout master manually, and add that CNAME file with the domain name you intend to use, and push into github by youself. * Reminding * the CNAME file created in src branch won't work since nikola github_deploy would ignore and won't copy CNAME into master branch. So if you don't do it manally the auto deploy would be over written again &amp; again even through you settle down the domain name in setting page of github repo or added in "src" branch. </p>
+<h3>2nd trial</h3>
+<p>It seems 1st trial works, but after new post build &amp; aut deploymetn by nikola, CNAME disappeared again :(
+Then, fould <a href="http://louistiao.me/posts/configuring-the-namecheap-dns-for-your-nikola-site-on-github-pages/">this trick</a>, just copy CNAME into files folder in src branch.</p>
+<h3>One more thing</h3>
 <p>BTW, the even .gitignore need to double check also in master branch, all these branches would share this simple config file...</p>
 </div>
     </div>
