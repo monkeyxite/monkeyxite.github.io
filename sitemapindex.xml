@@ -46,6 +46,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/git.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/github.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/google.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -80,6 +88,10 @@
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/mac.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/nikola.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/notebook.xml</loc>
@@ -142,16 +154,12 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://monkeyxite.github.io/galleries/rss.xml</loc>
-  <lastmod>2018-10-18T13:36:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://monkeyxite.github.io/rss.xml</loc>
-  <lastmod>2018-10-17T14:56:00Z</lastmod>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/sitemap.xml</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book.xml</loc>
@@ -194,6 +202,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/git.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/github.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/google.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -228,6 +244,10 @@
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/mac.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/nikola.xml</loc>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/notebook.xml</loc>
@@ -290,11 +310,7 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://monkeyxite.github.io/zh_cn/galleries/rss.xml</loc>
-  <lastmod>2018-10-18T13:36:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/rss.xml</loc>
-  <lastmod>2018-10-17T14:56:00Z</lastmod>
+  <lastmod>2018-10-18T14:21:00Z</lastmod>
  </sitemap>
 </sitemapindex>

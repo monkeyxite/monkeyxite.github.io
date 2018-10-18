@@ -70,7 +70,28 @@
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/jupyter-extension-jupyter-lab-config/" class="u-url">Jupyter Extension &amp; Jupyter Lab Config</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/" class="u-url">nikola auto deployment in github pages with custom domain name (CNAME)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jonny Hou
+            </span></p>
+            <p class="dateline">
+            <a href="posts/nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-10-18T22:10:45+08:00" itemprop="datePublished" title="2018-10-18 22:10">2018-10-18 22:10</time></a>
+            </p>
+                <p class="commentline">        
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Nikola has a neat feature that could deploy automatically in github pages, and it create master branches to fit the gh_pages deployment purpose and scr branch to records the raw data of config, theme, posts and so on.</p>
+<p>While github pages is applicable to using the custom domain name accordingly, which acutally creating a CNAME file with xxx.youdomain.com as contents.</p>
+<p>It seems currently Nikola did not expected that CNAME as master's content so you have to checkout master manually, and add that CNAME file with the domain name you intend to use, and push into github by youself. * Reminding * the CNAME file created in src branch won't work since nikola github_deploy would ignore and won't copy CNAME into master branch. So if you don't do it manally the auto deploy would be over written again &amp; again even through you settle down the domain name in setting page of github repo or added in "src" branch. </p>
+<p>BTW, the even .gitignore need to double check also in master branch, all these branches would share this simple config file...</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/jupyter-extension-jupyter-lab-config/" class="u-url">Jupyter Extension &amp; Jupyter Lab Config</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Jonny Hou
@@ -1077,39 +1098,6 @@ print  2**38
 <li>There are  so many changes in this year that i can not even list all of them in this post. Change different departments, career, time management, development platform......</li>
 <li>Wish in the next year, there will only be surprises, no unexpected changes, anymore.</li>
 </ul>Farewell, 2008</div>
-    </div>
-    </article><article class="h-entry post-" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2008/11/16/94html/" class="u-url">Mac OS X Privileges reconvery tips</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jonny Hou
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2008/11/16/94html/" rel="bookmark">
-            <time class="published dt-published" datetime="2008-11-16T03:26:00+08:00" itemprop="datePublished" title="2008-11-16 03:26">2008-11-16 03:26</time></a>
-            </p>
-                <p class="commentline">        
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div>
-<p></p>
-<p>This tip saved my ass when I broken the privileges of  Mac OS X by accident, while changing the file sharing settings:
-</p>
-<ol>
-<li>Turn on your Macbook.</li>
-<li>Press and hold the [Apple] and "S" keys when you hear a chime sound.</li>
-<li>Release the keys when you see computer code on a black and white screen.</li>
-<li>Type at the prompt: <span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;">/sbin/mount -uw /</span>
-</li>
-<li>Press the [Enter] key.</li>
-<li>Type next: <span style="color:rgb(0,51,144);font-weight:bold;letter-spacing:1px;font-family:Courier New;font-size:1em;">rm /var/db/.applesetupdone(rebuild user setups) or chmod (rebuild the user privilege)
-</span>
-</li>
-<li>Press the [Enter] key.</li>
-<li>Restart. Your Macbook will restart and you can create a new user and password by going through the installation wizard or reborn .</li>
-</ol>
-</div>
     </div>
     </article>
 </div>
