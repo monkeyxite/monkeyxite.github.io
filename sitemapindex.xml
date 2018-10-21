@@ -22,12 +22,20 @@
   <lastmod>2018-10-17T14:56:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/cat_note.xml</loc>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/coding.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/cydia.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/debug.xml</loc>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/dom.xml</loc>
@@ -139,7 +147,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/vim.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/web.xml</loc>
@@ -155,11 +163,11 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/rss.xml</loc>
-  <lastmod>2018-10-18T14:31:00Z</lastmod>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/sitemap.xml</loc>
-  <lastmod>2018-10-18T14:31:00Z</lastmod>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book.xml</loc>
@@ -178,12 +186,20 @@
   <lastmod>2018-10-17T14:56:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/cat_note.xml</loc>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/coding.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/cydia.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/debug.xml</loc>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/dom.xml</loc>
@@ -295,7 +311,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/vim.xml</loc>
-  <lastmod>2018-10-14T15:31:00Z</lastmod>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/web.xml</loc>
@@ -311,6 +327,6 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/rss.xml</loc>
-  <lastmod>2018-10-18T14:31:00Z</lastmod>
+  <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
 </sitemapindex>
