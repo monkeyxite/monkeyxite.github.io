@@ -3,25 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>way to debug vim | Intellegence Evolution</title>
+<title>python data visulaization by jupyter and superset | Intellegence Evolution</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="../../rss.xml">
-<link rel="canonical" href="https://monkeyxite.github.io/zh_cn/posts/way-to-debug-vim/">
+<link rel="canonical" href="https://monkeyxite.github.io/zh_cn/posts/python-data-visulaization-by-jupyter-and-superset/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Jonny Hou">
-<link rel="prev" href="../nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/" title="nikola auto deployment in github pages with custom domain name (CNAME)" type="text/html">
-<link rel="next" href="../python-data-visulaization-by-jupyter-and-superset/" title="python data visulaization by jupyter and superset" type="text/html">
+<link rel="prev" href="../way-to-debug-vim/" title="way to debug vim" type="text/html">
 <meta property="og:site_name" content="Intellegence Evolution">
-<meta property="og:title" content="way to debug vim">
-<meta property="og:url" content="https://monkeyxite.github.io/zh_cn/posts/way-to-debug-vim/">
-<meta property="og:description" content="Find the right issue submit info, might be some info for getting verbose of runtime debug. Such as SpaceVim Issue Tracker or vim-jedi issue tracker, providing detailed guide for stepwise debugging inf">
+<meta property="og:title" content="python data visulaization by jupyter and superset">
+<meta property="og:url" content="https://monkeyxite.github.io/zh_cn/posts/python-data-visulaization-by-jupyter-and-superset/">
+<meta property="og:description" content="There are plenties of ways to make your data vivid via data visualization.
+And python have tools like superset to make the visual report much more easier. And jupyter is a handy tool together with mat">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-10-21T21:50:28+08:00">
-<meta property="article:tag" content="debug">
-<meta property="article:tag" content="vim">
-<link rel="alternate" hreflang="en" href="../../../posts/way-to-debug-vim/">
+<meta property="article:published_time" content="2018-10-23T21:29:18+08:00">
+<meta property="article:tag" content="jupyter">
+<meta property="article:tag" content="matplotlib">
+<meta property="article:tag" content="seaborn">
+<meta property="article:tag" content="superset">
+<meta property="article:tag" content="visulaization">
+<link rel="alternate" hreflang="en" href="../../../posts/python-data-visulaization-by-jupyter-and-superset/">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
@@ -80,7 +83,7 @@
     <div class="span2"></div>
     <div class="span8">
     
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">way to debug vim</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">python data visulaization by jupyter and superset</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -88,7 +91,7 @@
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2018-10-21T21:50:28+08:00" itemprop="datePublished" title="2018-10-21 21:50">2018-10-21 21:50</time></a>
+            <time class="published dt-published" datetime="2018-10-23T21:29:18+08:00" itemprop="datePublished" title="2018-10-23 21:29">2018-10-23 21:29</time></a>
             </p>
                 <p class="commentline">        
 
@@ -99,32 +102,40 @@
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>Find the right issue submit info, might be some info for getting verbose of runtime debug. Such as <a href="https://github.com/SpaceVim/SpaceVim/issues">SpaceVim Issue Tracker</a> or <a href="https://github.com/davidhalter/jedi-vim/issues">vim-jedi issue tracker</a>, providing detailed guide for stepwise debugging info</p>
-<h3>Dis functional shortcut key</h3>
-<p>Typical scenario would be triggered some error or unexpected behavior after press some key. Then it's essential to get the details by identify what happened firstly after certain key pressed (or what vim thought should be happened)</p>
-<pre class="code literal-block"><span></span><span class="p">:</span><span class="k">verb</span> map K?
-</pre>
-
-
-<h3>Python Plugin</h3>
-<p>For python plugin, try to find python env issue inside of vim</p>
-<pre class="code literal-block"><span></span><span class="p">:</span><span class="n">python</span> <span class="kn">import</span> <span class="nn">sys</span><span class="p">;</span> <span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">jedi</span>
-</pre>
-
-
-<h3>To Be Continue</h3>
+<p>There are plenties of ways to make your data vivid via data visualization.</p>
+<p>And python have tools like superset to make the visual report much more easier. And jupyter is a handy tool together with matplotlib and seaborn to try the data lab.</p>
+<h2>jupyter</h2>
+<p>For typical jupyter, the intension might not be used as a tool to visualization but a warehouse to tuning, manipulate and sharp the date before reporting. It need several component to make the report more suitable for reporting, such as :</p>
+<ul>
+<li>
+<a href="https://github.com/damianavila/RISE">RICE</a>.</li>
+<li><a href="https://matplotlib.org/">matplotlib</a></li>
+<li><a href="https://seaborn.pydata.org/">Seaborn</a></li>
+</ul>
+<p>And further digging for seaborn &amp; matplotlib would be continously updated later on.</p>
+<h2>Superset</h2>
+<p>The end to end interface for BI as what tableau provided. While, there is pros and cons compared with tableau but for sure the opensource and community eco system is one of the attraictions for non-enterprise users and amateur users. </p>
+<p>TBC for usage/configuration of Superset.</p>
+<h2>Reference</h2>
+<ol>
+<li>https://superset.incubator.apache.org/</li>
+<li>https://www.pervasivecomputing.net/data-analytics/superset-vs-tableau</li>
+<li>https://medium.com/airbnb-engineering/caravel-airbnb-s-data-exploration-platform-15a72aa610e5</li>
+<li>https://medium.com/airbnb-engineering/superset-scaling-data-access-and-visual-insights-at-airbnb-3ce3e9b88a7f</li>
+<li>https://www.xpand-it.com/2018/09/17/apache-superset-open-source-bi/</li>
+</ol>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/debug/" rel="tag">debug</a></li>
-            <li><a class="tag p-category" href="../../categories/vim/" rel="tag">vim</a></li>
+<li><a class="tag p-category" href="../../categories/jupyter/" rel="tag">jupyter</a></li>
+            <li><a class="tag p-category" href="../../categories/matplotlib/" rel="tag">matplotlib</a></li>
+            <li><a class="tag p-category" href="../../categories/seaborn/" rel="tag">seaborn</a></li>
+            <li><a class="tag p-category" href="../../categories/superset/" rel="tag">superset</a></li>
+            <li><a class="tag p-category" href="../../categories/visulaization/" rel="tag">visulaization</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/" rel="prev" title="nikola auto deployment in github pages with custom domain name (CNAME)">上一篇文章</a>
-            </li>
-            <li class="next">
-                <a href="../python-data-visulaization-by-jupyter-and-superset/" rel="next" title="python data visulaization by jupyter and superset">下一篇文章</a>
+                <a href="../way-to-debug-vim/" rel="prev" title="way to debug vim">上一篇文章</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>评论</h2>
                 

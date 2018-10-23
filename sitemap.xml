@@ -419,11 +419,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/archive.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/book/</loc>
@@ -518,6 +518,10 @@
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/categories/matplotlib/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/categories/nikola/</loc>
   <lastmod>2018-10-18T14:21:00Z</lastmod>
  </url>
@@ -554,6 +558,14 @@
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/categories/seaborn/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/superset/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/categories/tips/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
@@ -568,6 +580,10 @@
  <url>
   <loc>https://monkeyxite.github.io/categories/vim/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/visulaization/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/web/</loc>
@@ -587,7 +603,7 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-10.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-2.html</loc>
@@ -1018,6 +1034,10 @@
   <lastmod>2018-10-18T14:21:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/posts/python-data-visulaization-by-jupyter-and-superset/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/posts/test-nicola-with-markdown/</loc>
   <lastmod>2018-10-13T16:15:00Z</lastmod>
  </url>
@@ -1059,11 +1079,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/archive.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book/</loc>
@@ -1158,6 +1178,10 @@
   <lastmod>2018-10-14T15:30:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/matplotlib/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/nikola/</loc>
   <lastmod>2018-10-18T14:21:00Z</lastmod>
  </url>
@@ -1194,6 +1218,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/seaborn/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/superset/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/tips/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </url>
@@ -1208,6 +1240,10 @@
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/vim/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/visulaization/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/web/</loc>
@@ -1227,7 +1263,7 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-10.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-2.html</loc>
@@ -1755,6 +1791,11 @@
   <loc>https://monkeyxite.github.io/zh_cn/posts/nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/</loc>
   <lastmod>2018-10-18T14:21:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/nikola-auto-deployment-in-github-pages-with-custom-domain-name-cname/" />
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/posts/python-data-visulaization-by-jupyter-and-superset/</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/python-data-visulaization-by-jupyter-and-superset/" />
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/posts/test-nicola-with-markdown/</loc>

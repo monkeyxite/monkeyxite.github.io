@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (关于文章 superset)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/zh_cn/categories/superset.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Tue, 23 Oct 2018 14:28:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>python data visulaization by jupyter and superset</title><link>https://monkeyxite.github.io/zh_cn/posts/python-data-visulaization-by-jupyter-and-superset/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;There are plenties of ways to make your data vivid via data visualization.&lt;/p&gt;
+&lt;p&gt;And python have tools like superset to make the visual report much more easier. And jupyter is a handy tool together with matplotlib and seaborn to try the data lab.&lt;/p&gt;
+&lt;h2&gt;jupyter&lt;/h2&gt;
+&lt;p&gt;For typical jupyter, the intension might not be used as a tool to visualization but a warehouse to tuning, manipulate and sharp the date before reporting. It need several component to make the report more suitable for reporting, such as :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/damianavila/RISE"&gt;RICE&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://matplotlib.org/"&gt;matplotlib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://seaborn.pydata.org/"&gt;Seaborn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And further digging for seaborn &amp;amp; matplotlib would be continously updated later on.&lt;/p&gt;
+&lt;h2&gt;Superset&lt;/h2&gt;
+&lt;p&gt;The end to end interface for BI as what tableau provided. While, there is pros and cons compared with tableau but for sure the opensource and community eco system is one of the attraictions for non-enterprise users and amateur users. &lt;/p&gt;
+&lt;p&gt;TBC for usage/configuration of Superset.&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;https://superset.incubator.apache.org/&lt;/li&gt;
+&lt;li&gt;https://www.pervasivecomputing.net/data-analytics/superset-vs-tableau&lt;/li&gt;
+&lt;li&gt;https://medium.com/airbnb-engineering/caravel-airbnb-s-data-exploration-platform-15a72aa610e5&lt;/li&gt;
+&lt;li&gt;https://medium.com/airbnb-engineering/superset-scaling-data-access-and-visual-insights-at-airbnb-3ce3e9b88a7f&lt;/li&gt;
+&lt;li&gt;https://www.xpand-it.com/2018/09/17/apache-superset-open-source-bi/&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><guid>https://monkeyxite.github.io/zh_cn/posts/python-data-visulaization-by-jupyter-and-superset/</guid><pubDate>Tue, 23 Oct 2018 13:29:18 GMT</pubDate></item></channel></rss>

@@ -83,7 +83,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/jupyter.xml</loc>
-  <lastmod>2018-10-17T14:56:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/life.xml</loc>
@@ -96,6 +96,10 @@
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/mac.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/matplotlib.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/categories/nikola.xml</loc>
@@ -134,6 +138,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/seaborn.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/categories/superset.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/tips.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -150,6 +162,10 @@
   <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/categories/visulaization.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/categories/web.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -163,11 +179,11 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/rss.xml</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/sitemap.xml</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book.xml</loc>
@@ -247,7 +263,7 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/jupyter.xml</loc>
-  <lastmod>2018-10-17T14:56:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/life.xml</loc>
@@ -260,6 +276,10 @@
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/mac.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/matplotlib.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/nikola.xml</loc>
@@ -298,6 +318,14 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/seaborn.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/superset.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/tips.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -314,6 +342,10 @@
   <lastmod>2018-10-21T15:15:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/visulaization.xml</loc>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/categories/web.xml</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </sitemap>
@@ -327,6 +359,6 @@
  </sitemap>
  <sitemap>
   <loc>https://monkeyxite.github.io/zh_cn/rss.xml</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-23T14:28:00Z</lastmod>
  </sitemap>
 </sitemapindex>
