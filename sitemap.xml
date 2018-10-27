@@ -419,11 +419,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/archive.html</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/book/</loc>
@@ -446,6 +446,10 @@
   <lastmod>2018-10-21T15:15:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/categories/cat_tool/</loc>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/categories/coding/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
@@ -460,6 +464,10 @@
  <url>
   <loc>https://monkeyxite.github.io/categories/dom/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/categories/email/</loc>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/categories/firefox/</loc>
@@ -570,6 +578,10 @@
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/categories/tool/</loc>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/categories/tools/</loc>
   <lastmod>2018-10-13T16:57:00Z</lastmod>
  </url>
@@ -599,43 +611,43 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-1.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-10.html</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-2.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-3.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-4.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-5.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-6.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-7.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-8.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/index-9.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/pages/about/</loc>
@@ -1046,6 +1058,10 @@
   <lastmod>2018-10-13T16:15:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/posts/tool-chain-for-email-handling/</loc>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/posts/way-to-debug-vim/</loc>
   <lastmod>2018-10-21T15:15:00Z</lastmod>
  </url>
@@ -1079,11 +1095,11 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/archive.html</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/book/</loc>
@@ -1106,6 +1122,10 @@
   <lastmod>2018-10-21T15:15:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/cat_tool/</loc>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/coding/</loc>
   <lastmod>2018-10-14T15:30:00Z</lastmod>
  </url>
@@ -1120,6 +1140,10 @@
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/dom/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/email/</loc>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/firefox/</loc>
@@ -1230,6 +1254,10 @@
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </url>
  <url>
+  <loc>https://monkeyxite.github.io/zh_cn/categories/tool/</loc>
+  <lastmod>2018-10-27T14:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://monkeyxite.github.io/zh_cn/categories/tools/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
  </url>
@@ -1259,43 +1287,43 @@
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-1.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-10.html</loc>
-  <lastmod>2018-10-23T14:28:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-2.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-3.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-4.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-5.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-6.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-7.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-8.html</loc>
-  <lastmod>2018-10-18T13:37:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/index-9.html</loc>
-  <lastmod>2018-10-21T15:15:00Z</lastmod>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/pages/about/</loc>
@@ -1806,6 +1834,11 @@
   <loc>https://monkeyxite.github.io/zh_cn/posts/test-nicola/</loc>
   <lastmod>2018-10-14T15:31:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/test-nicola/" />
+ </url>
+ <url>
+  <loc>https://monkeyxite.github.io/zh_cn/posts/tool-chain-for-email-handling/</loc>
+  <lastmod>2018-10-27T14:27:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://monkeyxite.github.io/posts/tool-chain-for-email-handling/" />
  </url>
  <url>
   <loc>https://monkeyxite.github.io/zh_cn/posts/way-to-debug-vim/</loc>

@@ -12,7 +12,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="zh_cn/rss.xml">
 <link rel="canonical" href="https://monkeyxite.github.io/">
 <link rel="next" href="index-10.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/python-data-visulaization-by-jupyter-and-superset/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/tool-chain-for-email-handling/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -70,7 +70,82 @@
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/python-data-visulaization-by-jupyter-and-superset/" class="u-url">python data visulaization by jupyter and superset</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/tool-chain-for-email-handling/" class="u-url">tool chain for email handling</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Jonny Hou
+            </span></p>
+            <p class="dateline">
+            <a href="posts/tool-chain-for-email-handling/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-10-27T21:15:57+08:00" itemprop="datePublished" title="2018-10-27 21:15">2018-10-27 21:15</time></a>
+            </p>
+                <p class="commentline">        
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>Background</h2>
+<p>Using email everyday, so the efficiency to handle email defines the efficiency of your day.</p>
+<h2>Email handling principle</h2>
+<ol>
+<li>Limit the access or notification of email, but pull the update with specific timeslot per day.</li>
+<li>Get rid of redundancies like HTML email, but pure text (or markdown into html automatically if needed)</li>
+<li>Filtering, Labeling and "Zero Inbox" is key for email handling</li>
+</ol>
+<h2>Tool Chain for email</h2>
+<p>After searching for years, these tools are choosen for efficient email handling:</p>
+<p>Email Client: Neomutt together with mbsync, msmtp; 
+Filtering: marina or mu;
+Editor: vim with muttdown;
+Calendar: ? TBD with one terminal tool, 
+Contact: abook with khard? ;
+Misc: urlscan, w3m, gpgme, etc; </p>
+<h2>Working flow and procedure</h2>
+<h3>Config Email</h3>
+<p>TBD, suggest follow dotfile procedure.</p>
+<h3>Recieving Email</h3>
+<p>Taking your specific time slot for email, than just open terminal and:</p>
+<pre class="code literal-block"><span></span>mbsync -a 
+</pre>
+
+
+<h3>Sorting/Labeling Email</h3>
+<h3>Write Email</h3>
+<p>Vim would be the major working force for this task with fancy tools included such as auto complete and spell checking.</p>
+<h4>Raw Text</h4>
+<p>Normal working follow editing txt file in vim. 
+TBD for special plugin to handle email more efficiently.</p>
+<h4>Rich Format</h4>
+<p>Add muttdown for sending out rich format by using muttdown.</p>
+<h4>Spellcheck: vim</h4>
+<p>To move to a misspelled word, use <strong>]s</strong> and <strong>[s</strong>. 
+<strong>z=</strong>, and Vim will suggest a list of alternatives that it thinks may be correct.
+<strong>zg</strong> command and Vim will add it to its dictionary.
+You can also mark words as incorrect using <strong>zw</strong>.</p>
+<pre class="code literal-block"><span></span>;enable <span class="k">spell</span>
+<span class="k">set</span> <span class="nb">nospell</span>
+;disable <span class="k">spell</span>
+<span class="k">set</span> <span class="k">spell</span>
+;change default <span class="k">lang</span>
+<span class="k">set</span> <span class="k">spell</span> <span class="nb">spelllang</span><span class="p">=</span>en_us
+</pre>
+
+
+<h3>Calendar handling</h3>
+<h3>Contact</h3>
+<p>Abook auto complete integration
+How to sync with cloud.</p>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://www.linux.com/learn/using-spell-checking-vim">hwo to spell check within vim</a></li>
+<li><a href="https://github.com/Roguelazer/muttdown">muttdown</a></li>
+<li><a href="https://webgefrickel.de/blog/a-modern-mutt-setup">a modern setup of mutt</a></li>
+<li><a href="http://blog.iodoru.org/post/2017-07-18-mu/">why mu</a></li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/python-data-visulaization-by-jupyter-and-superset/" class="u-url">python data visulaization by jupyter and superset</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Jonny Hou
@@ -1051,50 +1126,6 @@ You could always refer <a href="http://3.flasktutorial.sinaapp.com/">here</a> to
 <div>Keeping on enjoying life in <span id="SPELLING_ERROR_1" class="blsp-spelling-error">BJ</span>.</div>
 <div></div>
 <div></div>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/2009/02/16/97html/" class="u-url">PythonChallenge 1</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Jonny Hou
-            </span></p>
-            <p class="dateline">
-            <a href="posts/2009/02/16/97html/" rel="bookmark">
-            <time class="published dt-published" datetime="2009-02-16T06:02:00+08:00" itemprop="datePublished" title="2009-02-16 06:02">2009-02-16 06:02</time></a>
-            </p>
-                <p class="commentline">        
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>print trans(s)
-</p>
-<div><a href="http://www.pythonchallenge.com/pcc/def/ocr.html">Other Answer</a></div>
-<div>
-</div>
-<div>
-</div>
-<div><span class="Apple-style-span" style="font-weight:bold;"><span class="Apple-style-span" style="font-size:large;">Conclusion</span></span></div>
-<div><span class="Apple-style-span" style="font-weight:bold;">
-</span></div>
-<div>I think mine is straight, redundance, complex, and does not use the power of standard lib. </div>
-<div>
-</div>
-<div>Lessons learned:  </div>
-<div>
-<ol>
-<li>DRY
-</li>
-<li>string module</li>
-</ol>
-<div>
-</div>
-<div><span class="Apple-style-span" style="font-weight:bold;"><span class="Apple-style-span" style="font-size:large;">Review</span></span></div>
-<div><span class="Apple-style-span" style="font-weight:bold;">
-</span></div>
-<div><span class="Apple-style-span" style="font-size:medium;">N/A</span></div>
-</div>
 </div>
     </div>
     </article>

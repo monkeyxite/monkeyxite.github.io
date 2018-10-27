@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about vim)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/vim.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Oct 2018 15:15:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>way to debug vim</title><link>https://monkeyxite.github.io/posts/way-to-debug-vim/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;Find the right issue submit info, might be some info for getting verbose of runtime debug. Such as &lt;a href="https://github.com/SpaceVim/SpaceVim/issues"&gt;SpaceVim Issue Tracker&lt;/a&gt; or &lt;a href="https://github.com/davidhalter/jedi-vim/issues"&gt;vim-jedi issue tracker&lt;/a&gt;, providing detailed guide for stepwise debugging info&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about vim)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/vim.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 27 Oct 2018 14:27:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>tool chain for email handling</title><link>https://monkeyxite.github.io/posts/tool-chain-for-email-handling/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Using email everyday, so the efficiency to handle email defines the efficiency of your day.&lt;/p&gt;
+&lt;h2&gt;Email handling principle&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Limit the access or notification of email, but pull the update with specific timeslot per day.&lt;/li&gt;
+&lt;li&gt;Get rid of redundancies like HTML email, but pure text (or markdown into html automatically if needed)&lt;/li&gt;
+&lt;li&gt;Filtering, Labeling and "Zero Inbox" is key for email handling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tool Chain for email&lt;/h2&gt;
+&lt;p&gt;After searching for years, these tools are choosen for efficient email handling:&lt;/p&gt;
+&lt;p&gt;Email Client: Neomutt together with mbsync, msmtp; 
+Filtering: marina or mu;
+Editor: vim with muttdown;
+Calendar: ? TBD with one terminal tool, 
+Contact: abook with khard? ;
+Misc: urlscan, w3m, gpgme, etc; &lt;/p&gt;
+&lt;h2&gt;Working flow and procedure&lt;/h2&gt;
+&lt;h3&gt;Config Email&lt;/h3&gt;
+&lt;p&gt;TBD, suggest follow dotfile procedure.&lt;/p&gt;
+&lt;h3&gt;Recieving Email&lt;/h3&gt;
+&lt;p&gt;Taking your specific time slot for email, than just open terminal and:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;mbsync -a 
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Sorting/Labeling Email&lt;/h3&gt;
+&lt;h3&gt;Write Email&lt;/h3&gt;
+&lt;p&gt;Vim would be the major working force for this task with fancy tools included such as auto complete and spell checking.&lt;/p&gt;
+&lt;h4&gt;Raw Text&lt;/h4&gt;
+&lt;p&gt;Normal working follow editing txt file in vim. 
+TBD for special plugin to handle email more efficiently.&lt;/p&gt;
+&lt;h4&gt;Rich Format&lt;/h4&gt;
+&lt;p&gt;Add muttdown for sending out rich format by using muttdown.&lt;/p&gt;
+&lt;h4&gt;Spellcheck: vim&lt;/h4&gt;
+&lt;p&gt;To move to a misspelled word, use &lt;strong&gt;]s&lt;/strong&gt; and &lt;strong&gt;[s&lt;/strong&gt;. 
+&lt;strong&gt;z=&lt;/strong&gt;, and Vim will suggest a list of alternatives that it thinks may be correct.
+&lt;strong&gt;zg&lt;/strong&gt; command and Vim will add it to its dictionary.
+You can also mark words as incorrect using &lt;strong&gt;zw&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;;enable &lt;span class="k"&gt;spell&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nospell&lt;/span&gt;
+;disable &lt;span class="k"&gt;spell&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="k"&gt;spell&lt;/span&gt;
+;change default &lt;span class="k"&gt;lang&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="k"&gt;spell&lt;/span&gt; &lt;span class="nb"&gt;spelllang&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;en_us
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Calendar handling&lt;/h3&gt;
+&lt;h3&gt;Contact&lt;/h3&gt;
+&lt;p&gt;Abook auto complete integration
+How to sync with cloud.&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.linux.com/learn/using-spell-checking-vim"&gt;hwo to spell check within vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Roguelazer/muttdown"&gt;muttdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://webgefrickel.de/blog/a-modern-mutt-setup"&gt;a modern setup of mutt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.iodoru.org/post/2017-07-18-mu/"&gt;why mu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>email</category><category>tool</category><category>vim</category><guid>https://monkeyxite.github.io/posts/tool-chain-for-email-handling/</guid><pubDate>Sat, 27 Oct 2018 13:15:57 GMT</pubDate></item><item><title>way to debug vim</title><link>https://monkeyxite.github.io/posts/way-to-debug-vim/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;Find the right issue submit info, might be some info for getting verbose of runtime debug. Such as &lt;a href="https://github.com/SpaceVim/SpaceVim/issues"&gt;SpaceVim Issue Tracker&lt;/a&gt; or &lt;a href="https://github.com/davidhalter/jedi-vim/issues"&gt;vim-jedi issue tracker&lt;/a&gt;, providing detailed guide for stepwise debugging info&lt;/p&gt;
 &lt;h3&gt;Dis functional shortcut key&lt;/h3&gt;
 &lt;p&gt;Typical scenario would be triggered some error or unexpected behavior after press some key. Then it's essential to get the details by identify what happened firstly after certain key pressed (or what vim thought should be happened)&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="k"&gt;verb&lt;/span&gt; map K?
@@ -235,7 +292,4 @@ For a full description and some more interesting examples of the substitute comm
 &lt;a href="http://technorati.com/tag/EDITOR" rel="tag"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>tips</category><category>vim</category><guid>https://monkeyxite.github.io/posts/2006/02/8/41html/</guid><pubDate>Wed, 08 Feb 2006 05:25:00 GMT</pubDate></item><item><title>VIM TIP28</title><link>https://monkeyxite.github.io/posts/2006/02/8/40html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;a href="http://vim.sourceforge.net/tip_view.php?tip_id=28"&gt;VimTip 28: add a line-number to every line without cat or awk alike utilities.&lt;/a&gt;&lt;br&gt;不使用cat或awk等在添加每行都添加行号&lt;br&gt;&lt;br&gt;With
 Unix-like environment, you can use cat or awk to generate a line number
 easily, because vim has a friendly interface with shell, so everything
-work in vim as well as it does in shell.&lt;br&gt;在类Unix环境下，你可以轻松的使用cat或awk产生行号，因为vim与shell有友好的接口，所以同样可以在vim中执行shell中的操作。&lt;br&gt;&lt;b&gt;:%!call -n&lt;/b&gt;&lt;br&gt;or&lt;br&gt;&lt;b&gt;:%!awk '{print NR,$0}'&lt;/b&gt;&lt;br&gt;&lt;br&gt;But, if you use vim in MS-DOS, of win9x, win2000, you loss these tookit.here is a very simple way to archive this only by vim:&lt;br&gt;但是，如果你在MS的系统下，你将无法使用这些工具。下边是仅靠vim来实现上述功能的方法：&lt;br&gt;&lt;blockquote&gt;fu! LineIt()&lt;br&gt; exe ":s/^/".line(".")."/"&lt;br&gt;endf&lt;br&gt;&lt;/blockquote&gt;&lt;br&gt;Well, a sequence composed with alphabet is as easy as above:&lt;br&gt;那么，压缩为一行包括同样简单：&lt;br&gt;&lt;b&gt; exe "s/^/".nr2char(line("."))."/"&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/VI" rel="tag"&gt;VI&lt;/a&gt;, &lt;a href="http://technorati.com/tag/EDITOR" rel="tag"&gt;EDITOR&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</description><category>tips</category><category>vim</category><guid>https://monkeyxite.github.io/posts/2006/02/8/40html/</guid><pubDate>Wed, 08 Feb 2006 05:23:00 GMT</pubDate></item><item><title>VIM TIP29</title><link>https://monkeyxite.github.io/posts/2006/02/8/39html/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;a href="http://vim.sourceforge.net/tip_view.php?tip_id=29"&gt;VimTip 29: reverse all the line with only 7 keystroke in vim&lt;/a&gt;&lt;br&gt;使用7个键反转所有行&lt;br&gt;&lt;br&gt;&lt;b&gt;:g/^/m0&lt;/b&gt;&lt;br&gt;well, &lt;br&gt;1. &lt;b&gt;: &lt;/b&gt;bring you to command-line mode(also known as ex-mode) from normal-mode(also known as command mode).&lt;br&gt;1. &lt;b&gt;: &lt;/b&gt;使你从一般模式进入命令行&lt;br&gt;2. &lt;b&gt;g&lt;/b&gt;
-means you'll take an action through the whole file, generally perform a
-search, &lt;code&gt;v' also perform a search but it match the line not match the
-canonical expression.&amp;lt;br&amp;gt;2.&amp;lt;b&amp;gt;g&amp;lt;/b&amp;gt; 表明作用域将是整个文件，一般使用在搜索中。'&amp;lt;b&amp;gt;v&amp;lt;/b&amp;gt;'也在搜索中使用但是不能使用正则表达式。&amp;lt;br&amp;gt;3.&amp;lt;b&amp;gt; /&amp;lt;/b&amp;gt; begins the regular express&amp;lt;br&amp;gt;3.&amp;lt;b&amp;gt;/&amp;lt;/b&amp;gt;开始正则表达式&amp;lt;br&amp;gt;4.&amp;lt;b&amp;gt; ^ &amp;lt;/b&amp;gt;is a special character respect the start of a line.&amp;lt;br&amp;gt;4.&amp;lt;b&amp;gt; ^&amp;lt;/b&amp;gt;使表示行首的元字符&amp;lt;br&amp;gt;5. the second&amp;lt;b&amp;gt; /&amp;lt;/b&amp;gt; ends the regular express and indicate that the remains is action to do.&amp;lt;br&amp;gt;5. 第二个&amp;lt;b&amp;gt;/&amp;lt;/b&amp;gt;在正则表达式的末尾，并表明有后续操作&amp;lt;br&amp;gt;6. &amp;lt;b&amp;gt;m&amp;lt;/b&amp;gt; means move,&lt;/code&gt;&lt;b&gt;t&lt;/b&gt;&lt;code&gt;and&lt;/code&gt;&lt;b&gt;co&lt;/b&gt;' for copy, `d' for delete&lt;br&gt;6. &lt;b&gt;m&lt;/b&gt; 表示移动，'&lt;b&gt;t&lt;/b&gt;'&lt;b&gt; &lt;/b&gt;和'&lt;b&gt;co&lt;/b&gt;'表示复制，d为删除&lt;br&gt;7. &lt;b&gt;0 &lt;/b&gt;is the destination line.&lt;br&gt;7. &lt;b&gt;0&lt;/b&gt; 是目标行号&lt;br&gt;you can use &lt;br&gt;你可以使用&lt;br&gt;&lt;b&gt;:g/regexp/t$&lt;/b&gt;&lt;br&gt;to filter all lines and pick the match line together and copy them to the end of the buffer or&lt;br&gt;为了过滤所有的行并全部取出匹配行到buffer中&lt;br&gt;&lt;b&gt;:g/regexp/y A&lt;/b&gt;&lt;br&gt;to put them into a register(not eax, ebx...)&lt;br&gt;将过滤出的匹配项放入寄存器(非汇编中的eax、ebx)&lt;br&gt;&lt;br&gt;&lt;br&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/VIM" rel="tag"&gt;VIM&lt;/a&gt;, &lt;a href="http://technorati.com/tag/EDITOR" rel="tag"&gt;EDITOR&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</description><category>tips</category><category>vim</category><guid>https://monkeyxite.github.io/posts/2006/02/8/39html/</guid><pubDate>Wed, 08 Feb 2006 05:23:00 GMT</pubDate></item></channel></rss>
+work in vim as well as it does in shell.&lt;br&gt;在类Unix环境下，你可以轻松的使用cat或awk产生行号，因为vim与shell有友好的接口，所以同样可以在vim中执行shell中的操作。&lt;br&gt;&lt;b&gt;:%!call -n&lt;/b&gt;&lt;br&gt;or&lt;br&gt;&lt;b&gt;:%!awk '{print NR,$0}'&lt;/b&gt;&lt;br&gt;&lt;br&gt;But, if you use vim in MS-DOS, of win9x, win2000, you loss these tookit.here is a very simple way to archive this only by vim:&lt;br&gt;但是，如果你在MS的系统下，你将无法使用这些工具。下边是仅靠vim来实现上述功能的方法：&lt;br&gt;&lt;blockquote&gt;fu! LineIt()&lt;br&gt; exe ":s/^/".line(".")."/"&lt;br&gt;endf&lt;br&gt;&lt;/blockquote&gt;&lt;br&gt;Well, a sequence composed with alphabet is as easy as above:&lt;br&gt;那么，压缩为一行包括同样简单：&lt;br&gt;&lt;b&gt; exe "s/^/".nr2char(line("."))."/"&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Technorati Tags: &lt;a href="http://technorati.com/tag/VI" rel="tag"&gt;VI&lt;/a&gt;, &lt;a href="http://technorati.com/tag/EDITOR" rel="tag"&gt;EDITOR&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</description><category>tips</category><category>vim</category><guid>https://monkeyxite.github.io/posts/2006/02/8/40html/</guid><pubDate>Wed, 08 Feb 2006 05:23:00 GMT</pubDate></item></channel></rss>

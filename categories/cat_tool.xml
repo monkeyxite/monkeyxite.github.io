@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Intellegence Evolution (Posts about tool)</title><link>https://monkeyxite.github.io/</link><description></description><atom:link href="https://monkeyxite.github.io/categories/cat_tool.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:monkeyxite@gmail.com"&gt;Jonny Hou&lt;/a&gt; </copyright><lastBuildDate>Sat, 27 Oct 2018 14:27:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>tool chain for email handling</title><link>https://monkeyxite.github.io/posts/tool-chain-for-email-handling/</link><dc:creator>Jonny Hou</dc:creator><description>&lt;div&gt;&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Using email everyday, so the efficiency to handle email defines the efficiency of your day.&lt;/p&gt;
+&lt;h2&gt;Email handling principle&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Limit the access or notification of email, but pull the update with specific timeslot per day.&lt;/li&gt;
+&lt;li&gt;Get rid of redundancies like HTML email, but pure text (or markdown into html automatically if needed)&lt;/li&gt;
+&lt;li&gt;Filtering, Labeling and "Zero Inbox" is key for email handling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tool Chain for email&lt;/h2&gt;
+&lt;p&gt;After searching for years, these tools are choosen for efficient email handling:&lt;/p&gt;
+&lt;p&gt;Email Client: Neomutt together with mbsync, msmtp; 
+Filtering: marina or mu;
+Editor: vim with muttdown;
+Calendar: ? TBD with one terminal tool, 
+Contact: abook with khard? ;
+Misc: urlscan, w3m, gpgme, etc; &lt;/p&gt;
+&lt;h2&gt;Working flow and procedure&lt;/h2&gt;
+&lt;h3&gt;Config Email&lt;/h3&gt;
+&lt;p&gt;TBD, suggest follow dotfile procedure.&lt;/p&gt;
+&lt;h3&gt;Recieving Email&lt;/h3&gt;
+&lt;p&gt;Taking your specific time slot for email, than just open terminal and:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;mbsync -a 
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Sorting/Labeling Email&lt;/h3&gt;
+&lt;h3&gt;Write Email&lt;/h3&gt;
+&lt;p&gt;Vim would be the major working force for this task with fancy tools included such as auto complete and spell checking.&lt;/p&gt;
+&lt;h4&gt;Raw Text&lt;/h4&gt;
+&lt;p&gt;Normal working follow editing txt file in vim. 
+TBD for special plugin to handle email more efficiently.&lt;/p&gt;
+&lt;h4&gt;Rich Format&lt;/h4&gt;
+&lt;p&gt;Add muttdown for sending out rich format by using muttdown.&lt;/p&gt;
+&lt;h4&gt;Spellcheck: vim&lt;/h4&gt;
+&lt;p&gt;To move to a misspelled word, use &lt;strong&gt;]s&lt;/strong&gt; and &lt;strong&gt;[s&lt;/strong&gt;. 
+&lt;strong&gt;z=&lt;/strong&gt;, and Vim will suggest a list of alternatives that it thinks may be correct.
+&lt;strong&gt;zg&lt;/strong&gt; command and Vim will add it to its dictionary.
+You can also mark words as incorrect using &lt;strong&gt;zw&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;;enable &lt;span class="k"&gt;spell&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nospell&lt;/span&gt;
+;disable &lt;span class="k"&gt;spell&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="k"&gt;spell&lt;/span&gt;
+;change default &lt;span class="k"&gt;lang&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="k"&gt;spell&lt;/span&gt; &lt;span class="nb"&gt;spelllang&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;en_us
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Calendar handling&lt;/h3&gt;
+&lt;h3&gt;Contact&lt;/h3&gt;
+&lt;p&gt;Abook auto complete integration
+How to sync with cloud.&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.linux.com/learn/using-spell-checking-vim"&gt;hwo to spell check within vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Roguelazer/muttdown"&gt;muttdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://webgefrickel.de/blog/a-modern-mutt-setup"&gt;a modern setup of mutt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.iodoru.org/post/2017-07-18-mu/"&gt;why mu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>email</category><category>tool</category><category>vim</category><guid>https://monkeyxite.github.io/posts/tool-chain-for-email-handling/</guid><pubDate>Sat, 27 Oct 2018 13:15:57 GMT</pubDate></item></channel></rss>
