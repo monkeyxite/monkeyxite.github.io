@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>vim cheatsheet | Intellegence Evolution</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (zh_cn)" href="../../rss.xml">
+<link rel="canonical" href="https://monkeyxite.github.io/zh_cn/posts/vim-cheatsheet/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Jonny Hou">
+<link rel="prev" href="../tool-chain-for-email-handling/" title="tool chain for email handling" type="text/html">
+<meta property="og:site_name" content="Intellegence Evolution">
+<meta property="og:title" content="vim cheatsheet">
+<meta property="og:url" content="https://monkeyxite.github.io/zh_cn/posts/vim-cheatsheet/">
+<meta property="og:description" content="Write your post here.
+Insert mode commands
+
+Switch from Insert to Normal mode for one command only: CTRL-o (followed by the normal mode command)
+Delete back to the beginning of the previous word (or t">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-10-28T22:42:01+08:00">
+<link rel="alternate" hreflang="en" href="../../../posts/vim-cheatsheet/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">跳到主内容</a>
+
+<!-- Menubar -->
+
+<div class="navbar navbar-static-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="https://monkeyxite.github.io/zh_cn/">
+
+                <span id="blog-title">Intellegence Evolution</span>
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+<li>
+<a href="../../archive.html">文章归档</a>
+                </li>
+<li>
+<a href="../../categories/">标签</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS 源</a>
+
+                    
+                </li>
+</ul>
+<ul class="nav pull-right">
+<li>            </li>
+<li><a href="https://monkeyxite.github.io/" rel="alternate" hreflang="en">English</a></li>
+
+                    <li>    </li>
+<li>
+    <a href="index.md" id="sourcelink">资源</a>
+    </li>
+
+                
+                </ul>
+</div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="content" role="main">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">vim cheatsheet</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Jonny Hou
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2018-10-28T22:42:01+08:00" itemprop="datePublished" title="2018-10-28 22:42">2018-10-28 22:42</time></a>
+            </p>
+                <p class="commentline">        
+
+                    </p>
+<p class="sourceline"><a href="index.md" class="sourcelink">资源</a></p>
+
+        </div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Write your post here.</p>
+<h4>Insert mode commands</h4>
+<ul>
+<li>Switch from Insert to Normal mode for one command only: <code>CTRL-o</code> (followed by the normal mode command)</li>
+<li>Delete back to the beginning of the previous word (or the beginning of the current word if the cursor is already inside a word): <code>CTRL-w</code>
+</li>
+<li>Indent current line: <code>CTRL-t</code> (mnemonic: "tab")</li>
+<li>Dedent current line: <code>CTRL-d</code> (mnemonic: "dedent")</li>
+<li>Insert a hard tab, even when it would normally be expanded to spaces: <code>CTRL-V &lt;tab&gt;</code>
+</li>
+<li>Insert current filename <code>CTRL-r %</code> (for related things that can be inserted with <code>CTRL-r</code>, see <code>:h i_CTRL-R</code>).</li>
+</ul>
+<h4>Normal mode commands</h4>
+<ul>
+<li>
+<code>==</code>: intelligently indent selection (or currently line if no selection); <em>note that what is actually happening here is that we’re using the "filter" functionality with no filter, so <a href="../../../wiki/Vim">Vim</a> just uses the standard builtin "C indenting" functionality</em> (for more information see <code>:h filter</code>)</li>
+<li>
+<code>gq{motion}</code>: reformat (rewrap); eg:<ul>
+<li>
+<code>gqq</code>: reformat (rewrap) current line</li>
+</ul>
+</li>
+<li>
+<code>gu{motion}</code>: lowercase</li>
+<li>
+<code>gU{motion}</code>: uppercase</li>
+<li>
+<code>g~{motion}</code>: toggle case</li>
+<li>
+<code>CTRL-x</code>: increment the number at (the end of) the word under the cursor</li>
+<li>
+<code>CTRL-a</code>: decrement the number at (the end of) the word under the cursor</li>
+<li>
+<code>gv</code>: reselect last selection</li>
+<li>
+<code>g CTRL-G</code>: show current cursor position and total counts (columns, lines, words, bytes)</li>
+<li>
+<code>ga</code>: show ASCII info for character under cursor</li>
+<li>
+<code>g8</code>: show UTF-8 info for character under cursor</li>
+<li>
+<code>CTRL-w f</code>: open the file under the cursor in a split (<code>gf</code> will do this without the split)</li>
+</ul>
+<h5>Window and tab-related commands</h5>
+<ul>
+<li>
+<code>CTRL-w =</code>: resize windows to be equal width and height</li>
+<li>
+<code>CTRL-W r</code> or <code>CTRL-W CTRL-R</code>: Rotate windows (downwards/rightwards)</li>
+<li>
+<code>CTRL-W {H,J,K,L}</code>: Move a window to occupy to an entire edge of the viewport; eg. <code>CTRL-W J</code> pushes the current window to the bottom, occupying the full width (also works: <code>CTRL-W CTRL-{H,J,K,L}</code>)</li>
+<li>
+<code>CTRL-W T</code>: open current window in a new tab</li>
+<li>
+<code>CTRL-W _</code>: make current window as big as possible (cf. <code>10 CTRL-W _</code>, which makes it 10 lines high); (also works: <code>CTRL-W CTRL-_</code>)</li>
+<li>
+<code>CTRL-W b</code>: move to bottom window (also works: <code>CTRL-W CTRL-B</code>)</li>
+<li>
+<code>CTRL-W t</code>: move to top window (also works: <code>CTRL-W CTRL-T</code>)</li>
+<li>
+<code>gt</code>: next tab</li>
+<li>
+<code>gT</code>: previous tab</li>
+</ul>
+<p>For more see <code>:h window-moving</code></p>
+<h5>Movement</h5>
+<p>For lots of documentation see <code>:h motion.txt</code>.</p>
+<ul>
+<li>
+<code>h</code>, <code>j</code>, <code>k</code>, <code>l</code>: per-character/per-line movement through file (left, down, up, right)</li>
+<li>
+<code>gj</code>, <code>gk</code>: per-line movement through buffer, operating on <em>display lines</em> (which may be wrapped) not actual lines in the file (down, up)</li>
+<li>
+<code>w</code>: forward a word (mnemonic: "word"); here "word" is an "keyword" (identifier) like "foo9" or "h_go" and the movement is to the <em>beginning</em> of the next word</li>
+<li>
+<code>W</code>: forward a "big" word; here a "word" is <em>anything</em> other than whitespace</li>
+<li>
+<code>b</code>: back a word (mnemonic: "back"); again the movement is to the <em>beginning</em> of the word</li>
+<li>
+<code>B</code>: back a "big" word</li>
+<li>
+<code>e</code>: forward to the <em>end</em> of a word (mnemonic: "end")</li>
+<li>
+<code>E</code>: forward to the <em>end</em> of a "big" word</li>
+<li>
+<code>ge</code>: back to the <em>end</em> of the last word</li>
+<li>
+<code>gE</code>: back to the <em>end</em> of the last "big" word</li>
+<li>
+<code>f{character}</code>: forward to the next occurrence of <code>character</code> (mnemonic: "find/foward")</li>
+<li>
+<code>F{character}</code>: same as <code>f{character}</code>, but search in the opposite direction</li>
+<li>
+<code>t{character}</code>: forward <em>til</em> (until) the next occurrence of <code>character</code> (mnemonic: "til/to"); the cursor is place immediately <em>before</em> and not on the character</li>
+<li>
+<code>T{character}</code>: same as <code>t{character}</code>, but search in the opposite direction</li>
+<li>
+<code>;</code>: repeat last <code>f</code>, <code>F</code>, <code>t</code> or <code>T</code> operation</li>
+<li>
+<code>,</code>: repeat last <code>f</code>, <code>F</code>, <code>t</code> or <code>T</code> operation, but in the opposite direction</li>
+<li>
+<code>CTRL-F</code>: forward a (full) screen (mnemonic: "forward")</li>
+<li>
+<code>CTRL-B</code>: back a (full) screen (mnemonic: "back")</li>
+<li>
+<code>CTRL-D</code>: down a (half) screen (mnemonic: "down")</li>
+<li>
+<code>CTRL-U</code>: up a (half) screen (mnemonic: "up")</li>
+<li>
+<code>H</code>: jump to top of screen (mnemonic: "high")</li>
+<li>
+<code>M</code>: jump to middle of screen (mnemonic: "middle")</li>
+<li>
+<code>L</code>: jump to bottom of screen (mnemonic: "low")</li>
+<li>
+<code>gg</code>: jump to top of file (mnemonic: like <code>more</code> or <code>less</code> pagers, except plain <code>g</code> isn’t available so we have to use <code>gg</code>)</li>
+<li>
+<code>G</code>: jump to bottom of file (mnemonic: like <code>more</code> or <code>less</code> pagers)</li>
+<li>
+<code>200G</code>: jump to line 200</li>
+<li>
+<code>:200</code>: same as <code>200G</code>
+</li>
+<li>
+<code>{</code>: jump to last blank line</li>
+<li>
+<code>}</code>: jump to next blank line</li>
+<li>
+<code>[[</code>: jump to previous <code>{</code> in column 0</li>
+<li>
+<code>]]</code>: jump to next <code>{</code> in column 0</li>
+<li>
+<code>][</code>: jump to next <code>}</code> in column 0</li>
+<li>
+<code>[]</code>: jump to previous <code>}</code> in column 0</li>
+<li>
+<code>%</code>: jump to matching brace (with <a href="http://www.vim.org/scripts/script.php?script_id=39">matchit.vim</a> you can also jump to matching HTML tags and the like)</li>
+<li>
+<code>]s</code>: jump to next misspelled word</li>
+<li>
+<code>zg</code>: mark a word as good, adding it to the spelling dictionary</li>
+</ul>
+<h5>Scrolling</h5>
+<ul>
+<li>
+<code>zz</code> center current cursor line within viewport</li>
+<li>
+<code>zt</code> scroll current cursor line to top of viewport</li>
+<li>
+<code>zb</code> scroll current cursor line to bottom of viewport</li>
+<li>
+<code>CTRL-y</code> scroll down a line</li>
+<li>
+<code>CTRL-e</code> scroll up a line</li>
+<li>
+<code>CTRL-d</code> scroll down one page</li>
+<li>
+<code>CTRL-u</code> scroll up one page</li>
+</ul>
+<h5>Marks and jumps</h5>
+<p>When jumping to a mark, there are two variants:</p>
+<ul>
+<li>with <code>'</code>, the jump is line-wise, to the first non-blank character on the line containing the mark</li>
+<li>with ```, the jump is character-wise, to the position of the mark within the line</li>
+</ul>
+<p>Example commands:</p>
+<ul>
+<li>
+<code>m{letter}</code>: create a mark at the current position</li>
+<li>
+<code>'{letter}</code>: jump to specified mark (first non-whitespace character on line)</li>
+<li>
+<code>`{letter}</code>: jump to specified mark (to column where mark was set)</li>
+<li>
+<code>''</code>: jump back to the last line jumped from</li>
+<li>````: jump back to the last position jumped from</li>
+<li>
+<code>`.</code>: jump to position where last change occurred in current buffer</li>
+<li>
+<code>[` and</code>]`: jump to beginning/end of last changed or yanked text</li>
+<li>
+<code>&lt;` and</code>&gt;`: jump to beginning/end of last visual selection</li>
+<li>
+<code>:jump</code>: show the jump list (places you’ve jumped to with motion commands, specifically those listed at <code>:h jump-motions</code>)</li>
+<li>
+<code>CTRL-o</code>: move to older position in jump list (mnemonic: "jump out")</li>
+<li>
+<code>CTRL-i</code>: move to newer position in jump list (mnemonic: "jump in")</li>
+<li>
+<code>:changes</code>: show the changes list for the current buffer (places you’ve edited)</li>
+<li>
+<code>g;</code>: move to older position in change list</li>
+<li>
+<code>g,</code>: move to newer position in change list</li>
+</ul>
+<h5>Search</h5>
+<ul>
+<li>
+<code>*</code>: find word under cursor</li>
+<li>
+<code>#</code>: find word under cursor (reverse direction)</li>
+<li>
+<code>g*</code>: like <code>*</code>, but also looks for matches which are substrings of other words</li>
+<li>
+<code>g#</code>: like <code>#</code>, but also looks for matches which are substrings of other words</li>
+<li>
+<code>/{pattern}</code>: find pattern (mnemonic: like <a href="../../../wiki/Perl">Perl</a>/<a href="../../../wiki/Ruby">Ruby</a>/pager etc regex syntax)</li>
+<li>
+<code>?{pattern}</code>: find pattern (reverse direction)</li>
+<li>
+<code>n</code>: repeat last search</li>
+<li>
+<code>N</code>: repeat last search in opposite direction</li>
+<li>
+<code>gn</code>: go to next match and select it visually; can be used as a motion as well (ie. <code>cgn</code> means "change next match")</li>
+<li>
+<code>ggn</code>: go to first match in file</li>
+<li>
+<code>Gn</code>: go to last match in file</li>
+</ul>
+<h5>Folding</h5>
+<ul>
+<li>
+<code>zr</code>: decrement <code>'foldlevel'</code> A.K.A. "fold less" (mnemonic: reduce)</li>
+<li>
+<code>zm</code>: increment <code>'foldlevel'</code> A.K.A. "fold more" (mnemonic: more)</li>
+<li>
+<code>zR</code>: decrement <code>'foldlevel'</code> to zero A.K.A. "unfold everything" (mnemonic: <em>reduce</em>)</li>
+<li>
+<code>zM</code>: increment <code>'foldlevel'</code> to maximum A.K.A&gt; "fold everything" (mnemonic: <em>more</em>)</li>
+<li>
+<code>zo</code>: open current fold</li>
+<li>
+<code>zO</code>: open current fold recursively</li>
+<li>
+<code>zc</code>: close current fold</li>
+<li>
+<code>zC</code>: close current fold recursively</li>
+<li>
+<code>zv</code>: view cursor line A.K.A. "open just enough folds to make cursor line visible" (mnemonic: <em>view</em>/<em>visible</em>)</li>
+<li>
+<code>zi</code>: toggle value of <code>'foldenable'</code> (mnemonic: invert)</li>
+</ul>
+<h4>Visual mode commands</h4>
+<p>Enter using <code>V</code>:</p>
+<ul>
+<li>
+<code>gq</code>: reformat (rewrap) selection</li>
+<li>
+<code>o</code>: jump to opposite end of selection</li>
+</ul>
+<h4>Visual (block) mode commands</h4>
+<p>Enter using <code>&lt;C-v&gt;</code>:</p>
+<ul>
+<li>
+<code>$A{string}&lt;Esc&gt;</code>: append to each line, varying lengths (<a href="http://vimdoc.sourceforge.net/htmldoc/visual.html#v_b_A">details</a>).</li>
+</ul>
+<h4>Command mode commands</h4>
+<ul>
+<li>
+<code>:nohlsearch</code> (<code>:noh</code>): remove currently visible search highlighting (doesn’t disable highlighting permanently)</li>
+<li>
+<code>:enew</code> (<code>:ene</code>): open a new scratch buffer</li>
+<li>
+<code>:write</code>: write current buffer to a file</li>
+<li>
+<code>:read</code>: read into current buffer; eg:</li>
+<li>
+<code>:read !{shell command}</code>: insert output of shell command into current buffer at current cursor location</li>
+<li>
+<code>:{range}d</code>: delete lines in <code>{range}</code>
+</li>
+<li>
+<code>:{range}y</code>: yank lines in <code>{range}</code>
+</li>
+<li>
+<code>:g/{pattern}/{action}</code>: perform action on lines matching pattern (eg. <code>:g/a/d</code> would delete all lines matching "a")</li>
+<li>
+<code>:v/{pattern}/{action}</code>: inverse of <code>:g</code> (performs action on non-matching lines)</li>
+</ul>
+<p>To open the command-line window (showing full command history in a buffer, which you can edit, then use <code>&lt;CR&gt;</code> to run a given line’s command):</p>
+<ul>
+<li>
+<code>q:</code>: for commands</li>
+<li>
+<code>q/</code>: for searches (or <code>q?</code>)</li>
+</ul>
+<p>Funnily, you can easily open this by mistake by typing <code>q:</code> when you mean to type the quite-frequently-used <code>:q</code> instead.</p>
+<h5>Quickfix/Location list</h5>
+<h6>Commands</h6>
+<ul>
+<li>
+<code>:cclose</code> (<code>:ccl</code>): close quickfix window (<code>:lclose</code> and <code>:lcl</code> for location list)</li>
+<li>
+<code>:colder</code> (<code>:col</code>): show previous quickfix results (<code>:lolder</code> and <code>:lol</code> for location list)</li>
+<li>
+<code>:cnewer</code> (<code>:cnew</code>): show subsequent quickfix results (<code>:lnewer</code> and <code>:lnew</code> for location list)</li>
+</ul>
+<h6>Mappings</h6>
+<ul>
+<li>
+<code>CTRL-w Enter</code>: open current item in a split.</li>
+</ul>
+<h5>Mappings available in command mode</h5>
+<ul>
+<li>
+<code>&lt;C-r&gt;{register}</code>: paste the text from the specified register into the command line (eg. to paste the last-yanked text, do <code>&lt;C-r&gt;"</code>)</li>
+<li>
+<code>&lt;C-r&gt; w</code>: paste word currently under cursor</li>
+</ul>
+<h4>Special mappings</h4>
+<ul>
+<li>
+<code>&lt;C-w&gt; &lt;CR&gt;</code>: open quickfix entry in a horizontal split</li>
+</ul>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../tool-chain-for-email-handling/" rel="prev" title="tool chain for email handling">上一篇文章</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>评论</h2>
+                
+
+        </section></article>
+</div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2018         <a href="mailto:monkeyxite@gmail.com">Jonny Hou</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+    
+</div>
+            <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("zh-cn");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-238788-7"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-238788-7');
+            </script>
+</body>
+</html>
