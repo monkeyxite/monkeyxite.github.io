@@ -204,3 +204,9 @@ Funnily, you can easily open this by mistake by typing `q:` when you mean to typ
 ### Special mappings
 
 *   `<C-w> <CR>`: open quickfix entry in a horizontal split
+
+## Spacevim special
+
+### extra pluggin
+* `<SPC> D d`: search word under current docset
+* `<SPC> D D`: search word under all docsets
